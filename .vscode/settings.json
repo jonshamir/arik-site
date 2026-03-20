@@ -1,6 +1,10 @@
 {
+  "files.associations": {
+    "*.njk": "jinja"
+  },
   "editor.formatOnSave": true,
-  "[nunjucks]": {
+  "[jinja]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "djlint.showInstallError": false
 }

@@ -6,7 +6,8 @@
       "Bash(bun init:*)",
       "Bash(bun add:*)",
       "Bash(bun run:*)",
-      "Bash(bunx eleventy:*)"
+      "Bash(bunx eleventy:*)",
+      "mcp__ide__getDiagnostics"
     ]
   }
 }
