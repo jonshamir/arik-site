@@ -21,6 +21,7 @@ module.exports = function (eleventyConfig) {
   // Passthrough copy
   eleventyConfig.addPassthroughCopy('images');
   eleventyConfig.addPassthroughCopy('papers');
+  eleventyConfig.addPassthroughCopy('style');
 
   return {
     dir: {

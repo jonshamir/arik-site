@@ -8,15 +8,17 @@
   <link rel="stylesheet" href="/style/main.css">
 </head>
 <body>
-  <nav class="site-nav">
-    <a href="/" class="nav-name">Ariel Shamir</a>
-    <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      <a href="/papers/">Papers</a>
-      <a href="/categories/">Categories</a>
-    </div>
-  </nav>
+  <header>
+    <nav class="site-nav">
+      <a href="/" class="nav-name">Ariel Shamir</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/papers/">Papers</a>
+        <a href="/categories/">Categories</a>
+      </div>
+    </nav>
+  </header>
   <main>
     {{ content | safe }}
   </main>
