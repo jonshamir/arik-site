@@ -1,13 +1,22 @@
+@font-face {
+  font-family: "Jost";
+  src: url("./fonts/Jost-VariableFont.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Define design variables */
   --color-primary: #2b2d42;
   --color-secondary: #bfc6d2;
   --color-background: #f5f5f5;
   --color-accent: #3c477e;
+  --color-active: #99ccff;
 
   --border-radius: 0.5rem;
 
-  --font-titles: sans-serif;
+  --font-titles: "Jost", sans-serif;
   --font-body: system-ui, sans-serif; /* system-ui matches the user's system font */
 }
 
@@ -31,13 +40,16 @@ header {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  height: 6rem;
 
   a {
     text-decoration: none;
     color: var(--color-background);
+    font-weight: medium;
+    transition: color 0.2s ease;
 
     &:hover {
-      text-decoration: underline;
+      color: var(--color-active);
     }
   }
 
@@ -49,6 +61,23 @@ header {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-name {
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: var(--font-titles);
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
