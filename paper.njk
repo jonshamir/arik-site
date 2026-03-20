@@ -1,0 +1,48 @@
+---
+layout: base.njk
+pagination:
+  data: papers
+  size: 1
+  alias: paper
+  addAllPagesToCollections: true
+permalink: /papers/{{ paper.slug }}/
+eleventyComputed:
+  title: "{{ paper.title }} — Ariel Shamir"
+---
+
+<article class="paper-detail">
+  <h1>{{ paper.title }}</h1>
+  <p class="paper-authors">{{ paper.authors | join(', ') }}</p>
+  <p class="paper-venue">{{ paper.venue }} ({{ paper.year }})</p>
+  <span class="paper-type badge">{{ paper.paperType }}</span>
+
+  {% if paper.overviewImage %}
+  <div class="paper-overview-image">
+    <img src="{{ paper.overviewImage }}" alt="{{ paper.title }}">
+  </div>
+  {% endif %}
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>{{ paper.abstract }}</p>
+  </div>
+
+  <div class="paper-links">
+    {% if paper.paperLink %}
+      <a href="{{ paper.paperLink }}" class="btn">Paper PDF</a>
+    {% endif %}
+    {% if paper.videoLink %}
+      <a href="{{ paper.videoLink }}" class="btn">Video</a>
+    {% endif %}
+    {% if paper.projectLink %}
+      <a href="{{ paper.projectLink }}" class="btn">Project Page</a>
+    {% endif %}
+  </div>
+
+  <div class="paper-categories">
+    <h3>Categories</h3>
+    {% for cat in paper.categories %}
+      <a href="/categories/{{ cat | toSlug }}/" class="category-tag">{{ cat }}</a>
+    {% endfor %}
+  </div>
+</article>

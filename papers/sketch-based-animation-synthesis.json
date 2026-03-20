@@ -1,0 +1,15 @@
+{
+  "title": "Sketch-Based Animation Synthesis",
+  "authors": ["Ariel Shamir", "Daniel Cohen-Or"],
+  "year": 2015,
+  "abstract": "We introduce a sketch-based interface for synthesizing character animations. Users can sketch motion trajectories and poses, and our system automatically generates smooth, natural-looking animations.",
+  "venue": "Computer Graphics Forum",
+  "pages": "1-12",
+  "paperType": "journal",
+  "categories": ["Animation", "Art, Sketches & Typography"],
+  "paperLink": "https://example.com/sketch-animation.pdf",
+  "videoLink": "https://example.com/sketch-animation-video.mp4",
+  "projectLink": null,
+  "thumbnail": "/images/placeholder.jpg",
+  "overviewImage": "/images/placeholder.jpg"
+}

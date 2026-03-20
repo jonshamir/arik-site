@@ -1,0 +1,27 @@
+---
+layout: base.njk
+title: Papers — Ariel Shamir
+permalink: /papers/
+---
+
+<section class="papers-list">
+  <h1>Papers</h1>
+  {% for paper in papers | sort(true, false, 'year') %}
+  <article class="paper-card">
+    <div class="paper-thumbnail">
+      <img src="{{ paper.thumbnail }}" alt="{{ paper.title }}">
+    </div>
+    <div class="paper-info">
+      <h2><a href="/papers/{{ paper.slug }}/">{{ paper.title }}</a></h2>
+      <p class="paper-authors">{{ paper.authors | join(', ') }}</p>
+      <p class="paper-venue">{{ paper.venue }} ({{ paper.year }})</p>
+      <span class="paper-type badge">{{ paper.paperType }}</span>
+      <div class="paper-categories">
+        {% for cat in paper.categories %}
+          <a href="/categories/{{ cat | toSlug }}/" class="category-tag">{{ cat }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</section>
