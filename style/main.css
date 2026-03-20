@@ -211,3 +211,16 @@ fieldset {
     filter: brightness(80%);
   }
 }
+
+.industry-span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: red;
+}
+.industry-img {
+  height: 3rem;
+  object-fit: contain;
+}
