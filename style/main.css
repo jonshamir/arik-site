@@ -218,7 +218,9 @@ fieldset {
   justify-content: center;
   flex-direction: row;
   gap: 1rem;
-  background-color: red;
+  background-color: lightgray;
+  padding: 0.5rem;
+  border-radius: 99px;
 }
 .industry-img {
   height: 3rem;
