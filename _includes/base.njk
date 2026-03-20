@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title | default("Ariel Shamir") }}</title>
-  <link rel="stylesheet" href="/style/reset.css">
-  <link rel="stylesheet" href="/style/main.css">
-</head>
-<body>
-  <header>
-    <nav class="site-nav">
-      <a href="/" class="nav-name">Ariel Shamir</a>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/papers/">Papers</a>
-        <a href="/categories/">Categories</a>
-      </div>
-    </nav>
-  </header>
-  <main>
-    {{ content | safe }}
-  </main>
-  <footer>
-    <p>&copy; {{ "" | default("2026") }} Ariel Shamir</p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title | default("Ariel Shamir") }}</title>
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/"><i class="ph-fill ph-house"></i>Home</a>
+          <a href="/about/">About</a>
+          <a href="/papers/">Papers</a>
+          <a href="/categories/">Categories</a>
+        </div>
+      </nav>
+    </header>
+    <main>{{ content | safe }}</main>
+    <footer>
+      <p>&copy; {{ "" | default("2026") }} Ariel Shamir</p>
+    </footer>
+  </body>
 </html>

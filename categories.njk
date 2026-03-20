@@ -8,10 +8,10 @@ permalink: /categories/
   <h1>Categories</h1>
   <ul class="category-list">
     {% for cat in collections.papersByCategory %}
-    <li>
-      <a href="/categories/{{ cat.slug }}/">{{ cat.name }}</a>
-      <span class="paper-count">({{ cat.papers.length }})</span>
-    </li>
+      <li>
+        <a href="/categories/{{ cat.slug }}/">{{ cat.name }}</a>
+        <span class="paper-count">({{ cat.papers.length }})</span>
+      </li>
     {% endfor %}
   </ul>
 </section>

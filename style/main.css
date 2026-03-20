@@ -17,7 +17,8 @@
   --border-radius: 0.5rem;
 
   --font-titles: "Jost", sans-serif;
-  --font-body: system-ui, sans-serif; /* system-ui matches the user's system font */
+  --font-body:
+    system-ui, sans-serif; /* system-ui matches the user's system font */
 }
 
 body {

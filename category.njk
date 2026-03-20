@@ -11,19 +11,22 @@ eleventyComputed:
 
 <section class="category-page">
   <h1>{{ category.name }}</h1>
-  <p>{{ category.papers.length }} paper{{ "s" if category.papers.length != 1 }} in this category.</p>
+  <p>
+    {{ category.papers.length }} paper{{ "s" if category.papers.length != 1 }}
+    in this category.
+  </p>
 
   {% for paper in category.papers | sort(true, false, 'year') %}
-  <article class="paper-card">
-    <div class="paper-thumbnail">
-      <img src="{{ paper.thumbnail }}" alt="{{ paper.title }}">
-    </div>
-    <div class="paper-info">
-      <h2><a href="/papers/{{ paper.slug }}/">{{ paper.title }}</a></h2>
-      <p class="paper-authors">{{ paper.authors | join(', ') }}</p>
-      <p class="paper-venue">{{ paper.venue }} ({{ paper.year }})</p>
-      <span class="paper-type badge">{{ paper.paperType }}</span>
-    </div>
-  </article>
+    <article class="paper-card">
+      <div class="paper-thumbnail">
+        <img src="{{ paper.thumbnail }}" alt="{{ paper.title }}" />
+      </div>
+      <div class="paper-info">
+        <h2><a href="/papers/{{ paper.slug }}/">{{ paper.title }}</a></h2>
+        <p class="paper-authors">{{ paper.authors | join(', ') }}</p>
+        <p class="paper-venue">{{ paper.venue }} ({{ paper.year }})</p>
+        <span class="paper-type badge">{{ paper.paperType }}</span>
+      </div>
+    </article>
   {% endfor %}
 </section>

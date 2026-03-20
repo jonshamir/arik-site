@@ -17,9 +17,9 @@ eleventyComputed:
   <span class="paper-type badge">{{ paper.paperType }}</span>
 
   {% if paper.overviewImage %}
-  <div class="paper-overview-image">
-    <img src="{{ paper.overviewImage }}" alt="{{ paper.title }}">
-  </div>
+    <div class="paper-overview-image">
+      <img src="{{ paper.overviewImage }}" alt="{{ paper.title }}" />
+    </div>
   {% endif %}
 
   <div class="paper-abstract">
@@ -42,7 +42,9 @@ eleventyComputed:
   <div class="paper-categories">
     <h3>Categories</h3>
     {% for cat in paper.categories %}
-      <a href="/categories/{{ cat | toSlug }}/" class="category-tag">{{ cat }}</a>
+      <a href="/categories/{{ cat | toSlug }}/" class="category-tag"
+        >{{ cat }}</a
+      >
     {% endfor %}
   </div>
 </article>
