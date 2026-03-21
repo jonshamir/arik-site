@@ -11,18 +11,9 @@ eleventyComputed:
 ---
 
 <article class="paper-detail">
-  <p class="paper-authors">{{ paper.authors | join(' · ') }}</p>
   <h1>{{ paper.title }}</h1>
+  <p class="paper-authors">{{ paper.authors | join(' · ') }}</p>
   <p class="paper-venue">{{ paper.venue }} ({{ paper.year }})</p>
-
-  <div class="paper-categories">
-    {% for cat in paper.categories %}
-      <a href="/categories/{{ cat | toSlug }}/" class="category-tag"
-        >{{ cat }}</a
-      >
-    {% endfor %}
-  </div>
-
   <div class="paper-links">
     {% if paper.paperLink %}
       <a href="{{ paper.paperLink }}" class="btn">Paper PDF</a>
@@ -33,6 +24,13 @@ eleventyComputed:
     {% if paper.projectLink %}
       <a href="{{ paper.projectLink }}" class="btn">Project Page</a>
     {% endif %}
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>{{ paper | toBibtex }}</pre>
+        <button class="bibtex-copy-btn btn btn-small">Copy</button>
+      </div>
+    </dialog>
   </div>
 
   <div class="paper-abstract">

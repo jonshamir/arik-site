@@ -4,6 +4,30 @@ module.exports = function (eleventyConfig) {
   // Add toSlug filter for Nunjucks
   eleventyConfig.addFilter('toSlug', toSlug);
 
+  // Add toBibtex filter
+  eleventyConfig.addFilter('toBibtex', function (paper) {
+    const lastNameMatch = paper.authors[0].split(' ').pop().toLowerCase();
+    const key = lastNameMatch + paper.year;
+    const isJournal = paper.paperType === 'journal';
+    const entryType = isJournal ? 'article' : 'inproceedings';
+    const authors = paper.authors.join(' and ');
+
+    let fields = [];
+    fields.push(`  author    = {${authors}}`);
+    fields.push(`  title     = {${paper.title}}`);
+    if (isJournal) {
+      fields.push(`  journal   = {${paper.venue}}`);
+    } else {
+      fields.push(`  booktitle = {${paper.venue}}`);
+    }
+    fields.push(`  year      = {${paper.year}}`);
+    if (paper.volume) fields.push(`  volume    = {${paper.volume}}`);
+    if (paper.number) fields.push(`  number    = {${paper.number}}`);
+    if (paper.pages) fields.push(`  pages     = {${paper.pages}}`);
+
+    return `@${entryType}{${key},\n${fields.join(',\n')}\n}`;
+  });
+
   // Collection: papers grouped by category
   eleventyConfig.addCollection('papersByCategory', function (collectionApi) {
     const allPapers = require('./_data/papers.js')();

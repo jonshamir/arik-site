@@ -8,8 +8,12 @@
     <h3><a href="/papers/{{ paper.slug }}/">{{ paper.title }}</a></h3>
     <p class="paper-authors">{{ paper.authors | join(', ') }}</p>
     <p class="paper-venue">{{ paper.venue }} ({{ paper.year }})</p>
-    {% if paper.paperType %}
-      <span class="paper-type badge">{{ paper.paperType }}</span>
-    {% endif %}
+    <button class="bibtex-btn btn btn-small">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>{{ paper | toBibtex }}</pre>
+        <button class="bibtex-copy-btn btn btn-small">Copy</button>
+      </div>
+    </dialog>
   </div>
 </article>
