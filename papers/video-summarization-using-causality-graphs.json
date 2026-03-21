@@ -1,0 +1,21 @@
+{
+  "title": "Video Summarization using Causality Graphs",
+  "authors": [
+    "Shay Sheinfeld",
+    "Yotam Gingold",
+    "Ariel Shamir"
+  ],
+  "year": 2016,
+  "abstract": "Video summarization is useful for many applications such as content skimming and searching. Automatic video summarization is extremely challenging as it often depends on semantic tasks such as determining meaning, causal relationships, and importance of the displayed video events. We present a reliable, crowdsourced solution to video summarization based on human computation that addresses one of the main semantic challenges in story understanding: recognizing cause and effect. Our approach first automatically divides the video into simple shots as atomic elements. Using these elements we construct a context-tree (Verroios and Bernstein 2014) to gain global understanding, and introduce a crowdsource algorithm that explicitly builds a causality graph representing the causality relations between events in the video. We use both importance and causality to create a summary of the original video. Our evaluation shows that information from the causality graph creates better summarizations of the original video.",
+  "venue": "Workshop on Human Computation for Image and Video Analysis, @HCOMP",
+  "pages": "",
+  "paperType": "conference",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/vidSum.png",
+  "overviewImage": "/images/research/vidSumGraph.png"
+}

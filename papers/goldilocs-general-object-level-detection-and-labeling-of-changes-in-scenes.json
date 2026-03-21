@@ -1,0 +1,21 @@
+{
+  "title": "GOLDILOCS: General Object-Level Detection and Labeling of Changes in Scenes",
+  "authors": [
+    "Almog Friedlander",
+    "Ariel Shamir",
+    "Ohad Fried"
+  ],
+  "year": 2026,
+  "abstract": "",
+  "venue": "Proceedings of the Conference on Learning Representations ICLR",
+  "pages": "accepted",
+  "paperType": "conference",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/goldilocks.png",
+  "overviewImage": "/images/research/goldilocksOverview.jpg"
+}

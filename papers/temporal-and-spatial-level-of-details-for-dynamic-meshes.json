@@ -1,0 +1,20 @@
+{
+  "title": "Temporal and Spatial Level of Details for Dynamic Meshes",
+  "authors": [
+    "Valerio Pascucci",
+    "Ariel Shamir"
+  ],
+  "year": 2001,
+  "abstract": "Multi-resolution techniques enhance the abilities of visualization systems to overcome limitations in time, space and transmission costs. Numerous techniques have been presented which concentrate on creating level of detail models for static meshes. Timedependent deformable meshes impose even greater difficulties on such systems. In this paper we describe a solution for using level of details for time dependent meshes. Our solution allows for both temporal and spatial level of details to be combined in an efficient manner. By separating low and high frequency temporal information, we gain the ability to create very fast coarse updates in the temporal dimension, which can be adaptively refined for greater details.",
+  "venue": "Proceedings, Virtual Reality Systems and Techniques",
+  "pages": "423--430",
+  "paperType": "conference",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": "http://www.pascucci.org/pdf-papers/vrst2001.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/levels-detail.jpg",
+  "overviewImage": "/images/research/levels-detail.jpg"
+}

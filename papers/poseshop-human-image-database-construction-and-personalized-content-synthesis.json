@@ -1,0 +1,24 @@
+{
+  "title": "PoseShop: Human Image Database Construction and Personalized Content Synthesis",
+  "authors": [
+    "Tao Chen",
+    "Ping Tan",
+    "Li-Qian Ma",
+    "Ming-Ming Cheng",
+    "Ariel Shamir",
+    "and Shi-Min Hu"
+  ],
+  "year": 2013,
+  "abstract": "We present PoseShop – a pipeline to construct segmented human image database with minimal manual intervention. By downloading, analyzing, and filtering massive amounts of human images from the Internet we achieve a database which contains 400 thousands human figures that are segmented out of their background. The human figures are organized based on action semantic, clothes attributes and indexed by the shape of their poses. They can be queried using either silhouette sketch or a skeleton to find a given pose. We demonstrate applications for this database for multi-frame personalized content synthesis in the form of comic-strips, where the main character is the user or his/her friends. We address the two challenges of such synthesis, namely personalization and consistency over a set of frames, by introducing head swapping and clothes swapping techniques. We also demonstrate an action correlation analysis application to show the usefulness of the database for vision application.",
+  "venue": "IEEE Transactions on Visualization and Computer Graphics",
+  "pages": "824-837",
+  "paperType": "journal",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/poseShop.png",
+  "overviewImage": "/images/research/poseShopExample.png"
+}

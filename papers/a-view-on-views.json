@@ -1,0 +1,19 @@
+{
+  "title": "A View on Views",
+  "authors": [
+    "Ariel Shamir"
+  ],
+  "year": 2004,
+  "abstract": "This paper presents an approach for designing a personal information management system which addresses two main deficiencies in data access and information retrieval: the scattering of related information across different applications and locations, and the cluttering of information which creates difficulties finding data and concentrating on a specific task. The system design uses the notion of a view which is extremely versatile as an additional level of abstraction above files, folders, and desktops. A view defines the context of a specific task or subject, and can include and display information according to semantic ordering of relevancy. Semantic information is gathered in an attribute database using a novel attribute delegation mechanism which constantly augments the items with attribute information. An initial prototype implementation is under way and initial results are discussed.",
+  "venue": "Lecture Notes in Computer Science",
+  "pages": "90--100",
+  "paperType": "conference",
+  "categories": [
+    "Information Visualization"
+  ],
+  "paperLink": "http://www.springerlink.com/content/ewtr3aadn4jl1n1t/",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/views.jpg",
+  "overviewImage": "/images/research/views.jpg"
+}

@@ -7,7 +7,20 @@
       "Bash(bun add:*)",
       "Bash(bun run:*)",
       "Bash(bunx eleventy:*)",
-      "mcp__ide__getDiagnostics"
+      "mcp__ide__getDiagnostics",
+      "Bash(ls -1 /Users/jonshamir/Downloads/site/includes/research/*.inc)",
+      "Bash(grep -E \"\\\\.inc$\")",
+      "Bash(ls /Users/jonshamir/Downloads/site/*.asp)",
+      "Bash(xargs -I{} basename {} .asp)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//Users/jonshamir/Downloads/site/**)",
+      "Bash(sed 's|includes/research/||;s|\\\\.inc||')",
+      "Bash(done)",
+      "Bash(xxd)",
+      "Bash(bun:*)",
+      "Bash(ls:*)",
+      "Bash(xxd /Users/jonshamir/Downloads/site/Clipasso.asp)"
     ]
   }
 }

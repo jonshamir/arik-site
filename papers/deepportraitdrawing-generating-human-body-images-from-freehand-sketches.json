@@ -1,0 +1,23 @@
+{
+  "title": "DeepPortraitDrawing: Generating human body images from freehand sketches",
+  "authors": [
+    "Xian Wu",
+    "Chen Wang",
+    "Hongbo Fu",
+    "Ariel Shamir",
+    "Song-Hai Zhang"
+  ],
+  "year": 2023,
+  "abstract": "Various methods for generating realistic images of objects and human faces from freehand sketches have been explored. However, generating realistic human body images from sketches is still a challenging problem. It is, first because of the sensitivity to human shapes, second because of the complexity of human images caused by body shape and pose changes, and third because of the domain gap between realistic images and freehand sketches. In this work, we present DeepPortraitDrawing, a deep generative framework for converting roughly drawn sketches to realistic human body images. To encode complicated body shapes under various poses, we take a local-to-global approach. Locally, we employ semantic part auto-encoders to construct part-level shape spaces, which are useful for refining the geometry of an input pre-segmented hand-drawn sketch. Globally, we employ a cascaded spatial transformer network to refine the structure of body parts by adjusting their spatial locations and relative proportions. Finally, we use a style-based generator as the global synthesis network for the sketch-to-image translation task which is modulated by segmentation maps for semantic preservation. Extensive experiments have shown that given roughly sketched human portraits, our method produces more realistic images than the state-of-the-art sketch-to-image synthesis techniques.",
+  "venue": "Computers and Graphics, Vol. 116, November",
+  "pages": "73-81",
+  "paperType": "conference",
+  "categories": [
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": "https://www.sciencedirect.com/science/article/pii/S0097849323001723?dgcid=coauthor",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/sketchPortrait.png",
+  "overviewImage": "/images/research/sketchPortraitResults.png"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Data-Driven Video Completion",
+  "authors": [
+    "Shachar Ilan",
+    "Ariel Shamir"
+  ],
+  "year": 2014,
+  "abstract": "Image completion techniques aim to complete selected regions of an image in a natural looking manner with little or no user interaction. Video Completion, the space-time equivalent of the image completion problem, inherits and extends both the difficulties and the solutions of the original 2D problem, but also imposes new ones - mainly temporal coherency and space complexity (videos contain significantly more information than images). Datadriven approaches to completion have been established as a favored choice, especially when large regions have to be filled. In this report we present the current state-of-the-art in data-driven video completion techniques. For unacquainted researchers, we aim to provide a broad yet easy to follow introduction to the subject and early guidance to the challenges ahead. For a versed reader, we offer a comprehensive review of the contemporary techniques, sectioned out by their approaches to key aspects of the problem.",
+  "venue": "State of the Art Report, Proceedings Eurographics",
+  "pages": "",
+  "paperType": "conference",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/vidCompSTAR.png",
+  "overviewImage": null
+}

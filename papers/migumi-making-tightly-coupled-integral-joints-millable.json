@@ -1,0 +1,25 @@
+{
+  "title": "MiGumi: Making Tightly Coupled Integral Joints Millable",
+  "authors": [
+    "Aditya Ganeshan",
+    "Kurt Fleischer",
+    "Wenzel Jakob",
+    "Ariel Shamir",
+    "Daniel Ritchie",
+    "Takeo Igarashi",
+    "Maria Larsson"
+  ],
+  "year": 2025,
+  "abstract": "Traditional integral wood joints, despite their strength, durability, and elegance, remain rare in modern workflows due to the cost and difficulty of manual fabrication. CNC milling offers a scalable alternative, but directly milling traditional joints often fails to produce functional results because milling induces geometric deviations---such as rounded inner corners---that alter the target geometries of the parts. Since joints rely on tightly fitting surfaces, such deviations introduce gaps or overlaps that undermine fit or block assembly. We propose to overcome this problem by (1) designing a language that represent millable geometry, and (2) co-optimizing part geometries to restore coupling. We introduce Millable Extrusion Geometry (MXG), a language for representing geometry as the outcome of milling operations performed with flat-end drill bits. MXG represents each operation as a subtractive extrusion volume defined by a tool direction and drill radius. This parameterization enables the modeling of artifact-free geometry under an idealized zero-radius drill bit, matching traditional joint designs. Increasing the radius then reveals milling-induced deviations, which compromise the integrity of the joint. To restore coupling, we formalize tight coupling in terms of both surface proximity and proximity constraints on the mill-bit paths associated with mating surfaces. We then derive two tractable, differentiable losses that enable efficient optimization of joint geometry. We evaluate our method on 30 traditional joint designs, demonstrating that it produces CNC-compatible, tightly fitting joints that approximates the original geometry. By reinterpreting traditional joints for CNC workflows, we continue the evolution of this heritage craft and help ensure its relevance in future making practices.",
+  "venue": "ACM Transactions on Graphics (SIGGRAPH Asia Conference Proceedings), Accepted",
+  "pages": "Accepted",
+  "paperType": "journal",
+  "categories": [
+    "3D Modelling & Fabrication"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/MiGumi.png",
+  "overviewImage": "/images/research/MiGumiOverview.jpg"
+}

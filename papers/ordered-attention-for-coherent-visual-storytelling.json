@@ -1,0 +1,22 @@
+{
+  "title": "Ordered Attention for Coherent Visual Storytelling",
+  "authors": [
+    "Tom Braude",
+    "Idan Schwartz",
+    "Alexander Schwing",
+    "Ariel Shamir"
+  ],
+  "year": 2022,
+  "abstract": "We address the problem of visual storytelling, i.e., generating a story for a given sequence of images. While each story sentence should describe a corresponding image, a coherent story also needs to be consistent and relate to both future and past images. Current approaches encode images independently, disregarding relations between images. Our approach learns to encode images with different interactions based on the story position (i.e., past image or future image). To this end, we develop a novel message-passing-like algorithm for ordered image attention (OIA) that collects interactions across all the images in the sequence. Finally, to generate the storyÕs sentences, a second attention mechanism picks the important image attention vectors with an Image-Sentence Attention (ISA). The obtained results improve the METEOR score on the VIST dataset by 1%. Furthermore, a thorough human study confirms improvements and demonstrates that order-based interactions significantly improve coherency (64.20% vs. 28.70%).",
+  "venue": "Proceedings of the 30th ACM International Conference on MultimediaOctober",
+  "pages": "3310 - 3318",
+  "paperType": "conference",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/attStory.png",
+  "overviewImage": "/images/research/attStoryTeaser.png"
+}

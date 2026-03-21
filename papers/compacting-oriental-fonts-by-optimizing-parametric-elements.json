@@ -1,0 +1,20 @@
+{
+  "title": "Compacting Oriental Fonts by Optimizing Parametric Elements",
+  "authors": [
+    "Ariel Shamir",
+    "Ari Rappoport"
+  ],
+  "year": 1999,
+  "abstract": "Ideographic oriental fonts have an order of magnitude more symbols in their alphabet and are more complex in their design. Their unique characteristic of composing glyphs from radicals and radicals from strokes can help simplify their digital representation. We present a method to compact existing outline based oriental fonts with the ability to preserve their original design, by using a parametric representation for element based glyphs. Our method comprises of four main stages: classification of elements to groups, parametrization of representative elements, optimization of the parametric representatives to match all group elements, and compaction using quantization. Our method introduces automatic classification and optimization using topological signature mapping between element shapes. It also features simple and natural control over the tradeoff between compacting and preserving quality by using quantization in parametric space.",
+  "venue": "The Visual Computer, Vol. 15 No. 6, pp. 302--318",
+  "pages": "302--318",
+  "paperType": "journal",
+  "categories": [
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/oriental-fonts.jpg",
+  "overviewImage": "/images/research/oriental-fonts.jpg"
+}

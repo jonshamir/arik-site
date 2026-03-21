@@ -1,0 +1,25 @@
+{
+  "title": "LightLab: Controlling Light Sources in Images with Diffusion Models",
+  "authors": [
+    "Nadav Magar",
+    "Amir Hertz",
+    "Eric Tabellion",
+    "Yael Pritch",
+    "Alex Rav-Acha",
+    "Ariel Shamir",
+    "Yedid Hoshen"
+  ],
+  "year": 2025,
+  "abstract": "We present a simple, yet effective diffusion-based method for fine-grained, parametric control over light sources in an image. Existing relighting methods either rely on multiple input views to perform inverse rendering at inference time, or fail to provide explicit control over light changes. Our method fine-tunes a diffusion model on a small set of real raw photograph pairs, supplemented by synthetically rendered images at scale, to elicit its photorealistic prior for relighting. We leverage the linearity of light to synthesize image pairs depicting controlled light changes of either a target light source or ambient illumination. Using this data and an appropriate fine-tuning scheme, we train a model for precise illumination changes with explicit control over light intensity and color. Lastly, we show how our method can achieve compelling light editing results, and outperforms existing methods based on user preference.",
+  "venue": "ACM SIGGRAPH Conference Proceedings, paper number 106",
+  "pages": "paper number 106",
+  "paperType": "conference",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": "https://www.arxiv.org/abs/2505.09608",
+  "videoLink": null,
+  "projectLink": "https://nadmag.github.io/LightLab/",
+  "thumbnail": "/images/research/thumbnails/lightLab.png",
+  "overviewImage": "/images/research/lightLabOverview.jpg"
+}

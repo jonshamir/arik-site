@@ -1,0 +1,20 @@
+{
+  "title": "Multivariate Graphs Exploration using Interactive Visual Queries",
+  "authors": [
+    "Ariel Shamir",
+    "Alla Stolpnik"
+  ],
+  "year": 2012,
+  "abstract": "Graphic interfaces are vital when interacting with the vast amounts of information available today. A multivariate-graphs, containing typed nodes and typed links between nodes, is very often used to represent many types of data. Such graphs impose greater demands on graphical interaction techniques as they contain a great amount of information as attributes of graph entities. To visualize and interact with such graphs, stronger tools are needed for visualization and interaction that combine statistical and topological analysis, and provide the link to the correct information context whenever possible. In this paper we present visual queries as a graphical interface that reveals semantic information and assists both navigation and exploration of multivariate graphs. Visual queries display the results of specific queries on the elements of the graph or their data in a pop-up view. This promotes view consistency as the main graph depiction is preserved and allows multiple inspection of various data aspects simultaneously in context. We demonstrate three types of visual queries: topological, statistical and contextual and show how these are used effectively for various tasks of interactive graph exploration.",
+  "venue": "Computers and Graphics, 36(4)",
+  "pages": "257-264",
+  "paperType": "conference",
+  "categories": [
+    "Information Visualization"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/visualQueries.png",
+  "overviewImage": "/images/research/visualQueriesLarge.jpg"
+}

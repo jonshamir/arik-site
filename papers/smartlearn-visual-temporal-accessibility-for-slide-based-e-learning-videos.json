@@ -1,0 +1,19 @@
+{
+  "title": "SmartLearn: Visual-Temporal Accessibility for Slide-based e-learning Videos",
+  "authors": [
+    "Yotam Sechayk",
+    "Ariel Shamir",
+    "Takeo Igarashi"
+  ],
+  "year": 2024,
+  "abstract": "In the realm of e-learning, video-based content is increasingly prevalent but brings with it unique accessibility challenges. Our research, beginning with a formative study involving 53 participants, has pinpointed the primary accessibility barriers in video-based e-learning: mismatches in user pace, complex visual arrangements leading to unclear focus, and difficulties in navigating content. To tackle these barriers, we introduced SmartLearn (SL), an innovative tool designed to enhance the accessibility of video content. SL utilizes advanced video analysis techniques to address issues of focus, navigation, and pacing, enabling users to interact with video segments more effectively through a web interface. A subsequent evaluation demonstrated that SL significantly enhances user engagement, ease of access, and learnability over existing approaches. We conclude by presenting design guidelines derived from our study, aiming to promote future efforts in research and development towards a more inclusive digital education landscape.",
+  "venue": "Extended Abstracts of the CHI Conference on Human Factors in Computing Systems, Article No.: 294",
+  "pages": "1 - 11",
+  "paperType": "conference",
+  "categories": [],
+  "paperLink": "https://dl.acm.org/doi/abs/10.1145/3613905.3650883",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/smartLearn.png",
+  "overviewImage": null
+}

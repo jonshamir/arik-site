@@ -1,0 +1,19 @@
+{
+  "title": "InAugment: Improving Classifiers via Internal Augmentation",
+  "authors": [
+    "Moab Arar",
+    "Ariel Shamir",
+    "Amit Bermano"
+  ],
+  "year": 2021,
+  "abstract": "Image augmentation techniques apply transformation functions such as rotation, shearing, or color distortion on an input image. These augmentations were proven useful in improving neural networks' generalization ability. In this paper, we present a novel augmentation operation, InAugment, that exploits image internal statistics. The key idea is to copy patches from the image itself, apply augmentation operations on them, and paste them back at random positions on the same image. This method is simple and easy to implement and can be incorporated with existing augmentation techniques. We test InAugment on two popular datasets -- CIFAR and ImageNet. We show improvement over state-of-the-art augmentation techniques. Incorporating InAugment with Auto Augment yields a significant improvement over other augmentation techniques (e.g., +1% improvement over multiple architectures trained on the CIFAR dataset). We also demonstrate an increase for ResNet50 and EfficientNet-B3 top-1's accuracy on the ImageNet dataset compared to prior augmentation methods. Finally, our experiments suggest that training convolutional neural network using InAugment not only improves the model's accuracy and confidence but its performance on out-of-distribution images.",
+  "venue": "Proceedings of IEEE Interactive Labeling and Data Augmentation for Vision (ILDAV)",
+  "pages": "",
+  "paperType": "conference",
+  "categories": [],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/inAugment.png",
+  "overviewImage": "/images/research/inAugmentFigure.jpg"
+}

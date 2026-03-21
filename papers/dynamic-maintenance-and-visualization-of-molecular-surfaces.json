@@ -1,0 +1,23 @@
+{
+  "title": "Dynamic Maintenance and Visualization of Molecular Surfaces",
+  "authors": [
+    "Chandrajit Bajaj",
+    "Valerio Pascucci",
+    "Ariel Shamir",
+    "Robert J. Holt",
+    "Arun Netravali"
+  ],
+  "year": 2003,
+  "abstract": "Molecular surface computations are often necessary in order to perform synthetic drug design. A critical step in this process is the computation and update of an exact boundary representation for the molecular surface (e.g. the Lee-Richards surface). In this paper we introduce efficient techniques for computing a molecular surface boundary representation as a set of NURBS (non-uniform rational B-splines) patches. This representation introduces for molecules the same geometric data structure used in the solid modeling community and enables immediate access to a wide range of modeling operations and techniques. Furthermore, this allows the use of any general solid modeling or visualization system as a molecular modeling interface. However, using such a representation in a molecular modeling environment raises several efficiency and update constraints, especially in a dynamic setting. For example, changes in the probe radius result in both geometric and topological changes to the set of patches. Our techniques provide the option of trading accuracy of the representation for the efficiency of the computation, while still tracking the changes in the set of patches. In particular, we discuss two main classes of dynamic updates: one that keeps the topology of the molecular configuration fixed, and a more complicated case where the topology may be updated continuously. In general the generated output surface is represented in a format that can be loaded into standard solid modeling systems. It can also be directly triangulated or rendered, possibly at different levels of resolution, by a standard graphics library such as OpenGL without any additional effort.",
+  "venue": "Discrete and Applied Mathematics, Vol. 127, No. 1, pp. 23--51",
+  "pages": "23--51",
+  "paperType": "conference",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": "http://www.pascucci.org/pdf-papers/dynamicDAM.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/molecular-surface.jpg",
+  "overviewImage": "/images/research/molecular-surface.jpg"
+}

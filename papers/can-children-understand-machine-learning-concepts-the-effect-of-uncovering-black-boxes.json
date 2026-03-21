@@ -1,0 +1,22 @@
+{
+  "title": "Can Children Understand Machine Learning Concepts? The Effect of Uncovering Black Boxes",
+  "authors": [
+    "Tom Hitron",
+    "Yoav Orlev",
+    "Iddo Wald",
+    "Ariel Shamir",
+    "Hadas Erel",
+    "Oren Zuckerman"
+  ],
+  "year": 2019,
+  "abstract": "Machine Learning services are integrated into various aspects of everyday life. Their underlying processes are typically black-boxed to increase ease-of-use. Consequently, children lack the opportunity to explore such processes and develop essential mental models.We present a gesture recognition research platform, designed to support learning from experience by uncovering Machine Learning building blocks: Data Labeling and Evaluation. Children used the platform to perform physical gestures, iterating between sampling and evaluation. Their understanding was tested in a pre/post experimental design, in three conditions: learning activity uncovering Data Labeling only, Evaluation only, or both. Our findings show that both building blocks are imperative to enhance childrenÕs understanding of basic Machine Learning concepts. Children were able to apply their new knowledge to everyday life context, including personally meaningful applications. We conclude that childrenÕs interaction with uncovered black boxes of Machine Learning contributes to a better understanding of the world around them.",
+  "venue": "Proceedings of ACM CHI Conference on Human Factors in Computing Systems, 415:1-415:11",
+  "pages": "415:1--415:11",
+  "paperType": "conference",
+  "categories": [],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/childLearn.png",
+  "overviewImage": "/images/research/childLearnExample.png"
+}

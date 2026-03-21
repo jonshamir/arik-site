@@ -1,0 +1,20 @@
+{
+  "title": "Filling Your Shelves: Synthesizing Diverse Style-Preserving Artifact Arrangements",
+  "authors": [
+    "Lucas Majerowicz",
+    "Ariel Shamir",
+    "Alla Sheffer",
+    "Holger H. Hoos"
+  ],
+  "year": 2014,
+  "abstract": "Our homes and workspaces are filled with collections of dozens of artifacts laid out on surfaces such as shelves, counters, and mantles. The content and layout of these arrangements reflect both context, e.g. kitchen or living room, and style, e.g. neat or messy. Manually assembling such arrangements in virtual scenes is highly time consuming, especially when one needs to generate multiple diverse arrangements for numerous support surfaces and living spaces. We present a datadriven method especially designed for artifact arrangement which automatically populates empty surfaces with diverse believable arrangements of artifacts in a given style. The input to our method is an annotated photograph or a 3D model of an exemplar arrangement, that reflects the desired context and style. Our method leverages this exemplar to generate diverse arrangements reflecting the exemplar style for arbitrary furniture setups and layout dimensions. To simultaneously achieve scalability, diversity and style preservation, we define a valid solution space of arrangements that reflect the input style. We obtain solutions within this space using barrier functions and stochastic optimization.",
+  "venue": "IEEE Transactions on Visualization and Computer Graphics, Volume: 20, Issue: 11, November",
+  "pages": "",
+  "paperType": "journal",
+  "categories": [],
+  "paperLink": "includes/papers/arrangement-final.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/arrangement.png",
+  "overviewImage": "/images/research/arrangementSearch.png"
+}

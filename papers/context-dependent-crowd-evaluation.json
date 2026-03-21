@@ -1,0 +1,20 @@
+{
+  "title": "Context-Dependent Crowd Evaluation",
+  "authors": [
+    "Alon Lerner",
+    "Yiorgos Chrysanthou",
+    "Ariel Shamir",
+    "Daniel Cohen-Or"
+  ],
+  "year": 2010,
+  "abstract": "No matter which technique is used for simulating crowds, the quality of the results is usually measured by examining its “look-and-feel”. However, even if a crowd looks good in general, there could be some specific individual behaviors which do not seem correct. Although spotting such problems manually can become tedious, ignoring them may harm the simulation’s credibility. In this paper we present a data-driven approach for evaluating the behaviors of individuals within a simulated crowd. Based on video-footage of a real crowd, a database of behavior examples is generated. Given a simulation of a crowd, an analog analysis is performed on it, defining a set of queries, which are matched by a similarity function to the database examples. The results offer a possible objective answer to the question of how similar are the simulated individual behaviors compared to real observed behaviors. By changing the video input one can change the context of evaluation. We show several examples of evaluating simulated crowds produced using different techniques and comprising of dense crowds, sparse crowds and flocks.",
+  "venue": "Computer Graphics Forum",
+  "pages": "2197-2206",
+  "paperType": "journal",
+  "categories": [],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/crowd-eval.png",
+  "overviewImage": null
+}

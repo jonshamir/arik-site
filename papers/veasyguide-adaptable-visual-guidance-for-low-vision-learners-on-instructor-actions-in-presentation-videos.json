@@ -1,0 +1,23 @@
+{
+  "title": "VeasyGuide: Adaptable Visual Guidance for Low-vision Learners on Instructor Actions in Presentation Videos",
+  "authors": [
+    "Yotam Sechayk",
+    "Ariel Shamir",
+    "Amy Pavel",
+    "Takeo Igarashi"
+  ],
+  "year": 2025,
+  "abstract": "Instructors often rely on visual actions such as pointing, marking, and sketching to convey information in educational presentation videos. These subtle visual cues often lack verbal descriptions, forcing low-vision (LV) learners to search for visual indicators or rely solely on audio, which can lead to missed information and increased cognitive load. To address this challenge, we conducted a co-design study with three LV participants and developed VeasyGuide, a tool that uses motion detection to identify instructor actions and dynamically highlight and magnify them. VeasyGuide produces familiar visual highlights that convey spatial context and adapt to diverse learners and content through extensive personalization and real-time visual feedback. VeasyGuide reduces visual search effort by clarifying what to look for and where to look. In an evaluation with 8 LV participants, learners demonstrated a significant improvement in detecting instructor actions, with faster response times and significantly reduced cognitive load. A separate evaluation with 8 sighted participants showed that VeasyGuide also enhanced engagement and attentiveness, suggesting its potential as a universally beneficial tool.",
+  "venue": "ACM SIGACCESS Conference on Computers and Accessibility",
+  "pages": "accepted",
+  "paperType": "conference",
+  "categories": [
+    "Image & Video Processing",
+    "Information Visualization"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/veasyGuide.png",
+  "overviewImage": "/images/research/veasyGuideOverview.jpg"
+}

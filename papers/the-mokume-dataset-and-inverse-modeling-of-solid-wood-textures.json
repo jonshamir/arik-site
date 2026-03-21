@@ -1,0 +1,30 @@
+{
+  "title": "The Mokume Dataset and Inverse Modeling of Solid Wood Textures",
+  "authors": [
+    "Maria Larsson",
+    "Hodaka Yamaguchi",
+    "Ehsan Pajouheshgar",
+    "I-Chao Shen",
+    "Kenji Tojo",
+    "Chia-Ming Chang",
+    "Lars Hansson",
+    "Olof Broman",
+    "Takashi Ijiri",
+    "Ariel Shamir",
+    "Wenzel Jakob",
+    "and Takeo Igarashi"
+  ],
+  "year": 2025,
+  "abstract": "We present the Mokume dataset for solid wood texturing consisting of 190 cube-shaped samples of various hard and softwood species documented by high-resolution exterior photographs, annual ring annotations, and volumetric computed tomography (CT) scans. A subset of samples further includes photographs along slanted cuts through the cube for validation purposes. Using this dataset, we propose a three-stage inverse modeling pipeline to infer solid wood textures using only exterior photographs. Our method begins by evaluating a neural model to localize year rings on the cube face photographs. We then extend these exterior 2D observations into a globally consistent 3D representation by optimizing a procedural growth field using a novel iso-contour loss. Finally, we synthesize a detailed volumetric color texture from the growth field. For this last step, we propose two methods with different efficiency and quality characteristics: a fast inverse procedural texture method, and a neural cellular automaton (NCA). We demonstrate the synergy between the Mokume dataset and the proposed algorithms through comprehensive comparisons with unseen captured data. We also present experiments demonstrating the efficiency of our pipelineÕs components against ablations and baselines. Our code, the dataset, and reconstructions are available via https://mokumeproject.github.io/.",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "1",
+  "paperType": "journal",
+  "categories": [
+    "3D Modelling & Fabrication"
+  ],
+  "paperLink": "https://www.ma-la.com/mokume/preprint_paper.pdf",
+  "videoLink": null,
+  "projectLink": "https://mokumeproject.github.io/",
+  "thumbnail": "/images/research/thumbnails/mokume.png",
+  "overviewImage": "/images/research/mokumeOverview.jpg"
+}

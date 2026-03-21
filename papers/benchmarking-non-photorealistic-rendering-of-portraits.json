@@ -1,0 +1,29 @@
+{
+  "title": "Benchmarking non-photorealistic rendering of portraits",
+  "authors": [
+    "Paul L. Rosin",
+    "David Mould",
+    "Itamar Berger",
+    "John Collomosse",
+    "Yu-Kun Lai",
+    "Chuan Li",
+    "Hua Li",
+    "Ariel Shamir",
+    "Michael Wand",
+    "Tinghuai Wang",
+    "Holger Winnemoller"
+  ],
+  "year": 2017,
+  "abstract": "We present a set of images for helping NPR practitioners evaluate their image-based portrait stylisation algorithms. Using a standard set both facilitates comparisons with other methods and helps ensure that presented results are representative. We give two levels of difficulty, each consisting of 20 images selected systematically so as to provide good coverage of several possible portrait characteristics. We applied three existing portrait-specific stylisation algorithms, two general-purpose stylisation algorithms, and one general learning based stylisation algorithm to the first level of the benchmark, corresponding to the type of constrained images that have often been used in portrait-specific work. We found that the existing methods are generally effective on this new image set, demonstrating that level one of the benchmark is tractable; challenges remain at level two. Results revealed several advantages conferred by portrait-specific algorithms over general-purpose algorithms: portrait-specific algorithms can use domain-specific information to preserve key details such as eyes and to eliminate extraneous details, and they have more scope for semantically meaningful abstraction due to the underlying face model. Finally, we provide some thoughts on systematically extending the benchmark to higher levels of difficulty.",
+  "venue": "Proceedings of the Symposium on Non-Photorealistic Animation and Rendering NPAR17",
+  "pages": "Article 11",
+  "paperType": "conference",
+  "categories": [
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/faceBenchmark.png",
+  "overviewImage": "/images/research/faceBenchmarkExamples.png"
+}

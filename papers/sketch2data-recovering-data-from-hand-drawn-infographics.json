@@ -1,0 +1,22 @@
+{
+  "title": "Sketch2Data: Recovering data from hand-drawn infographics",
+  "authors": [
+    "Anran Qi",
+    "Theophanis Tsandilas",
+    "Ariel Shamir",
+    "Adrien Bousseau"
+  ],
+  "year": 2025,
+  "abstract": "Data collection and visualization have traditionally been seen as activities reserved for experts. However, by drawing simple geometric figures Ñ known as glyphs Ñ anyone can visually record their own data. Still, the resulting hand-drawn infographics do not provide direct access to the underlying data, hindering digital editing of both the glyphs and their values. We introduce a method to recover data values from glyph-based hand-drawn infographics. Given a visualization in a bitmap format and a user-defined parametric template of its glyphs, we leverage deep neural networks to detect and localize the visualization glyphs, and estimate the data values they represent. We also provide a user interface to review and correct these estimates, informed by a measure of uncertainty of the neural network predictions. Our reverse-engineering procedure effectively disentangles the depicted data from its visual representation, enabling various visualization authoring applications, such as visualizing new data values or experimenting with alternative visualizations of the same data.",
+  "venue": "Computers & Graphics, in press (Presented at the 9th ACM/EG Expressive Symposium)",
+  "pages": "accepted",
+  "paperType": "journal",
+  "categories": [
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": "https://anranqi.github.io/img/RevEngSketches_compress.pdf",
+  "videoLink": null,
+  "projectLink": "https://anranqi.github.io/Sketch2Data.github.io/",
+  "thumbnail": "/images/research/thumbnails/sketch2data.png",
+  "overviewImage": "/images/research/sketch2dataOverview.jpg"
+}

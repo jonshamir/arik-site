@@ -1,0 +1,25 @@
+{
+  "title": "MASH: Represent 3D Shapes via Masked Anchored SpHerical Distances",
+  "authors": [
+    "Changhao Li",
+    "Yu Xin",
+    "Xiaowei Zhou",
+    "Ariel Shamir",
+    "Hao Zhang",
+    "Ligang Liu",
+    "Ruizhen Hu"
+  ],
+  "year": 2025,
+  "abstract": "We introduce Masked Anchored SpHerical Distances (MASH), a novel multi-view and parametrized representation of 3D shapes. Inspired by multi-view geometry and motivated by the importance of perceptual shape understanding for learning 3D shapes, MASH represents a 3D shape as a collection of observable local surface patches, each defined by a spherical distance function emanating from an anchor point. We further leverage the compactness of spherical harmonics to encode the MASH functions, combined with a generalized view cone with a parameterized base that masks the spatial extent of the spherical function to attain locality. We develop a differentiable optimization algorithm capable of converting any point cloud into a MASH representation accurately approximating ground-truth surfaces with arbitrary geometry and topology. Extensive experiments demonstrate that MASH is versatile for multiple applications including surface reconstruction, shape generation, completion, and blending, achieving superior performance thanks to its unique representation encompassing both implicit and explicit features.",
+  "venue": "ACM SIGGRAPH Conference Proceedings, paper number 30",
+  "pages": "paper number 30",
+  "paperType": "conference",
+  "categories": [
+    "3D Modelling & Fabrication"
+  ],
+  "paperLink": "https://arxiv.org/abs/2504.09149v1",
+  "videoLink": null,
+  "projectLink": "https://565353780.github.io/MASH/",
+  "thumbnail": "/images/research/thumbnails/mashRep.png",
+  "overviewImage": "/images/research/mashRepOverview.jpg"
+}

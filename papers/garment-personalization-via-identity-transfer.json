@@ -1,0 +1,22 @@
+{
+  "title": "Garment Personalization via Identity Transfer",
+  "authors": [
+    "Roy Shilkrot",
+    "Daniel Cohen-Or",
+    "Ariel Shamir",
+    "Ligang Liu"
+  ],
+  "year": 2012,
+  "abstract": "We present a method for transferring the identity of a given subject to a target image for try-on experience of clothes. The method involves cloning the user’s identity into a catalogue of model images wearing the desired garments. We present an accurate segmentation procedure for human heads that separates three semantic parts: face, hair, and background. We use a trikernel statistical model based on Textons and segment using graph cut. Using an offline simple training phase the extracted head can be cloned automatically into photos of catalogue models. The skin color is adjusted according to a statistical model, and the head is relighted using Spherical Harmonics. Lastly, the body dimensions are warped to fit the user’s dimensions using a parametric model. This creates high quality compositions imitating the identity of the user in the desired garment. We show some realistic results, and present a study that supports their quality.",
+  "venue": "IEEE Computer Graphics and Applications",
+  "pages": "62",
+  "paperType": "conference",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": "http://web.media.mit.edu/~roys/identitytransfer-cgaieee2012/",
+  "thumbnail": "/images/research/thumbnails/identityTransfer.png",
+  "overviewImage": "/images/research/identityTransferOverview.png"
+}

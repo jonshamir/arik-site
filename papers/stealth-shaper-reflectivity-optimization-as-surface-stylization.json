@@ -1,0 +1,22 @@
+{
+  "title": "Stealth Shaper: Reflectivity Optimization as Surface Stylization",
+  "authors": [
+    "Kenji Tojo",
+    "Ariel Shamir",
+    "Bernd Bickel",
+    "Nobuyuki Umetani"
+  ],
+  "year": 2023,
+  "abstract": "We present a technique to optimize the reflectivity of a surface while preserv- ing its overall shape. The naive optimization of the mesh vertices using the gradients of reflectivity simulations results in undesirable distortion. In con- trast, our robust formulation optimizes the surface normal as an independent variable that bridges the reflectivity term with differential rendering, and the regularization term with as-rigid-as-possible elastic energy. We further adaptively subdivide the input mesh to improve the convergence. Conse- quently, our method can minimize the retroreflectivity of a wide range of input shapes, resulting in sharply creased shapes ubiquitous among stealth aircraft and Sci-Fi vehicles. Furthermore, by changing the reward for the direction of the outgoing light directions, our method can be applied to other reflectivity design tasks, such as the optimization of architectural walls to concentrate light in a specific region. We have tested the proposed method using light-transport simulations and real-world 3D-printed objects.",
+  "venue": "Conference Proceedings ACM SIGGRAPH",
+  "pages": "Article 20",
+  "paperType": "conference",
+  "categories": [
+    "3D Modelling & Fabrication"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/Stealth.png",
+  "overviewImage": "/images/research/StealthResults.jpg"
+}

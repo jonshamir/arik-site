@@ -1,0 +1,22 @@
+{
+  "title": "Palette Aligned Image Diffusion",
+  "authors": [
+    "Elad Aharoni",
+    "Noy Porat",
+    "Dani Lischinski",
+    "Ariel Shamir"
+  ],
+  "year": 2026,
+  "abstract": "We introduce the Palette-Adapter, a novel method for conditioning text-to-image diffusion models on a user-specified color palette. While palettes are a compact and intuitive tool widely used in creative workflows, they introduce significant ambiguity and instability when used for conditioning image generation. Our approach addresses this challenge by interpreting palettes as sparse histograms and introducing two scalar control parameters: histogram entropy and palette-to-histogram distance, which allow flexible control over the degree of palette adherence and color variation. We further introduce a negative histogram mechanism that allows users to suppress specific undesired hues, improving adherence to the intended palette under the standard classifier-free guidance mechanism. To ensure broad generalization across the color space, we train on a carefully curated dataset with balanced coverage of rare and common colors. Our method enables stable, semantically coherent generation across a wide range of palettes and prompts.We evaluate our method qualitatively, quantitatively, and through a human evaluation, and show that it consistently outperforms existing approaches in achieving both strong palette adherence and high image quality.",
+  "venue": "Computer Graphics Forum 45(2): accepted, (proc. Eurographics)",
+  "pages": "Accepted",
+  "paperType": "journal",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/palette.png",
+  "overviewImage": "/images/research/paletteOverview.jpg"
+}

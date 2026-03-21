@@ -1,0 +1,24 @@
+{
+  "title": "Interaction Context (ICON): Towards a Geometric Functionality Descriptor",
+  "authors": [
+    "Ruizhen Hu",
+    "Chenyang Zhu",
+    "Oliver van Kaick",
+    "Ligang Liu",
+    "Ariel Shamir",
+    "Hao Zhang"
+  ],
+  "year": 2015,
+  "abstract": "We introduce a contextual descriptor which aims to provide a geometric description of the functionality of a 3D object in the context of a given scene. Differently from previous works, we do not regard functionality as an abstract label or represent it implicitly through an agent. Our descriptor, called interaction context or ICON for short, explicitly represents the geometry of object-to-object interactions. Our approach to object functionality analysis is based on the key premise that functionality should mainly be derived from interactions between objects and not objects in isolation. Specifically, ICON collects geometric and structural features to encode interactions between a central object in a 3D scene and its surrounding objects. These interactions are then grouped based on feature similarity, leading to a hierarchical structure. By focusing on interactions and their organization, ICON is insensitive to the numbers of objects that appear in a scene, the specific disposition of objects around the central object, or the objects’ fine-grained geometry. With a series of experiments, we demonstrate the potential of ICON in functionality-oriented shape processing, including shape retrieval (either directly or by complementing existing shape descriptors), segmentation, and synthesis.",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "Article 83",
+  "paperType": "journal",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": null,
+  "videoLink": "https://vimeo.com/148262152",
+  "projectLink": "http://vcc.siat.ac.cn/index/getInfo?title_id=453&id=655&to_path=project",
+  "thumbnail": "/images/research/thumbnails/icon.png",
+  "overviewImage": "/images/research/iconLarge.png"
+}

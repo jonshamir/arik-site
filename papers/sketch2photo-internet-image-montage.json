@@ -1,0 +1,24 @@
+{
+  "title": "Sketch2Photo: Internet Image Montage",
+  "authors": [
+    "Tao Chen",
+    "Cheng Ming Ming",
+    "Ping Tan",
+    "Ariel Shamir",
+    "Shi-Min Hu"
+  ],
+  "year": 2009,
+  "abstract": "",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "",
+  "paperType": "journal",
+  "categories": [
+    "Image & Video Processing",
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": "http://cg.cs.tsinghua.edu.cn/montage/main.htm",
+  "thumbnail": "/images/research/thumbnails/photo-sketch.png",
+  "overviewImage": null
+}

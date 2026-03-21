@@ -1,0 +1,20 @@
+{
+  "title": "Local Geodesic Parametrization: An Ant's Perspective",
+  "authors": [
+    "Lior Shapira",
+    "Ariel Shamir"
+  ],
+  "year": 2009,
+  "abstract": "Two dimensional parameterizations of meshes is a dynamic field of research. Most works focus on parameterizing complete surfaces, attempting to satisfy various constraints on distances and angles and produce a 2D map with minimal errors. Except for developable surfaces no single map can be devoid of errors, and a parametrization produced for one purpose usually doesn't suit others. This work presents a different viewpoint. We try and acquire the perspective of an ant living on the surface. The point on which it stands is the center of its world, and importance diminishes from there onward. Distances and angles measured relative to its position have higher importance than those measured elsewhere. Hence, the local parametrization of the geodesic neighborhood should convey this perspective by mostly preserving geodesic distances from the center. We present a method for producing such overlapping local-parametrization for each vertex on the mesh. Our method provides an accurate rendition of the local area of each vertex and can be used for several purposes, including clustering algorithms which focus on local areas of the surface within a certain window such as Mean Shift.",
+  "venue": "in Mathematical Foundations of Scientific Visualization, Computer Graphics and Massive Data Exploration Series: Mathematics and Visualization",
+  "pages": "",
+  "paperType": "conference",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": "http://www.faculty.idc.ac.il/arik/papers/GeodParam.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/geodesic-param.jpg",
+  "overviewImage": "/images/research/geodesic-param.jpg"
+}

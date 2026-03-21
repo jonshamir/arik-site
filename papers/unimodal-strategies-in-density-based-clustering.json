@@ -1,0 +1,21 @@
+{
+  "title": "Unimodal Strategies in Density-Based Clustering",
+  "authors": [
+    "Oron Nir",
+    "Jay Tenenbaum",
+    "Ariel Shamir"
+  ],
+  "year": 2025,
+  "abstract": "Density-based clustering methods often surpass centroid-based counterparts, when addressing data with noise or arbitrary data distributions common in real-world problems. In this study, we reveal a key property intrinsic to density-based clustering methods regarding the relation between the number of clusters and the neighborhood radius of core points --- we empirically show that it is nearly unimodal, and support this claim theoretically in a specific setting. We leverage this property to devise new strategies for finding appropriate values for the radius more efficiently based on the Ternary Search algorithm. This is especially important for large scale data that is high-dimensional, where parameter tuning is computationally intensive. We validate our methodology through extensive applications across a range of high-dimensional, large-scale NLP, Audio, and Computer Vision tasks, demonstrating its practical effectiveness and robustness. This work not only offers a significant advancement in parameter control for density-based clustering but also broadens the understanding regarding the relations between their guiding parameters. Our code is available on https://github.com/oronnir/UnimodalStrategies",
+  "venue": "Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases - ECML PKDD, accepted",
+  "pages": "Accepted",
+  "paperType": "conference",
+  "categories": [
+    "Information Visualization"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/unimodal.png",
+  "overviewImage": null
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Neural Image Abstraction using Long Smoothing B-Splines",
+  "authors": [
+    "Daniel Berio",
+    "Michael Stroh",
+    "Sylvain Calinon",
+    "Frederic Fol Leymarie",
+    "Oliver Deussen",
+    "Ariel Shamir"
+  ],
+  "year": 2025,
+  "abstract": "We integrate smoothing B-splines into a standard differentiable vector graphics (DiffVG) pipeline through a simple linear map, and show how this can be used to generate smooth and arbitrarily long paths within image-based deep learning systems. With this approach, we can take advantage of derivative-based smoothing costs for parametric control of fidelity/simplicity tradeoffs, while also enabling stylization control in both geometric and image spaces. The proposed pipeline is compatible with recent vector graphics generation and vectorization methods, but also enables results that were not possible with previous approaches. We demonstrate the versatility of our approach with four applications aimed at the generation of stylized vector graphics: stylized space-filling path generation, stroke-based image abstraction, closed-area image abstraction, and stylized text generation. Through these applications, we also introduce novel techniques and loss functions for neural-guided generation of stylized vector graphics.",
+  "venue": "ACM Transactions on Graphics (SIGGRAPH Asia Conference Proceedings), Accepted",
+  "pages": "Accepted",
+  "paperType": "journal",
+  "categories": [
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/longCurves.png",
+  "overviewImage": "/images/research/longCurvesOverview.jpg"
+}

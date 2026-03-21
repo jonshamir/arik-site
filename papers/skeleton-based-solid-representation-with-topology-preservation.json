@@ -1,0 +1,20 @@
+{
+  "title": "Skeleton Based Solid Representation with Topology Preservation",
+  "authors": [
+    "Ariel Shamir",
+    "Amir Shaham"
+  ],
+  "year": 2006,
+  "abstract": "The medial axis (MA) of an object is homotopy equivalent to the solid model. This makes the medial axis a natural candidate for a skeleton representation of a general solid object. In addition, the medial axis transform (MAT) is useful for many applications in computer graphics and other areas. In many applications it is not only important to have a description of the skeleton, but also to have the relation that links parts of the skeleton and the related parts of the model, both on the boundary and inside the solid volume. In this paper we suggest a tetrahedral complex representation of the solid that is based on its MA approximation skeleton which preserves the topological relation between them. This representation is called the {\\em pair-mesh} since each tetrahedron in the complex connects a MA approximation element and a boundary approximation element and has sub-simplices on both of them. Using the pair-mesh we also derive a parametric representation of the volume between the skeleton and the boundary as a set of parametric triangular meshes. In these meshes each triangle deforms between a pair of simplices, one on the MA approximation and one on the boundary. Such meshes realize the deformation retraction between the skeleton and solid. The basis for the construction of the pair-mesh is the duality properties of Voronoi related structures and Delaunay triangulations.",
+  "venue": "Graphical Models, 68: 307-321",
+  "pages": "307--321",
+  "paperType": "journal",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": "http://www.faculty.idc.ac.il/arik/papers/skeleton.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/skeleton-based.jpg",
+  "overviewImage": "/images/research/skeleton-based.jpg"
+}

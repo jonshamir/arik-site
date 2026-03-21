@@ -1,0 +1,23 @@
+{
+  "title": "Intelligent Mesh Scissoring Using 3D Snakes",
+  "authors": [
+    "Yunjin Lee",
+    "Seungyong Lee",
+    "Ariel Shamir",
+    "Daniel Cohen-Or",
+    "Hans-Peter Seidel"
+  ],
+  "year": 2004,
+  "abstract": "Mesh partitioning and parts extraction have become key ingredients for many mesh manipulation applications both manual and automatic. In this paper we present an intelligent scissoring operator for meshes which supports both automatic segmentation and manual cutting. Instead of segmenting the mesh by clustering our approach concentrates on finding and defining the contours for cutting. This approach is based on the em minima rule which states that human perception usually divides a surface into parts along contours of concave discontinuity of the tangent plane. The technique uses feature extraction to find such candidate feature-contours. Subsequently, such a contour can be selected either automatically or manually, or the user may draw a 2D line to slice the mesh to start the scissoring process. The given open-contour is completed to form a loop around a specific part of the mesh, and this loop is used as the initial position of a 3D geometric snake. The snake moves by relaxation until it settles to define the final scissoring position. This process uses several fundamental geometric mesh attributes such as curvature and centricity and enables the definition of both automatic segmentation and easy-to-use intelligent-scissoring operator.",
+  "venue": "Proceedings of the 12th Pacific Conference on Computer Graphics and Applications, pp. 279-287",
+  "pages": "279--287",
+  "paperType": "conference",
+  "categories": [
+    "3D Modelling & Fabrication"
+  ],
+  "paperLink": "http://vcl.ajou.ac.kr/~yunjin/paper/pg04.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/mesh-scissor-snake.jpg",
+  "overviewImage": "/images/research/mesh-scissor-snake.jpg"
+}

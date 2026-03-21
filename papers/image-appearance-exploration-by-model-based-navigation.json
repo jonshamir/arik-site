@@ -1,0 +1,22 @@
+{
+  "title": "Image Appearance Exploration by Model Based Navigation",
+  "authors": [
+    "Lior Shapira",
+    "Ariel Shamir",
+    "Daniel Cohen-Or"
+  ],
+  "year": 2009,
+  "abstract": "Changing the appearance of an image can be a complex and non-intuitive task. Many times the target image colors and look are only known vaguely and many trials are needed to reach the desired results. Moreover, the effect of a specific change on an image is difficult to envision, since one must take into account spatial image considerations along with the color constraints. Tools provided today by image processing applications can become highly technical and non-intuitive including various gauges and knobs. In this paper we introduce a method for changing image appearance by navigation, focusing on recoloring images. The user visually navigates a high dimensional space of possible color manipulations of an image. He can either explore in it for inspiration or refine his choices by navigating into sub regions of this space to a specific goal. This navigation is enabled by modeling the chroma channels of an image's colors using a Gaussian Mixture Model (GMM). The Gaussians model both color and spatial image coordinates, and provide a high dimensional parameterization space of a rich variety of color manipulations. The user's actions are translated into transformations of the parameters of the model, which recolor the image. This approach provides both inspiration and intuitive navigation in the complex space of image color manipulations.",
+  "venue": "Computer Graphics Forum",
+  "pages": "to appear",
+  "paperType": "journal",
+  "categories": [
+    "Image & Video Processing",
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": "http://www.cs.tau.ac.il/~liors/research/papers/image_appearance_exploration.pdf",
+  "videoLink": null,
+  "projectLink": "http://www.cs.tau.ac.il/~liors/image-appearance-exploration",
+  "thumbnail": "/images/research/thumbnails/appearance-explore.jpg",
+  "overviewImage": "/images/research/appearance-explore.jpg"
+}

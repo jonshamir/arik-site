@@ -1,0 +1,21 @@
+{
+  "title": "Medial Axis Based Solid Representation",
+  "authors": [
+    "Amir Shaham",
+    "Ariel Shamir",
+    "Daniel Cohen-Or"
+  ],
+  "year": 2004,
+  "abstract": "The medial axis (MA) of an object and medial axis transform (MAT) have many applications in solid modeling, computer graphics and other areas. In this paper we present a novel representation of solids which we call a {\\em pair-mesh}. The pair-mesh is a deformable manifold surface triangulation where each node deforms between a pair of vertices one on the MA and one on the boundary. Consequently, it provides a continuous map between the MA approximation and the boundary of the shape, encompassing the topological structures of them both. This representation can also be seen as a tetrahedral partitioning of the volume between the two, where each tetrahedron includes vertices from both the MA approximation and the reconstructed boundary. Given an object represented as a polyhedron or a point set, the pair-mesh creation is based on Voronoi based MA approximation algorithm. The MA approximation is constrained using a volume scaffolding to preserve the path-connectivity characteristic of the object, maintain the link between opposite sides of the MA, and prevent self intersections. We demonstrate the powerful properties of the pair-mesh by defining an effective local topological classification operator for elements in the medial axis.",
+  "venue": "Proceedings ACM Symposium on Solid Modeling and Applications, pp. 37-44",
+  "pages": "37--44",
+  "paperType": "conference",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/medial-axis.jpg",
+  "overviewImage": "/images/research/medial-axis.jpg"
+}

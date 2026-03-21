@@ -1,0 +1,22 @@
+{
+  "title": "Motion Fields to Predict Play Evolution in Dynamic Sport Scenes",
+  "authors": [
+    "Kihwan Kim",
+    "Matthias Grundmann",
+    "Ariel Shamir",
+    "Iain Matthews",
+    "Jessica Hodgins",
+    "Irfan Essa"
+  ],
+  "year": 2010,
+  "abstract": "Videos of multi-player team sports provide a challenging domain for dynamic scene analysis. Player actions and interactions are complex as they are driven by many factors, such as the short-term goals of the individual player, the overall team strategy, the rules of the sport, and the current context of the game. We show that such constrained multi-agent events can be analyzed, and even predicted, by estimating the global movements of all players in the scene at any time and used to predict play evolution. We propose a novel approach to detect the locations where the play evolution will proceed, e.g. where interesting events will occur, by tracking player positions over time. We start with a multiview video from fixed cameras of a game. We first extract the ground level sparse movement of players in each time-step, and then generate a dense motion field. Using this field we detect locations where the motion converges, implying positions towards which the play is evolving.",
+  "venue": "Proc. Computer Vision and Pattern Recognition",
+  "pages": "840 - 847",
+  "paperType": "conference",
+  "categories": [],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/play-evo.jpg",
+  "overviewImage": null
+}

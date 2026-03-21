@@ -1,0 +1,25 @@
+{
+  "title": "Organizing Heterogenous Scene Collection through Contextual Focal Points",
+  "authors": [
+    "Kai Xu",
+    "Rui Ma",
+    "Hao Zhang",
+    "Chenyang Zhu",
+    "Ariel Shamir",
+    "Daniel Cohen-Or",
+    "Hui Huang"
+  ],
+  "year": 2014,
+  "abstract": "We introduce focal points for characterizing, comparing, and organizing collections of complex and heterogeneous data and apply the concepts and algorithms developed to collections of 3D indoor scenes. We represent each scene by a graph of its constituent objects and define focal points as representative substructures in a scene collection. To organize a heterogenous scene collection, we cluster the scenes based on a set of extracted focal points: scenes in a cluster are closely connected when viewed from the perspective of the representative focal points of that cluster. The key concept of representativity requires that the focal points occur frequently in the cluster and that they result in a compact cluster. Hence, the problem of focal point extraction is intermixed with the problem of cluster ing groups of scenes based on their representative focal points. We present a co-analysis algorithm which interleaves frequent patter mining and subspace clustering to extract a set of contextual focal points which guide the clustering of the scene collection. We demonstrate advantages of focal-centric scene comparison and or ganization over existing approaches, particularly in dealing with hybrid scenes, scenes consisting of elements which suggest member ship in different semantic categories.",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "Article 35",
+  "paperType": "journal",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": "http://www.kevinkaixu.net/k/projects/focal.html",
+  "thumbnail": "/images/research/thumbnails/sceneOrg.png",
+  "overviewImage": "/images/research/sceneOrgOverview.png"
+}

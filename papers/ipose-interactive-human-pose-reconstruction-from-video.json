@@ -1,0 +1,20 @@
+{
+  "title": "iPose: Interactive Human Pose Reconstruction from Video",
+  "authors": [
+    "Jingyuan Liu",
+    "Li-Yi Wei",
+    "Ariel Shamir",
+    "Takeo Igarashi"
+  ],
+  "year": 2024,
+  "abstract": "Reconstructing 3D human poses from video has wide applications, such as character animation and sports analysis. Automatic 3D pose reconstruction methods have demonstrated promising results, but failure cases can still appear due to the diversity of human actions, capturing conditions, and depth ambiguities. Thus, manual intervention remains indispensable, which can be time-consuming and require professional skills.We thus present iPose, an interactive tool that facilitates intuitive human pose reconstruction from a given video. Our tool incorporates both human perception in specifying pose appearance to achieve controllability, and video frame processing algorithms to achieve precision and automation. A user manipulates the projection of a 3D pose via 2D operations on top of video frames, and the 3D poses are updated correspondingly while satisfying both kinematic and video frame constraints. The pose updates are propagated temporally to reduce user workload. We evaluate the effectiveness of iPose with a user study on the 3DPW dataset and expert interviews.",
+  "venue": "Proceedings of The ACM conference on Human Factors in Computing Systems (CHI) Article No.: 945",
+  "pages": "1 - 14",
+  "paperType": "conference",
+  "categories": [],
+  "paperLink": null,
+  "videoLink": "https://vimeo.com/918674246",
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/iPose.png",
+  "overviewImage": "/images/research/iPoseOverview.jpg"
+}

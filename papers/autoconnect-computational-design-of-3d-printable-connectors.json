@@ -1,0 +1,24 @@
+{
+  "title": "AutoConnect: Computational Design of 3D-Printable Connectors",
+  "authors": [
+    "Yuki Koyama",
+    "Shinjiro Sueda",
+    "Emma Steinhardt",
+    "Takeo Igarashi",
+    "Ariel Shamir",
+    "Wojciech Matusik"
+  ],
+  "year": 2015,
+  "abstract": "We present AutoConnect, an automatic method that creates customized, 3D-printable connectors attaching two physical objects together. Users simply position and orient virtual models of the two objects that they want to connect and indicate some auxiliary information such as weight and dimensions. Then, AutoConnect creates several alternative designs that users can choose from for 3D printing. The design of the connector is created by combining two holders, one for each object. We categorize the holders into two types. The first type holds standard objects such as pipes and planes. We utilize a database of parameterized mechanical holders and optimize the holder shape based on the grip strength and material consumption. The second type holds free-form objects. These are procedurally generated shell-gripper designs created based on geometric analysis of the object. We illustrate the use of our method by demonstrating many examples of connectors and practical use cases.",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "Article 231",
+  "paperType": "journal",
+  "categories": [
+    "3D Modelling & Fabrication"
+  ],
+  "paperLink": null,
+  "videoLink": "https://vimeo.com/148245378",
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/autoConnect.png",
+  "overviewImage": "/images/research/autoConnectTeaser1.png"
+}

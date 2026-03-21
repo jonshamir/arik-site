@@ -1,0 +1,21 @@
+{
+  "title": "Enhanced Hierarchical Shape Matching for Shape Transformation",
+  "authors": [
+    "Ariel Shamir",
+    "Andrei Sotzio",
+    "Daniel Cohen-Or"
+  ],
+  "year": 2003,
+  "abstract": "The quality of 3D object transformation very often relies on the quality of the matching between the two objects. Geometric considerations regarding scale, rotation and translation, and user defined constraints are used to control the matching. Nevertheless, more complex measures regarding volumetric or topological similarity between the shapes are more difficult to define even manually. Choosing an appropriate representation can assist in finding more robust definitions for such measures resulting in an enhanced and comprehensive automatic matching algorithm. In this paper we present a hierarchal union of spheres object representation. The underlying topology of this volumetric representation can be defined as a distinct skeletal model, the zero alpha-shape. This structure can then be used to find better matching and yield better transformations when complex topologies are involved. Our shape matching approach begins by defining a hierarchical model on top of the zero alpha shape, which induces a hierarchy on the union of spheres. Shape matching and alignment including topology and volume constraints are solved progressively while traversing this hierarchy.",
+  "venue": "International Journal for Shape Modeling IJSM, Vol. 9, No. 2",
+  "pages": "",
+  "paperType": "journal",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/shape-matching.jpg",
+  "overviewImage": "/images/research/shape-matching.jpg"
+}

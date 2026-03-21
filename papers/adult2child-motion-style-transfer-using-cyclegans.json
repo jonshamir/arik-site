@@ -1,0 +1,23 @@
+{
+  "title": "Adult2child: Motion Style Transfer using CycleGANs",
+  "authors": [
+    "Yuzhu Dong",
+    "Andreas Aristidou",
+    "Ariel Shamir",
+    "Moshe Mahler",
+    "Eakta Jain"
+  ],
+  "year": 2020,
+  "abstract": "Child characters are commonly seen in leading roles in top-selling video games. Previous studies have shown that child motions are perceptually and stylistically different from those of adults. Creating motion for these characters by motion capturing children is uniquely challenging because of confusion, lack of patience and regulations. Retargeting adult motion, which is much easier to record, onto child skeletons, does not capture the stylistic differences. In this paper, we propose that style translation is an effective way to transform adult motion capture data to the style of child motion. Our method is based on CycleGAN, which allows training on a relatively small number of sequences of child and adult motions that do not even need to be temporally aligned. Our adult2child network converts short sequences of motions called motion words from one domain to the other. The network was trained using a motion capture database collected by our team containing 23 locomotion and exercise motions. We conducted a perception study to evaluate the success of style translation algorithms, including our algorithm and recently presented style translation neural networks. Results show that the translated adult motions are recognized as child motions significantly more often than adult motions.",
+  "venue": "MIG2020: Proceedings of The 13th Annual ACM SIGGRAPH Conference on Motion, Interaction and Games, 13:1-13:11",
+  "pages": "13:1-13:11",
+  "paperType": "conference",
+  "categories": [
+    "Animation"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/adult2child.png",
+  "overviewImage": "/images/research/adult2childTeaser.png"
+}

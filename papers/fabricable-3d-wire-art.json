@@ -1,0 +1,23 @@
+{
+  "title": "Fabricable 3D Wire Art",
+  "authors": [
+    "Kenji Tojo",
+    "Ariel Shamir",
+    "Bernd Bickel",
+    "Nobuyuki Umetani"
+  ],
+  "year": 2024,
+  "abstract": "This paper presents a computational method for automatically creating fabricable 3D wire sculptures from various input modalities, including 3D models, images, and even text. There are several challenges to wire art creation. For example, artists must express the desired visual as a sparse wire representation. It is also difficult to manually bend wires in the air without guidance to fabricate the designed 3D curves. Our workflow solves these challenges by using two core techniques. First, we present an algorithm that automatically generates a fabricable 3D curve representation of the target based on a loss function that measures the semantic distance between the rendered curve and the target. The loss function can be defined using different pre-trained vision-language neural networks to generate wire art from different input types. The loss function is then optimized using differentiable rendering specifically targeting 3D parametric curves. Our method can incorporate various fabrication constraints on the wire as additional regularization terms in the optimization process. Second, we present an algorithm to generate a 3D printable jig structure that can be used to fabricate the generated wire path. The major challenge in the jig generation stems from the design of an intersection-free surface mesh for 3D printing, which we address with our inflation algorithm. The experimental results indicate that our method can handle a wider range of input types and can produce physically fabricable wire shapes compared to previous wire generation methods. Various wire arts have been fabricated using our 3D-printed jig to demonstrate its effectiveness in 3D wire bending.",
+  "venue": "ACM SIGGRAPH Conference Proceedings, Article No.: 134",
+  "pages": "1-11",
+  "paperType": "conference",
+  "categories": [
+    "3D Modelling & Fabrication",
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": "https://dl.acm.org/doi/10.1145/3641519.3657453",
+  "videoLink": null,
+  "projectLink": "https://kenji-tojo.github.io/publications/fab3dwire/",
+  "thumbnail": "/images/research/thumbnails/wireArt.png",
+  "overviewImage": "/images/research/wireArtOverview.jpg"
+}

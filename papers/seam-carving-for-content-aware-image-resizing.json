@@ -1,0 +1,20 @@
+{
+  "title": "Seam Carving for Content-Aware Image Resizing",
+  "authors": [
+    "Shai Avidan",
+    "Ariel Shamir"
+  ],
+  "year": 2023,
+  "abstract": "",
+  "venue": "Seminal Graphics Papers : Pushing the Boundaries",
+  "pages": "Article 64",
+  "paperType": "conference",
+  "categories": [
+    "Seam Carving"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/seamSeminal.png",
+  "overviewImage": null
+}

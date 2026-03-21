@@ -1,0 +1,22 @@
+{
+  "title": "Self-similarity Analysis for Motion Capture Cleaning",
+  "authors": [
+    "Andreas Aristidou",
+    "Daniel Cohen-Or",
+    "Jessica Hodgins",
+    "Ariel Shamir"
+  ],
+  "year": 2018,
+  "abstract": "Motion capture sequences may contain erroneous data, especially when the motion is complex or performers are interacting closely and occlusions are frequent. Common practice is to have specialists visually detect the abnormalities and fix them manually. In this paper, we present a method to automatically analyze and fix motion capture sequences by using self-similarity analysis. The premise of this work is that human motion data has a high-degree of self-similarity. Therefore, given enough motion data, erroneous motions are distinct when compared to other motions. We utilize motion-words that consist of short sequences of transformations of groups of joints around a given motion frame. We search for the K-nearest neighbors (KNN) set of each word using dynamic time warping and use it to detect and fix erroneous motions automatically. We demonstrate the effectiveness of our method in various examples, and evaluate by comparing to alternative methods and to manual cleaning.",
+  "venue": "Computer Graphics Forum, 37(2): 297-309 (Eurographics",
+  "pages": "297-â€“309",
+  "paperType": "journal",
+  "categories": [
+    "Animation"
+  ],
+  "paperLink": "includes/papers/SSA-final.pdf",
+  "videoLink": "https://vimeo.com/262522859",
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/ssaMotion.png",
+  "overviewImage": "/images/research/ssaMotionOverview.png"
+}

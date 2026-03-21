@@ -1,0 +1,22 @@
+{
+  "title": "Conversational Gesture Model (CGM): Extending Speaker-Centric Audio-Driven Motion Generation to Full Conversation Gestures",
+  "authors": [
+    "Tomer Koren",
+    "Adi Rosenthal",
+    "Doron Friedman",
+    "Ariel Shamir"
+  ],
+  "year": 2026,
+  "abstract": "In this work we extend speaker-centric audio-driven gesture synthesis toward a unified conversational model that jointly captures both speaking and listening behaviors. Existing speaker-centric models effectively generate gestures aligned with speech but overlook the bidirectional dynamics that characterize natural dialogue. To address this limitation, we propose the Conversational Gesture Model (CGM), a cross-attention-based model capable of synthesizing gestures conditioned on interlocutor conversational cues such as gestures, tone, and textual semantics. By leveraging cross-attention mechanisms, the model fuses interlocutor audio and text features with character gesture encodings, enabling a single system to seamlessly alternate between speaking and listening roles of the same character. Hence, our model enables a single system to act as both speaker and listener, capturing the fluid role shifts and mutual influence inherent in conversation. Experiments demonstrate that this approach preserves the quality of speaker-driven gestures while significantly improving the realism, coherence, and responsiveness of full conversational interactions.",
+  "venue": "Computer Graphics Forum 45(2): accepted, (proc. Eurographics)",
+  "pages": "Accepted",
+  "paperType": "journal",
+  "categories": [
+    "Animation"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/CGM.png",
+  "overviewImage": "/images/research/CGMOverview.jpg"
+}

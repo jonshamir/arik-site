@@ -1,0 +1,22 @@
+{
+  "title": "Inverse Kinematics Techniques in Computer Graphics: A Survey",
+  "authors": [
+    "Andreas Aristidou",
+    "Joan Lasenby",
+    "Yiorgos Chrysanthou",
+    "Ariel Shamir"
+  ],
+  "year": 2018,
+  "abstract": "Inverse kinematics (IK) is the use of kinematic equations to determine the joint parameters of a manipulator so that the end effector moves to a desired position; IK can be applied in many areas, including robotics, engineering, computer graphics and video games. In this survey, we present a comprehensive review of the IK problem and the solutions developed over the years from the computer graphics point of view. The paper starts with the definition of forward and IK, their mathematical formulations and explains how to distinguish the unsolvable cases, indicating when a solution is available. The IK literature in this report is divided into four main categories: the analytical, the numerical, the data-driven and the hybrid methods. A timeline illustrating key methods is presented, explaining how the IK approaches have progressed over the years. The most popular IK methods are discussed with regard to their performance, computational cost and the smoothness of their resulting postures, while we suggest which IK family of solvers is best suited for particular problems. Finally, we indicate the limitations of the current IK methodologies and propose future research directions.",
+  "venue": "Computer Graphics Forum, 37(6): 35-58",
+  "pages": "35-58",
+  "paperType": "journal",
+  "categories": [
+    "Animation"
+  ],
+  "paperLink": "http://onlinelibrary.wiley.com/doi/10.1111/cgf.13310/abstract",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/ikSurvey.png",
+  "overviewImage": "/images/research/InverseKinematics.png"
+}

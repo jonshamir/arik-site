@@ -1,0 +1,24 @@
+{
+  "title": "Learning to Predict Part Mobility from a Single Static Snapshot",
+  "authors": [
+    "Ruizhen Hu",
+    "Wenchao Li",
+    "Oliver Van-Kaick",
+    "Ariel Shamir",
+    "Hao Zhang",
+    "Hui Huang"
+  ],
+  "year": 2017,
+  "abstract": "We introduce a method for learning a model for the mobility of parts in 3D objects. Our method allows not only to understand the dynamic functionalities of one or more parts in a 3D object, but also to apply the mobility functions to static 3D models. Specifically, the learned part mobility model can predict mobilities for parts of a 3D object given in the form of a single static snapshot reflecting the spatial configuration of the object parts in 3D space, and transfer the mobility from relevant units in the training data. The training data consists of a set of mobility units of different motion types. Each unit is composed of a pair of 3D object parts (one moving and one reference part), along with usage examples consisting of a few snapshots capturing different motion states of the unit. Taking advantage of a linearity characteristic exhibited by most part motions in everyday objects, and utilizing a set of part-relation descriptors, we define a mapping from static snapshots to dynamic units. This mapping employs a motion-dependent snapshot-to-unit distance obtained via metric learning. We show that our learning scheme leads to accurate motion prediction from single static snapshots and allows proper motion transfer. We also demonstrate other applications such as motion-driven object detection and motion hierarchy construction.",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "Article 227",
+  "paperType": "journal",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": null,
+  "videoLink": "https://vimeo.com/262533429",
+  "projectLink": "http://vcc.szu.edu.cn/research/2017/ICON3/",
+  "thumbnail": "/images/research/thumbnails/icon3.png",
+  "overviewImage": "/images/research/Icon3Teaser.png"
+}

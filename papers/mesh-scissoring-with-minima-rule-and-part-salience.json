@@ -1,0 +1,23 @@
+{
+  "title": "Mesh Scissoring With Minima Rule and Part Salience",
+  "authors": [
+    "Yunjin Lee",
+    "Seungyong Lee",
+    "Ariel Shamir",
+    "Daniel Cohen-Or",
+    "Hans-Peter Seidel"
+  ],
+  "year": 2005,
+  "abstract": "This paper presents an intelligent scissoring operator for meshes. Unlike common approaches that segment a mesh using clustering schemes, we introduce a method that concentrates on the contours for cutting. Our approach is based on the minima rule and part salience theory from cognitive theory. The minima rule states that human perception usually divides a surface into parts along the concave discontinuity of the tangent plane. The part salience theory provides factors that determine the salience of segments. Our method first extracts features to find candidate contours based on the minima rule. Subsequently, these open contours are prioritized to select the most salient one. Then, the selected open contour is automatically completed to form a loop around a specific part of the mesh. This loop is used as the initial position of a 3D geometric snake. Before applying a snake, we measure the part salience of the segments obtained by the completed contour. If conditions for the salience are not met, the contour is rejected. Otherwise, the snake moves by relaxation until it settles to define the final scissoring position. In this paper, we focus on a fully automatic scissoring scheme; nevertheless, we also report on semi-automatic user interfaces for intelligent scissoring which are easy to use and intuitive.",
+  "venue": "Computer Aided Geometric Design",
+  "pages": "444-465",
+  "paperType": "conference",
+  "categories": [
+    "3D Modelling & Fabrication"
+  ],
+  "paperLink": "http://www.cs.tau.ac.il/~dcor/online_papers/papers/cagd05.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/mesh-scissor-minima.jpg",
+  "overviewImage": "/images/research/mesh-scissor-minima.jpg"
+}

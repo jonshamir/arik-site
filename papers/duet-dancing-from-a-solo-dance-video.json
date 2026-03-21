@@ -1,0 +1,21 @@
+{
+  "title": "Duet dancing from a solo dance video",
+  "authors": [
+    "Yarin Moshe",
+    "Yael Moses",
+    "Ariel Shamir"
+  ],
+  "year": 2025,
+  "abstract": "This paper introduces a method to generate duet dance videos from an input solo dancerÕs video performance. Addressing this novel problem, our system tackles a set of sub-tasks, including dancer segmentation, camera motion handling, stage reconstruction and the intricate management of geometric constraints such as dancer scale preservation and dancers collision prevention. The proposed approach leverages existing methodologies and new solutions. Notably, we address collisions in 2D spaceÐtime directly, departing from traditional 3D approaches. We modify the initial location of the dancer to avoid long-time collisions globally, while also modulating the pace of the dance by deliberate slowing down or accelerating motion to avoid short collisions locally. Experimental results attest to the efficacy of our approach. The system not only successfully synthesizes engaging duet dance sequences but also upholds the authenticity of individual performances, as shown by a user study.",
+  "venue": "Computers & Graphics, in press (Presented at the 9th ACM/EG Expressive Symposium)",
+  "pages": "accepted",
+  "paperType": "journal",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": "https://www.sciencedirect.com/science/article/pii/S0097849325000913?dgcid=rss_sd_all",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/duetDance.png",
+  "overviewImage": "/images/research/duetDanceOverview.jpg"
+}

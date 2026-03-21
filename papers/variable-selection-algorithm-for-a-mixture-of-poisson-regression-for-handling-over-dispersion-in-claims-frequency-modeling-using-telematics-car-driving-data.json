@@ -1,0 +1,21 @@
+{
+  "title": "Variable Selection Algorithm for a Mixture of Poisson Regression for Handling Over-dispersion in Claims Frequency Modeling Using Telematics Car Driving Data",
+  "authors": [
+    "Jennifer Chan",
+    "S. T. Boris Choy",
+    "Udi Makov",
+    "Ariel Shamir",
+    "Vered Shapovalov"
+  ],
+  "year": 2022,
+  "abstract": "In automobile insurance, it is common to adopt a Poisson regression model to predict the number of claims as part of the actuarial pricing process. The Poisson assumption can rarely be justified, often due to over-dispersion, and alternative modeling is often considered, typically zero-inflated models, which are special cases of finite mixture distributions. Finite mixture regression modeling of telematics data is challenging to implement since the huge number of covariates computationally prohibits the essential variable selection needed to attain a model with desirable predictive power devoid of overfitting. This paper aims at devising an algorithm that can carry the task of variable selection in the presence of a large number of covariates. This is achieved by generating sub-samples of the data corresponding to each component of the Poisson mixture, and wherein variable selection is applied following the enhancement of the Poisson assumption by means of controlling the number of zero claims. The resulting algorithm is assessed by measuring the out-of-sample AUC (Area Under the Curve), a Machine Learning tool for quantifying predictive power. Finally, the application of the algorithm is demonstrated by using data of claim history and telematics data describing driving behavior. It transpires that unlike alternative algorithms related to Poisson regression, the proposed algorithm is both implementable and enjoys an improved AUC (0.71). The proposed algorithm allows more accurate pricing in an era where telematics data is used for automobile insurance.",
+  "venue": "Risks 10(4), 83; special issue on Special Issue Advanced Statistical and Machine Learning Models in Non-life and Health Insurance",
+  "pages": "accepted",
+  "paperType": "conference",
+  "categories": [],
+  "paperLink": "https://www.mdpi.com/journal/risks/special_issues/Advanced_Statistical_and_Machine_Learning_Models_in_Non_Life_and_Health#published",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/poissonMixNew.png",
+  "overviewImage": null
+}

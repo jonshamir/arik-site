@@ -1,0 +1,27 @@
+{
+  "title": "Smart Scribbles for Sketch Segmentation",
+  "authors": [
+    "G. Noris",
+    "D. Sykora",
+    "A. Shamir",
+    "S. Coros",
+    "B. Whited",
+    "M. Simmons",
+    "A. Hornung",
+    "M. Gross",
+    "R. Sumner"
+  ],
+  "year": 2012,
+  "abstract": "We present ‘Smart Scribbles’— a new scribble-based interface for user-guided segmentation of digital sketchy drawings. In contrast to previous approaches based on simple selection strategies, Smart Scribbles exploits richer geometric and temporal information, resulting in a more intuitive segmentation interface. We introduce a novel energy minimization formulation in which both geometric and temporal information from digital input devices is used to define stroke-to-stroke and scribble-to-stroke relationships. Although the minimization of this energy is, in general, an NP-hard problem, we use a simple heuristic that leads to a good approximation and permits an interactive system able to produce accurate labellings even for cluttered sketchy drawings. We demonstrate the power of our technique in several practical scenarios such as sketch editing, as-rigid-as-possible deformation and registration, and on-the-fly labelling based on pre-classified guidelines.",
+  "venue": "Computer Graphics Forum",
+  "pages": "2516-2527",
+  "paperType": "journal",
+  "categories": [
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": "http://dcgi.felk.cvut.cz/home/sykorad/Noris12-CGF.pdf",
+  "videoLink": "https://www.youtube.com/watch?v=3VE6BmvEA6o",
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/smartScribbles.png",
+  "overviewImage": "/images/research/smartScribblesTeaser.png"
+}

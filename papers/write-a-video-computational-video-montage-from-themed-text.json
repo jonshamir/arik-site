@@ -1,0 +1,23 @@
+{
+  "title": "Write-A-Video: Computational Video Montage from Themed Text",
+  "authors": [
+    "Miao Wang",
+    "Guo-Wei Yang",
+    "Shi-Min Hu",
+    "Shing-Tung Yau",
+    "Ariel Shamir"
+  ],
+  "year": 2019,
+  "abstract": "We present Write-A-Video, a computational video montage method that generates video from themed text. Given such text and a related video repository either from online websites or personal albums, our method helps the user generate a video montage in a simple manner. The resulting video illustrates the given narrative, provides diverse visual content, and follows cinematographic guidelines. The process involves three simple steps: (1) the user provides input, mostly in the form of editing the text, (2) the system automatically searches for semantically matching candidate shots from the video repository, and then (3) assembles the video montage. Visual-semantic matching between segmented text and shots is performed by cascaded keyword matching and visual-semantic embedding, which has better accuracy than alternative solutions. The video assembly is formulated as a hybrid optimization over shots, considering temporal constraints, cinematography metrics such as camera movement and tone, and user-specified cinematography idioms. We present a novel interface for video montage creation where users operate on text instead of manipulating video frames. User study results demonstrate that all energy terms used in video assembly contribute meaningfully to the quality of the montage. Users without video editing experience are able to generate appealing videos using our method. Moreover, the time needed to create a video from themed text using our technique is significantly lower than that required by a professional video editor using commercial frame-based software, while the results are of similar quality.",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "Article 177",
+  "paperType": "journal",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": "includes/papers/WriteAVideo.pdf",
+  "videoLink": "https://vimeo.com/357657704",
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/writeVideo.png",
+  "overviewImage": "/images/research/writeVideoTeaser.png"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "The Face of Art: Landmark Detection and Geometric Style in Portraits",
+  "authors": [
+    "Jordan Yaniv",
+    "Yael Newman",
+    "Ariel Shamir"
+  ],
+  "year": 2019,
+  "abstract": "",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "60:1-60:15",
+  "paperType": "journal",
+  "categories": [
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/faceofArt.png",
+  "overviewImage": null
+}

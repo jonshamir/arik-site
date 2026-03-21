@@ -1,0 +1,25 @@
+{
+  "title": "BiggerSelfie: Selfie Video Expansion with Hand-held Camera",
+  "authors": [
+    "Miao Wang",
+    "Ariel Shamir",
+    "Guo-Ye Yang",
+    "Jin-Kun Lin",
+    "Guo-Wei Yang",
+    "Shao-Ping Lu",
+    "Shi-Min Hu"
+  ],
+  "year": 2018,
+  "abstract": "Selfie photography from hand-held cameras is becoming a popular media type. Apart from the convenience and flexibility, the limitations of such media include low camera motion stability, small field of view and little background content. In this paper, we present a novel method to create what we call a BiggerSelfie that deals with these shortages. Using a video of the environment that has partial content overlap with the selfie video, we stitch plausible frames selected from the environment video to the original selfie frames, and stabilize the composed video content in a portrait-preserving manner. Using the proposed method, one can easily obtain a stable selfie video with expanded background content by merely capturing some background shots. We show various results and several evaluations to demonstrate the applicability of our method.",
+  "venue": "IEEE Transactions on Image Processing, 27(12): 5854-5865",
+  "pages": "5854--5865",
+  "paperType": "journal",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": "includes/papers/BiggerSelfie_CameraReady.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/biggerSelfie.png",
+  "overviewImage": "/images/research/biggerSelfieTeaser.png"
+}

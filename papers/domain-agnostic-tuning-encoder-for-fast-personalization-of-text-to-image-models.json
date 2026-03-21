@@ -1,0 +1,25 @@
+{
+  "title": "Domain-Agnostic Tuning-Encoder for Fast Personalization of Text-To-Image Models",
+  "authors": [
+    "Moab Arar",
+    "Rinon Gal",
+    "Yuval Atzmon",
+    "Gal Chechik",
+    "Daniel Cohen-Or",
+    "Ariel Shamir",
+    "Amit H. Bermano"
+  ],
+  "year": 2023,
+  "abstract": "Text-to-image (T2I) personalization allows users to guide the creative image generation process by combining their own visual concepts in natural language prompts. Recently, encoder-based techniques have emerged as a new effective approach for T2I personalization, reducing the need for multiple images and long training times. However, most existing encoders are limited to a single-class domain, which hinders their ability to handle diverse concepts. In this work, we propose a domain-agnostic method that does not require any specialized dataset or prior information about the personalized concepts. We introduce a novel contrastive-based regularization technique to maintain high fidelity to the target concept characteristics while keeping the predicted embeddings close to editable regions of the latent space, by pushing the predicted tokens toward their nearest existing CLIP tokens. Our experimental results demonstrate the effectiveness of our approach and show how the learned tokens are more semantic than tokens predicted by unregularized models. This leads to a better representation that achieves state-of-the-art performance while being more flexible than previous methods.",
+  "venue": "ACM SIGGRAPH Asia Conference Proceedings, Article No.: 150",
+  "pages": "1-13",
+  "paperType": "conference",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": "https://arxiv.org/pdf/2307.06925.pdf",
+  "videoLink": null,
+  "projectLink": "https://datencoder.github.io/",
+  "thumbnail": "/images/research/thumbnails/domainAgnosticTTI.png",
+  "overviewImage": "/images/research/domainAgnosticTTIOverview.png"
+}

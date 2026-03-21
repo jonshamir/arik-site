@@ -1,0 +1,27 @@
+{
+  "title": "Latent representation of H&E images retains biological information in a breast cancer cohort",
+  "authors": [
+    "Chlo&eacute; Benmussa",
+    "Esther Sanfeliu",
+    "Anabel Martinez-Romero",
+    "Blanca Gonz&aacute;lez-Farr&eacute;",
+    "Tom&aacute;s Pascual",
+    "Joaquin Gavil&aacute;",
+    "Alona Levy-Jurgenson",
+    "Ariel Shamir",
+    "Fara Bras&oacute;-Maristany",
+    "Aleix Prat",
+    "Zohar Yakhini"
+  ],
+  "year": 2025,
+  "abstract": "Imaging technologies and staining based pathology are important components of common practice cancer care. Specifically, H&E imaging is standard for almost all cancer patients. Traditionally, H&E images can serve, when used by experienced trained pathologists, to infer important biological properties of the samples. Recent work demonstrated that machine learning and machine vision analysis of H&E images can further expand the scope of the inference. However, H&E images are high-resolution, making them difficult to analyze and possibly noisy. In this work, we propose an autoencoder-based pipeline that greatly reduces the dimension of the data representation while maintaining valuable properties. In particular, we investigate how different latent space dimensions affect bulk label predictions from H&E. We use autoencoders applied to image tiles as a tool in this investigation and also examine other information that may be inferred from image tiles. For example, we show classification results for tiles, such as Luminal A versus Luminal B, with an F1 score larger than 0.85. We also show that Ki67 levels can be inferred from H&E tiles, as shown before on other cohorts, and that inference is still possible when working with lower dimensional latent representations. The two main contributions of this paper are as follows. First, demonstrating that the use of image tiles can be informative, both at the global classification level, and, more importantly, to support the assessment of heterogeneity. Second, reasonably accurate inference can be performed with lower dimensional latent representations of the H&E images.",
+  "venue": "PLoS One.",
+  "pages": "",
+  "paperType": "conference",
+  "categories": [],
+  "paperLink": "https://pubmed.ncbi.nlm.nih.gov/40997111/",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/latentHE.png",
+  "overviewImage": "/images/research/latentHEOverview.jpg"
+}

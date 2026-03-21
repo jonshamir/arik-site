@@ -1,0 +1,27 @@
+{
+  "title": "NeuFrameQ: Neural Frame Fields for Scalable and Generalizable Anisotropic Quadrangulation",
+  "authors": [
+    "Ying-Tian Liu",
+    "Jiajun Li",
+    "Yu-Tao Liu",
+    "Xin Yu",
+    "Yuan-Chen Guo",
+    "Yan-Pei Cao",
+    "Ding Liang",
+    "Ariel Shamir",
+    "Song-Hai Zhang"
+  ],
+  "year": 2025,
+  "abstract": "Quad meshes play a crucial role in computer graph002 ics applications, yet automatically generating high-quality quad meshes remains challenging. Traditional quadrangulation approaches rely on local geometric features and manual constraints, often producing suboptimal mesh layouts that fail to capture global shape semantics. We introduce NeuFrameQ, a novel learning-based framework for scalable and generalizable mesh quadrangulation via frame field prediction. We first create a large-scale dataset of high-quality quad meshes with various shapes to serve as priors of domain knowledge. Empowered by this dataset, we employ a connectivity-agnostic learning approach that operates on point clouds with normals, enabling robust processing of complex mesh geometries. By decomposing frame field prediction into direction regression and magnitude estimation tasks, we effectively handle the ill-posed nature in frame field estimation. We also employ the polyvector representation and computing mechanism in both tasks to handle the inherent ambiguities in frame field representation. Extensive experiments demonstrate that NeuFrameQ produces high-quality quad meshes with superior semantic alignment, also for geometries derived from neural fields. Our method significantly advances the state of the art in automatic quad mesh generation, bridging the gap between neural content creation and production-ready geometric assets.",
+  "venue": "Proceedings of the International Conference on Computer Vision, ICCV",
+  "pages": "accepted",
+  "paperType": "conference",
+  "categories": [
+    "3D Modelling & Fabrication"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/NeuFrameQ.png",
+  "overviewImage": "/images/research/NeuFrameQOverview.jpg"
+}

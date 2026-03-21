@@ -1,0 +1,21 @@
+{
+  "title": "Content-Adaptive Image Downscaling",
+  "authors": [
+    "Johannes Kopf",
+    "Ariel Shamir",
+    "Pieter Peers"
+  ],
+  "year": 2013,
+  "abstract": "This paper introduces a novel content-adaptive image downscaling method. The key idea is to optimize the shape and locations of the downsampling kernels to better align with local image features. Our content-adaptive kernels are formed as a bilateral combination of two Gaussian kernels defined over space and color, respectively. This yields a continuum ranging from smoothing to edge/detail preserving kernels driven by image content. We optimize these kernels to represent the input image well, by finding an output image from which the input can be well reconstructed. This is technically realized as an iterative maximum-likelihood optimization using a constrained variation of the Expectation-Maximization algorithm. In comparison to previous downscaling algorithms, our results remain crisper without suffering from ringing artifacts. Besides natural images, our algorithm is also effective for creating pixel art images from vector graphics inputs, due to its ability to keep linear features sharp and connected.",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "Article 173",
+  "paperType": "journal",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": "https://johanneskopf.de/publications/downscaling/",
+  "thumbnail": "/images/research/thumbnails/downSample.png",
+  "overviewImage": "/images/research/downSampleTeaser.png"
+}

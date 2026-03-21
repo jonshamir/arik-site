@@ -1,0 +1,22 @@
+{
+  "title": "Semantic Segmentation in Art Paintings",
+  "authors": [
+    "Nadav Cohen",
+    "Yael Newman",
+    "Ariel Shamir"
+  ],
+  "year": 2022,
+  "abstract": "Semantic segmentation is a difficult task even when trained in a supervised manner on photographs. In this paper, we tackle the problem of semantic segmentation of artistic paintings, which is even more challenging because of a much larger diversity in colors, textures, and shapes and because there are no ground truth annotations available for segmentation. We propose an unsupervised method for semantic segmentation of paintings using domain adaptation. Our approach creates a training set of pseudo-paintings in specific artistic styles by using style-transfer on the PASCAL VOC 2012 dataset, and then applies domain confusion between PASCAL VOC 2012 and real paintings. These two steps build on a new dataset we gathered called DRAM (Diverse Realism in Art Movements) composed of figurative art paintings from four movements, which are highly diverse in pattern, color, and geometry. To segment new paintings, we present a composite multi-domain adaptation method that trains on each sub-domain separately and composes their solutions during inference time. Our method provides better segmentation results not only on the specific artistic movements of DRAM, but also on other, unseen ones. We compare our approach to alternative methods and show applications of semantic segmentation in art paintings.",
+  "venue": "Computer Graphics Forum 41(2): 261-275, (proc. Eurographics)",
+  "pages": "261 -- 275",
+  "paperType": "journal",
+  "categories": [
+    "Image & Video Processing",
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/artSeg.png",
+  "overviewImage": "/images/research/artSegTeaser.jpg"
+}

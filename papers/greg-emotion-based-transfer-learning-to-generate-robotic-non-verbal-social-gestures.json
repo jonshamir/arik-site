@@ -1,0 +1,22 @@
+{
+  "title": "GREG: Emotion-Based Transfer Learning to Generate Robotic Non-verbal Social Gestures",
+  "authors": [
+    "Idan Dov Vidra",
+    "Aviv Yehezkel",
+    "Udi Lumnitz",
+    "Hadas Erel",
+    "Oren Zuckerman",
+    "Ariel Shamir"
+  ],
+  "year": 2025,
+  "abstract": "This paper presents a Recurrent Neural Network (RNN)-based method for generating a large variety of social gestures for non-humanoid robotic devices based on a tiny sample of animator-generated gestures. Currently, the creation of robotic gestures relies on human animators, resulting in a limited number of manually designed, low-diversity gestures that are time-consuming and costly to produce. Generating a diverse range of gestures for non-humanoid robots is essential, as robots will be integrated into everyday life situations in the near future. Training an RNN model for robot gesture generation introduces challenges, such as the lack of relevant datasets for non-humanoid gestures and the absence of a direct mapping between human and robot movements. In this work, we propose a novel approach that leverages RNN and Transfer Learning to generate movement coordinates for non-verbal robotic gestures automatically. Based on a pretrained RNN model for textual sentiment detection, we use Transfer Learning to learn the abstract \"language\" of robot non-verbal gestures and incorporate a text generation approach to create movement embeddings using word2vec methodology. The model is trained on two emotion categories: \"happy\" and \"sad,\" trained on its respective animations, and predicts the next movement of the robot based on previous ones. We conducted a user study, built from an Òon-screen usersÕ evaluationÓ, with 66 Amazon Mechanical Turk service participants. The user study evaluated the generated gestures animation using on-screen videos and compared it to random-next-frame animation on the one hand as a baseline, and to the animator's animations dataset on the other hand. The results indicate that our proposed model successfully generates diverse and expressive robot gestures.",
+  "venue": "HCI (66): 199-209",
+  "pages": "199--209",
+  "paperType": "conference",
+  "categories": [],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/Greg.png",
+  "overviewImage": "/images/research/GregOverview.jpg"
+}

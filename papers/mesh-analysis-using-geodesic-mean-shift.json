@@ -1,0 +1,21 @@
+{
+  "title": "Mesh Analysis Using Geodesic Mean Shift",
+  "authors": [
+    "Ariel Shamir",
+    "Lior Shapira",
+    "Daniel Cohen-Or"
+  ],
+  "year": 2006,
+  "abstract": "In this paper we introduce a versatile and robust method for analyzing the feature space associated with a given mesh surface. The method is based on the mean-shift operator which was shown to be successful in image and video processing. Its strength lays in the fact that it works in a single joint space of geometry and attributes called the feature-space. The mean-shift procedure works as a gradient ascend finding maxima of an estimated probability density function in feature-space. Our method for using the meanshift technique on surfaces solves several difficulties. First, meshes as opposed to images do not present a regular and uniform sampling of domain. Second, on surfaces meshes the shifting procedure must be constrained to stay on the surface and preserve geodesic distances. We define a special local geodesic parameterizations scheme, and use it to generalize the mean-shift procedure to unstructured surface meshes. Our method can support piecewise linear attribute definitions as well as piecewise constant attributes.",
+  "venue": "The Visual Computer, 22(2): 99-108",
+  "pages": "99--108",
+  "paperType": "journal",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": "http://www.faculty.idc.ac.il/arik/papers/GeodMeanShift.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/mesh-analysis.jpg",
+  "overviewImage": "/images/research/mesh-analysis.jpg"
+}

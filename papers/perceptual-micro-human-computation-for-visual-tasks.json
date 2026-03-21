@@ -1,0 +1,20 @@
+{
+  "title": "Perceptual Micro Human-Computation for Visual Tasks",
+  "authors": [
+    "Yotam Gingold",
+    "Ariel Shamir and Daniel Cohen-Or"
+  ],
+  "year": 2012,
+  "abstract": "Human computation (HC) utilizes humans to solve problems or carry out tasks that are hard for pure computational algorithms. Many graphics and vision problems fall into this category. Previous HC approaches mainly focus on generating data in batch, to gather benchmarks or perform surveys demanding non-trivial interactions.We advocate a tighter integration of human computation into online, interactive algorithms. We aim to distill the differences between humans and computers and maximize the advantages of both in one algorithm. Our key idea is to decompose such a problem into a massive number of very simple, carefully designed, human micro-tasks that are based on perception, and whose answers can be combined algorithmically to solve the original problem. We present three specific examples for the design of Perceptual Micro-HC algorithms to extract depth layers and image normals from a single photograph, and to augment an image with high-level semantic information such as symmetry.",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "119",
+  "paperType": "journal",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/microHC.png",
+  "overviewImage": "/images/research/microHCTeaser.png"
+}

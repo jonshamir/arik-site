@@ -1,0 +1,21 @@
+{
+  "title": "Multi-Resolution Dynamic Meshes with Arbitrary Deformation",
+  "authors": [
+    "Chandrajit Bajaj",
+    "Valerio Pascucci",
+    "Ariel Shamir"
+  ],
+  "year": 2000,
+  "abstract": "Multi-resolution techniques and models have been shown to be effective for the display and transmission of large static geometric object. Dynamic environments with internally deforming objects pose similar challenges in terms of time and space and need the development of similar solutions. We present the T-DAG, an adaptive multi-resolution representation for dynamic meshes with arbitrary deformations including attribute, position, connectivity and topology changes. We also provide an on-line algorithm for constructing the T-DAG, enabling the traversal and use of the multi-resolution model for partial playback while still constructing it.",
+  "venue": "Proceedings, IEEE Visualization Conference, Salt Lake City, Utah, pp. 423--430",
+  "pages": "423--430",
+  "paperType": "conference",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": "http://www.pascucci.org/pdf-papers/tdag.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/multi-res-mesh.jpg",
+  "overviewImage": "/images/research/multi-res-mesh.jpg"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Progressive Tracking of Isosurfaces in Time-Varying Scalar Fields",
+  "authors": [
+    "Chandrajit Bajaj",
+    "Ariel Shamir",
+    "Bong-Soo Sohn"
+  ],
+  "year": 2002,
+  "abstract": "Scientific simulations and measurements often involve time dependent processes and produce time dependent data sets. Isosurface extraction is an important tool for visualizing three or twodimensional time varying scalar fields defined by such data. Nevertheless, the size of the data and the dynamic nature impose difficulty in devising efficient and effective time dependent isosurface extraction techniques. In this paper, we describe a progressive algorithm for time dependent isosurface extraction. The algorithm maintains efficiency in time and space by exploiting coherency in both temporal and spatial dimensions of the data, as well as in the function values domain. It creates the isosurface of consecutive time steps progressively from previous time steps allowing time critical utilization. In addition, it can track evolving isosurface components and identify topology change events such as merge, split, vanish and create. This information is used to define several visualization techniques such as tracking of individual components, which help gain better understanding of the dynamic structure of the data.",
+  "venue": "CS & TICAM Technical Report TR-02-4, University of Texas at Austin",
+  "pages": "",
+  "paperType": "conference",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": "http://www.faculty.idc.ac.il/arik/papers/progTiso.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/track-isosurface.jpg",
+  "overviewImage": "/images/research/track-isosurface.jpg"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Learning Explicit Smoothing Kernels for Joint Image Filtering",
+  "authors": [
+    "Xiaonan Fang",
+    "Miao Wang",
+    "Ariel Shamir",
+    "Shi-Min Hu"
+  ],
+  "year": 2019,
+  "abstract": "Smoothing noises while preserving strong edges in images is an important problem in image processing. Image smoothing filters can be either explicit (based on local weighted average) or implicit (based on global optimization). Implicit methods are usually time-consuming and cannot be applied to joint image filtering tasks, i.e., leveraging the structural information of a guidance image to filter a target image.Previous deep learning based image smoothing filters are all implicit and unavailable for joint filtering. In this paper, we propose to learn explicit guidance feature maps as well as offset maps from the guidance image and smoothing parameter that can be utilized to smooth the input itself or to filter images in other target domains. We design a deep convolutional neural network consisting of a fully-convolution block for guidance and offset maps extraction together with a stacked spatially varying deformable convolution block for joint image filtering. Our models can approximate several representative image smoothing filters with high accuracy comparable to state-of-the-art methods, and serve as general tools for other joint image filtering tasks, such as color interpolation, depth map upsampling, saliency map upsampling, flash/non-flash image denoising and RGB/NIR image denoising.",
+  "venue": "Computer Graphics Forum",
+  "pages": "181-190",
+  "paperType": "journal",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/kernels.png",
+  "overviewImage": "/images/research/kernelsTeaser.png"
+}

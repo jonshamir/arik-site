@@ -1,0 +1,22 @@
+{
+  "title": "Playing Along: Building AI Agents for Co-Creation of Improvised Stories",
+  "authors": [
+    "Idan Dov Vidra",
+    "Gal Kimron",
+    "Lior Noy",
+    "Ariel Shamir"
+  ],
+  "year": 2025,
+  "abstract": "This paper studies human-agent co-creation of improvised stories, investigating whether Large Language Models can effectively engage in an improvisational practice known as the \"Yes! and...\" game. We demonstrate how AI systems can participate successfully in improvisational co-creation, moving beyond response generation to collaborative story-telling. We provide a systematic framework for evaluating creative AI outputs in improvisational contexts, combining human evaluation with computational metrics. Our evaluations show that stories co-created with an AI agent received similar ratings to human-human collaborations and were perceptually indistinguishable in blind testing. This shows how AI's creative invention abilities - which can be limitations in factual tasks - become assets in collaborative storytelling. More generally, our approach presents the \"Yes! and...\" game as a novel model-system for studying improvised co-creativity in a well-defined and measurable setup.",
+  "venue": "Proceedings of the 16th International Conference on Computational Creativity, ICCC'25",
+  "pages": "accepted",
+  "paperType": "conference",
+  "categories": [
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": "https://computationalcreativity.net/iccc25/wp-content/uploads/papers/iccc25-vidra2025playing.pdf",
+  "videoLink": null,
+  "projectLink": "https://idanvidra.github.io/playing_along_paper_site/",
+  "thumbnail": "/images/research/thumbnails/yesAnd.png",
+  "overviewImage": "/images/research/yesAndOverview.jpg"
+}

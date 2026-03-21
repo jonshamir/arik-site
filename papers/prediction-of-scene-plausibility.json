@@ -1,0 +1,19 @@
+{
+  "title": "Prediction of scene plausibility",
+  "authors": [
+    "Or Nachmias",
+    "Ohad Fried",
+    "Ariel Shamir"
+  ],
+  "year": 2025,
+  "abstract": "Understanding the 3D world from 2D images involves more than detection and segmentation of the objects within the scene. It also includes the interpretation of the structure and arrangement of the scene elements. Such understanding is often rooted in recognizing the physical world and its limitations, and in prior knowledge as to how similar typical scenes are arranged. In this research, we pose a new challenge for neural networks, or other scene understanding algorithmsÑcan they distinguish plausible scenes from implausible ones? Plausibility is defined both in terms of physical properties and in terms of functional and typical arrangements. Loosely, it can be seen as the probability of encountering a given scene in the real physical world. We have built a dataset of synthetic images containing both plausible and implausible scenes, and test the success of various vision models for the task of classifying and recognizing different types of implausibility. Our code and dataset is publicly available at https://github. com/ornachmias/scene_plusibility_prediction .",
+  "venue": "Computational Visual Media 11(6):",
+  "pages": "",
+  "paperType": "conference",
+  "categories": [],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/plausibility.png",
+  "overviewImage": "/images/research/plausibilityTeaser.jpg"
+}

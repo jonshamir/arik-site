@@ -1,0 +1,19 @@
+{
+  "title": "On the Role of Geometry in Geo-Localization",
+  "authors": [
+    "Moti Kadosh",
+    "Yael Moses",
+    "Ariel Shamir"
+  ],
+  "year": 2021,
+  "abstract": "Consider the geo-localization task -- finding the pose of a camera in a large 3D scene from a single image. Most existing CNN-based methods use as input textured images. We aim to experimentally explore whether texture and correlation between nearby images are necessary in a CNN-based solution for the geo-localization task. To do so, we consider {\\em lean images}, which are textureless projections of a simple 3D model of a city. They contain solely information that relates to the geometry of the scene viewed (edges, faces, or relative depth). Our results may give insight to the role of geometry (as opposed to textures) in a CNN-based geo-localization solution. The main contributions of this paper are: (i) demonstrating the power of CNNs for recovering camera pose using lean images; and (ii)~providing insight into the role of geometry in the CNN learning process;",
+  "venue": "Computational Visual Media, 7(1): 103-113",
+  "pages": "103-113,",
+  "paperType": "conference",
+  "categories": [],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/geometryRole.png",
+  "overviewImage": "/images/research/geometryRoleTeaser.png"
+}
