@@ -1,5 +1,5 @@
 (function () {
-  var PAGE_SIZE = 20;
+  var PAGE_SIZE = 10;
 
   var containers = document.querySelectorAll(".papers-list, .category-page");
 
@@ -87,7 +87,7 @@
       currentPage = page;
       history.replaceState(null, "", "#page=" + page);
       render();
-      container.scrollIntoView({ behavior: "smooth", block: "start" });
+      container.scrollIntoView({ behavior: "instant", block: "start" });
     }
 
     function buildPageNumbers(current, total) {
