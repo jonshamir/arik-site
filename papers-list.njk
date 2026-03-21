@@ -6,6 +6,11 @@ permalink: /papers/
 
 <section class="papers-list">
   <h1>Research</h1>
+  <ul class="category-list">
+    {% for cat in collections.papersByCategory %}
+      <li><a href="/categories/{{ cat.slug }}/">{{ cat.name }}</a></li>
+    {% endfor %}
+  </ul>
   {% for paper in papers | sort(true, false, 'year') %}
     <article class="paper-card">
       <div class="paper-thumbnail">
