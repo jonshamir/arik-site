@@ -11,9 +11,7 @@
   "venue": "ACM Transactions on Graphics",
   "pages": "",
   "paperType": "journal",
-  "categories": [
-    "Seam Carving"
-  ],
+  "categories": ["Seam Carving"],
   "paperLink": null,
   "videoLink": null,
   "projectLink": "http://people.csail.mit.edu/mrub/retargetme/",
