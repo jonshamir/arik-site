@@ -126,6 +126,7 @@ h6 {
   font-family: var(--font-titles);
   font-weight: 500;
   font-optical-sizing: auto;
+  line-height: 1.2em;
 }
 
 h1 {
@@ -248,4 +249,48 @@ a.industry-span:hover {
 
 .list-column {
   float: left;
+}
+
+.paper-card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  h3 {
+    margin-top: 0;
+  }
+  a {
+    color: currentColor;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.paper-thumbnail {
+  width: 12rem;
+  flex-shrink: 0;
+  img {
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+}
+
+.paper-authors {
+  font-size: 0.9em;
+}
+
+.paper-venue {
+  font-style: italic;
+}
+
+.paper-overview-image {
+  margin-top: 2rem;
 }
