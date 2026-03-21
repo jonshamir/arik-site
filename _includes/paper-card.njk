@@ -7,7 +7,7 @@
   <div class="paper-info">
     <h3><a href="/papers/{{ paper.slug }}/">{{ paper.title }}</a></h3>
     <p class="paper-authors">{{ paper.authors | join(', ') }}</p>
-    <p class="paper-venue">{{ paper.venue }} ({{ paper.year }})</p>
+    <p class="paper-venue">{{ paper.venue }} {{paper.volume}}{% if paper.number %} ({{paper.number}}) {% endif %}, {{ paper.year }}</p>
     <button class="bibtex-btn btn btn-small">BibTeX</button>
     <dialog class="bibtex-dialog">
       <div class="bibtex-dialog-content">
