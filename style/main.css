@@ -251,6 +251,10 @@ a.industry-span:hover {
   float: left;
 }
 
+.category-list {
+  columns: 2;
+}
+
 .paper-card {
   display: flex;
   flex-direction: row;
