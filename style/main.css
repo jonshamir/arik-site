@@ -312,3 +312,17 @@ a.industry-span:hover {
 .paper-overview-image {
   margin-top: 2rem;
 }
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+
+  .contact {
+    min-width: 18rem;
+    background-color: #e4e4e4;
+    padding: 0 1rem 1rem 1rem;
+    border-radius: 1rem;
+  }
+}
