@@ -1,11 +1,11 @@
 ---
 layout: base.njk
-title: Research — Ariel Shamir
-permalink: /papers/
+title: All Publications — Ariel Shamir
+permalink: /papers/all/
 ---
 
 <section class="papers-list">
-  <h1>Research</h1>
+  <h1>All Publications</h1>
   <ul class="category-list">
     {% for cat in collections.papersByCategory %}
       <li><a href="/categories/{{ cat.slug }}/">{{ cat.name }}</a></li>
@@ -13,7 +13,6 @@ permalink: /papers/
     <li><a href="/papers/all/">All Publications</a></li>
   </ul>
   {% for paper in papers | sort(true, false, 'year') %}
-    {% if paper.categories and "Recent" in paper.categories %}
     <article class="paper-card">
       <div class="paper-thumbnail">
         <a href="/papers/{{ paper.slug }}/">
@@ -26,6 +25,5 @@ permalink: /papers/
         <p class="paper-venue">{{ paper.venue }} ({{ paper.year }})</p>
       </div>
     </article>
-    {% endif %}
   {% endfor %}
 </section>

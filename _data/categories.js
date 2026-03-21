@@ -1,4 +1,5 @@
 const categories = [
+  "Recent",
   "Shape Analysis",
   "3D Modelling & Fabrication",
   "Image & Video Processing",
