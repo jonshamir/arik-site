@@ -7,25 +7,28 @@ permalink: /papers/
 <section class="papers-list">
   <h1>Research</h1>
   <ul class="category-list">
+    <li><a href="/papers/all/">All Publications</a></li>
     {% for cat in collections.papersByCategory %}
       <li><a href="/categories/{{ cat.slug }}/">{{ cat.name }}</a></li>
     {% endfor %}
-    <li><a href="/papers/all/">All Publications</a></li>
   </ul>
+  <br />
+  <h2>Recent Work</h2>
+
   {% for paper in papers | sort(true, false, 'year') %}
     {% if paper.categories and "Recent" in paper.categories %}
-    <article class="paper-card">
-      <div class="paper-thumbnail">
-        <a href="/papers/{{ paper.slug }}/">
-          <img src="{{ paper.thumbnail }}" alt="{{ paper.title }}" />
-        </a>
-      </div>
-      <div class="paper-info">
-        <h3><a href="/papers/{{ paper.slug }}/">{{ paper.title }}</a></h3>
-        <p class="paper-authors">{{ paper.authors | join(', ') }}</p>
-        <p class="paper-venue">{{ paper.venue }} ({{ paper.year }})</p>
-      </div>
-    </article>
+      <article class="paper-card">
+        <div class="paper-thumbnail">
+          <a href="/papers/{{ paper.slug }}/">
+            <img src="{{ paper.thumbnail }}" alt="{{ paper.title }}" />
+          </a>
+        </div>
+        <div class="paper-info">
+          <h3><a href="/papers/{{ paper.slug }}/">{{ paper.title }}</a></h3>
+          <p class="paper-authors">{{ paper.authors | join(', ') }}</p>
+          <p class="paper-venue">{{ paper.venue }} ({{ paper.year }})</p>
+        </div>
+      </article>
     {% endif %}
   {% endfor %}
 </section>
