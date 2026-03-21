@@ -8,6 +8,8 @@
   "abstract": "Digital typefaces for computer graphics and multimedia applications must be capable of supporting operations such as font variations, transformations, deformations and blending. A powerful implementation of such operations must rely on the inherent typographic attributes of the typeface. However, even today's most advanced typeface representations support only geometric outline representations and basic font variations. In this paper we discuss high-level typeface representations which we term Parametric Typographic Representations (PTRs). We present an algorithm for automatically extracting typographic elements of typefaces from their outline representation, which is an essential initial step in converting typefaces from outline representations to PTRs. The extracted typographic elements include serifs, bars, stems, slants, bows, arcs, curve stems and curve bars. Most notable is the treatment of serifs, which are represented by finite-automata. The algorithm only needs to learn a serif type once, and is then capable of automatically recognizing it in different typefaces. We show an application of a PTR for automatic high-quality hinting of fonts, which is one of the most important stages in digital font production. Our system was used to generate hints for dozens of thousands of Kanji, Roman and Hebrew characters.",
   "venue": "Computer Graphics Forum, Vol.15 No.3",
   "pages": "259--268",
+  "volume": "15",
+  "number": "3",
   "paperType": "journal",
   "categories": [
     "Art, Sketches & Typography"

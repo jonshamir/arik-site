@@ -11,6 +11,8 @@
   "abstract": "We present prominent structures in video, a representation of visually strong, spatially sparse and temporally stable structural units, for use in video analysis and editing. With a novel quality measurement of prominent structures in video, we develop a general framework for prominent structure computation, and an efficient hierarchical structure alignment algorithm between a pair of videos. The prominent structural unit map is proposed to encode both binary prominence guidance and numerical strength and geometry details for each video frame. Even though the detailed appearance of videos could be visually different, the proposed alignment algorithm can find matched prominent structure sub-volumes. Prominent structures in video support a wide range of video analysis and editing applications including graphic match-cut between successive videos, instant cut editing, finding transition portals from a video collection, structure-aware video re-ranking, visualizing human action differences, etc.",
   "venue": "IEEE Transactions on Visualization and Computer Graphics, 27(7): 3305-3317",
   "pages": "3305-3317",
+  "volume": "27",
+  "number": "2",
   "paperType": "journal",
   "categories": [
     "Image & Video Processing"

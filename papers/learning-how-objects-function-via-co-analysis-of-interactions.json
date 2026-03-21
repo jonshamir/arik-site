@@ -12,6 +12,8 @@
   "abstract": "We introduce a co-analysis method which learns a functionality model for an object category, e.g., strollers or backpacks. Like previous works on functionality, we analyze object-to-object interactions and intra-object properties and relations. Differently from previous works, our model goes beyond providing a functionalityoriented descriptor for a single object; it prototypes the functionality of a category of 3D objects by co-analyzing typical interactions involving objects from the category. Furthermore, our co-analysis localizes the studied properties to the specific locations, or surface patches, that support specific functionalities, and then integrates the patch-level properties into a category functionality model. Thus our model focuses on the how, via common interactions, and where, via patch localization, of functionality analysis.",
   "venue": "ACM Transactions on Graphics",
   "pages": "Article 47",
+  "volume": "35",
+  "number": "4",
   "paperType": "journal",
   "categories": [
     "Shape Analysis"

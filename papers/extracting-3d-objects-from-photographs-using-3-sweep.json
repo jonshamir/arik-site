@@ -11,6 +11,8 @@
   "abstract": "We introduce an interactive technique to extract and manipulate simple 3D shapes in a single photograph. Such extraction requires understanding of the shape’s components, their projections, and their relations. These cognitive tasks are simple for humans, but particularly difficult for automatic algorithms. Thus, our approach combines the cognitive abilities of humans with the computational accuracy of the machine to create a simple modeling tool. In our interface, the human draws three strokes over the photograph to generate a 3D component that snaps to the outline of the shape. Each stroke defines one dimension of the component. Such human assistance implicitly segments a complex object into its components, and positions them in space. The computer reshapes the component to fit the image of the object in the photograph as well as to satisfy various inferred geometric constraints between components imposed by a global 3D structure. We show that this intelligent interactive modeling tool provides the means to create editable 3D parts quickly. Once the 3D object has been extracted, it can be quickly edited and placed back into photos or 3D scenes, permitting object-driven photo editing tasks which are impossible to perform in image-space.",
   "venue": "Communications of the ACM",
   "pages": "121-129",
+  "volume": "59",
+  "number": "12",
   "paperType": "journal",
   "categories": [
     "3D Modelling & Fabrication"

@@ -20,7 +20,8 @@
       "Bash(xxd)",
       "Bash(bun:*)",
       "Bash(ls:*)",
-      "Bash(xxd /Users/jonshamir/Downloads/site/Clipasso.asp)"
+      "Bash(xxd /Users/jonshamir/Downloads/site/Clipasso.asp)",
+      "Bash(find /Users/jonshamir/Documents/Projects/arik/arik-site -name *mapping* -o -name *config* -o -name *map*)"
     ]
   }
 }

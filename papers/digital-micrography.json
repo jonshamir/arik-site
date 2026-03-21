@@ -11,6 +11,8 @@
   "abstract": "We present an algorithm for creating digital micrography images, or micrograms, a special type of calligrams created from minuscule text. These attractive text-art works successfully combine beautiful images with readable meaningful text. Traditional micrograms are created by highly skilled artists and involve a huge amount of tedious manual work. We aim to simplify this process by providing a computerized digital micrography design tool. The main challenge in creating digital micrograms is designing textual layouts that simultaneously convey the input image, are readable and appealing. To generate such layout we use the streamlines of singularity free, low curvature, smooth vector fields, especially designed for our needs. The vector fields are computed using a new approach which controls field properties via {\\em a priori} boundary condition design that balances the different requirements we aim to satisfy. The optimal boundary conditions are computed using a graph-cut approach balancing local and global design considerations. The generated layouts are further processed to obtain the final micrograms. Our method automatically generates engaging, readable micrograms starting from a vector image and an input text while providing a variety of optional high-level controls to the user.",
   "venue": "ACM Transactions on Graphics",
   "pages": "",
+  "volume": "30",
+  "number": "4",
   "paperType": "journal",
   "categories": [
     "Art, Sketches & Typography"

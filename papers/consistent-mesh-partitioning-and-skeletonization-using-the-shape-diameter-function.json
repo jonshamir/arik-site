@@ -9,6 +9,8 @@
   "abstract": "Mesh partitioning and skeletonisation are fundamental for many computer graphics and animation techniques. Because of the close link between an object’s skeleton and its boundary, these two problems are in many cases complementary. Any partitioning of the object can assist in the creation of a skeleton and any segmentation of the skeleton can infer a partitioning of the object. In this paper, we consider these two problems on a wide variety of meshes, and strive to construct partitioning and skeletons which remain consistent across a family of objects, not a single one. Such families can consist of either a single object in multiple poses and resolutions, or multiple objects which have a general common shape. To achieve consistency, we base our algorithms on a volume-based shape-function called the shape-diameter-function (SDF), which remains largely oblivious to pose changes of the same object and maintains similar values in analogue parts of different objects. The SDF is a scalar function defined on the mesh surface; however, it expresses a measure of the diameter of the object’s volume in the neighborhood of each point on the surface. Using the SDF we are able to process and manipulate families of objects which contain similarities using a simple and consistent algorithm: consistently partitioning and creating skeletons among multiple meshes.",
   "venue": "The Visual Computer",
   "pages": "249-259",
+  "volume": "24",
+  "number": "4",
   "paperType": "journal",
   "categories": [
     "Shape Analysis"

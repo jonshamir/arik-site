@@ -11,6 +11,7 @@
   "abstract": "We present a method for the automatic creation of fictional story-books based on personal photographs. Unlike previous attempts that summarize such collections by picking salient or diverse photos, or creating personal literal narratives, we focus on the creation of fictional stories. This provides new value to users, as well as an engaging way for people (especially children) to experience their own photographs. We use a graph model to represent an artist-generated story, where each node is a ÒframeÓ, akin to frames in comics or storyboards. A node is described by story elements, comprising actors, location, supporting objects and time. The edges in the graph encode connections between these elements and provide the discourse of the story. Based on this construction, we develop a constraint satisfaction algorithm for one-to-one assignment of nodes to photographs. Once each node is assigned to a photographs, a visual depiction of the story can be generated in different styles using various templates. We show results of several fictional visual stories created from different personal photo sets and in different styles.",
   "venue": "Computer Graphics Forum, Volume",
   "pages": "19--31",
+  "volume": "37",
   "paperType": "journal",
   "categories": [
     "Art, Sketches & Typography",

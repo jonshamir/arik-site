@@ -8,6 +8,8 @@
   "abstract": "Digital fonts are easily available today and their use has become widespread. Nonetheless, the visual quality of printed and displayed text and the technical quality of digital typefaces are often unsatisfactory. The foremost reason for this situation is that font manufacturing systems manipulate font boundary representations through low-level operations. In this paper we examine several aspects of font quality, and present a method for enhancing the quality of a typeface given in today's standard representation, the boundary (outline) representation. The method is based on the usage of high-level typographic features, and includes enhancements to both individual glyphs and complete fonts. Glyph enhancements include elimination of redundant points, insertion of essential points, corrections to contour orientations and inter-penetrations, and vertical and horizontal coherence. Font enhancements include regularization of font weights and sizes, serif unification, and feature extraction and discrimination. Our method is comprised of several algorithms which have been implemented in a commercial font manufacturing system to achieve enhanced quality of produced fonts.",
   "venue": "Computers & Graphics Vol. 21, No. 6, special issue on Graphics in Electronic Printing and Publishing",
   "pages": "",
+  "volume": "21",
+  "number": "6",
   "paperType": "journal",
   "categories": [
     "Art, Sketches & Typography"

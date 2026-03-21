@@ -9,6 +9,8 @@
   "abstract": "As depth cameras become more popular, pixel depth information becomes easier to obtain. This information can clearly enhance many image processing applications. However, combining depth and color information is not straightforward as these two signals can have different noise characteristics, differences in resolution and their boundaries do not generally agree. We present a technique that combines depth and color image information from real devices in synergy. In particular, we focus on combining them to improve image segmentation. We use color information to fill and clean depth and use depth to enhance color image segmentation. We demonstrate the utility of the combined segmentation for extracting layers and present a novel image retargeting algorithm for layered images.",
   "venue": "The Visual Computer",
   "pages": "1181-1193",
+  "volume": "28",
+  "number": "12",
   "paperType": "journal",
   "categories": [
     "Image & Video Processing"

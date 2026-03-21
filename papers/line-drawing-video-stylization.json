@@ -11,6 +11,8 @@
   "abstract": "We present a method to automatically convert videos and CG animations to stylized animated line-drawings. Using a data-driven approach, the animated drawings can follow the sketching style of a specific artist. Given an input video, we first extract edges from the video frames and vectorize them to curves. The curves are matched to strokes from an artist’s library, while following the artist’s stroke distribution and characteristics. The key challenge in this process is to match the large number of curves in the frames over time, despite topological and geometric changes, allowing to maintain temporal coherence in the output animation. We solve this problem using constrained optimization to build correspondences between tracked points and create smooth sheets over time. These sheets are then replaced with strokes from the artist’s database to render the final animation. We evaluate our tracking algorithm on various examples and show stylized animation results based on various artists.",
   "venue": "Computer Graphics Forum",
   "pages": "18-23",
+  "volume": "35",
+  "number": "6",
   "paperType": "journal",
   "categories": [
     "Image & Video Processing",

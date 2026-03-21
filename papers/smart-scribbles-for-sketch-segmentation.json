@@ -15,6 +15,8 @@
   "abstract": "We present ‘Smart Scribbles’— a new scribble-based interface for user-guided segmentation of digital sketchy drawings. In contrast to previous approaches based on simple selection strategies, Smart Scribbles exploits richer geometric and temporal information, resulting in a more intuitive segmentation interface. We introduce a novel energy minimization formulation in which both geometric and temporal information from digital input devices is used to define stroke-to-stroke and scribble-to-stroke relationships. Although the minimization of this energy is, in general, an NP-hard problem, we use a simple heuristic that leads to a good approximation and permits an interactive system able to produce accurate labellings even for cluttered sketchy drawings. We demonstrate the power of our technique in several practical scenarios such as sketch editing, as-rigid-as-possible deformation and registration, and on-the-fly labelling based on pre-classified guidelines.",
   "venue": "Computer Graphics Forum",
   "pages": "2516-2527",
+  "volume": "31",
+  "number": "8",
   "paperType": "journal",
   "categories": [
     "Art, Sketches & Typography"

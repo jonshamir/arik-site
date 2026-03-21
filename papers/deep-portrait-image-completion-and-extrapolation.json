@@ -13,6 +13,7 @@
   "abstract": "General image completion and extrapolation methods often fail on portrait images where parts of the human body need to be recovered - a task that requires accurate human body structure and appearance synthesis. We present a two-stage deep learning framework for tacking this problem. In the first stage, given a portrait image with an incomplete human body, we extract a complete, coherent human body structure through a human parsing network, which focuses on structure recovery inside the unknown region with the help of pose estimation. In the second stage, we use an image completion network to fill the unknown region, guided by the structure map recovered in the first stage. For realistic synthesis the completion network is trained with both perceptual loss and conditional adversarial loss. We evaluate our method on public portrait image datasets, and show that it outperforms other state-of-art general image completion methods. Our method enables new portrait image editing applications such as occlusion removal and portrait extrapolation. We further show that the proposed general learning framework can be applied to other types of images, e.g. animal images.",
   "venue": "IEEE Transactions on Image Processing, 29: 2344-2355",
   "pages": "2344--2355",
+  "volume": "29",
   "paperType": "journal",
   "categories": [
     "Image & Video Processing"

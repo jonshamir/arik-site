@@ -10,6 +10,8 @@
   "abstract": "Editing and manipulation of existing 3D geometric objects are means to extend their repertoire and promote their availability. Traditionally, tools to compose or manipulate objects defined by 3D meshes are in the realm of artists and experts. In this paper, we introduce a simple and effective user interface for easy composition of 3D mesh-parts for non-professionals. Our technique borrows from the cut-and-paste paradigm where a user can cut parts out of existing objects and paste them onto others to create new designs. To assist the user attach objects to each other in a quick and simple manner, many applications in computer graphics support the notion of “snapping”. Similarly, our tool allows the user to loosely drag one mesh part onto another with an overlap, and lets the system snap them together in a graceful manner. Snapping is accomplished using our Soft-ICP algorithm which replaces the global transformation in the ICP algorithm with a set of point-wise locally supported transformations. The technique enhances registration with a set of rigid to elastic transformations that account for simultaneous global positioning and local blending of the objects. For completeness of our framework, we present an additional simple mesh-cutting tool, adapting the graph-cut algorithm to meshes.",
   "venue": "The Visual Computer",
   "pages": "835-844",
+  "volume": "22",
+  "number": "9",
   "paperType": "journal",
   "categories": [
     "3D Modelling & Fabrication"

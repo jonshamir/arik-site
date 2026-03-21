@@ -9,6 +9,8 @@
   "abstract": "Recent deep learning methods can generate diverse graphic design layouts efficiently. However, these methods often create layouts with flaws, such as misalignment, unwanted overlaps, and unsatisfied containment. To tackle this issue, we propose an optimization-based method called LayoutRectifier, which gracefully rectifies auto-generated graphic design layouts to reduce these flaws while minimizing deviation from the generated layout. The core of our method is a two-stage optimization. First, we utilize grid systems, which professional designers commonly use to organize elements, to mitigate misalignments through discrete search. Second, we introduce a novel box containment function designed to adjust the positions and sizes of the layout elements, preventing unwanted overlapping and promoting desired containment. We evaluate our method on content-agnostic and content-aware layout generation tasks and achieve better-quality layouts that are more suitable for downstream graphic design tasks. Our method complements learning-based layout generation methods and does not require additional training.",
   "venue": "Computer Graphics Forum 44(7): accepted, (proc. Pacific Graphics)",
   "pages": "Accepted",
+  "volume": "44",
+  "number": "7",
   "paperType": "journal",
   "categories": [],
   "paperLink": null,

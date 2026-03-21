@@ -9,6 +9,8 @@
   "abstract": "We address the problem of allowing casual users to customize parametric models while maintaining their valid state as 3D-printable functional objects. We define Fab Form as any such design representation that lends itself to interactive customization by a novice user, while remaining valid and manufacturable. We proposes a method to achieve these Fab Form requirements for general parametric designs tagged with a general set of automated validity tests and a small number of parameters exposed to the casual user. Our solution separates Fab Form evaluation into a precomputation stage and a runtime stage. Parts of the geometry and design validity (such as manufacturability) are evaluated and stored in the precomputation stage by adaptively sampling the design space. At runtime the remainder of the evaluation is performed. This allows interactive navigation in the valid regions of the design space using an automatically generated Web user interface (UI). We evaluate our approach by converting several parametric models into corresponding Fab Forms.",
   "venue": "ACM Transactions on Graphics",
   "pages": "Article 100",
+  "volume": "34",
+  "number": "4",
   "paperType": "journal",
   "categories": [
     "3D Modelling & Fabrication"

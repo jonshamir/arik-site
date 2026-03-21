@@ -7,6 +7,8 @@
   "abstract": "We present a formulation of boundary mesh segmentation as an optimization problem. Previous segmentation solutions are classified according to the different segmentation goals, the optimization criteria and the various algorithmic techniques used. We identify two primarily distinct types of mesh segmentation, namely parts segmentation and patch segmentation. We also define generic algorithms for the major techniques used for segmentation.",
   "venue": "Computer Graphics Forum",
   "pages": "1539-1556",
+  "volume": "27",
+  "number": "6",
   "paperType": "journal",
   "categories": [
     "Shape Analysis"

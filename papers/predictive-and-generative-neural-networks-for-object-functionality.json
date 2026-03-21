@@ -13,6 +13,8 @@
   "abstract": "Humans can predict the functionality of an object even without any surroundings, since their knowledge and experience would allow them to \"hallucinate\" the interaction or usage scenarios involving the object. We develop predictive and generative deep convolutional neural networks to replicate this feat. Our networks are trained on a database of scene contexts, called interaction contexts, each consisting of a central object and one or more surrounding objects, that represent object functionalities. Given a 3D object in isolation, our functional similarity network (fSIM-NET), a variation of the triplet network, is trained to predict the functionality of the object by inferring functionality-revealing interaction contexts involving the object. fSIM-NET is complemented by a generative network (iGEN-NET) and a segmentation network (iSEG-NET). iGEN-NET takes a single voxelized 3D object and synthesizes a voxelized surround, i.e., the interaction context which visually demonstrates the object's functionalities. iSEG-NET separates the interacting objects into different groups according to their interaction types.",
   "venue": "ACM Transactions on Graphics",
   "pages": "151:1-151:13",
+  "volume": "37",
+  "number": "4",
   "paperType": "journal",
   "categories": [
     "Shape Analysis"

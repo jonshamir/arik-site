@@ -11,6 +11,8 @@
   "abstract": "In this paper we address the problem of finding analogies between parts of 3D objects. By partitioning an object into meaningful parts and finding analogous parts in other objects, not necessarily of the same type, many analysis and modeling tasks could be enhanced. For instance, partial match queries can be formulated, annotation of parts in objects can be utilized, and modeling-by-parts applications could be supported. We define a similarity measure between two parts based not only on their local signatures and geometry, but also on their context within the shape to which they belong. In our approach, all objects are hierarchically segmented (e.g. using the shape diameter function), and each part is given a local signature. However, to find corresponding parts in other objects we use a context enhanced part-in-whole matching. Our matching function is based on bi-partite graph matching and is computed using a flow algorithm which takes into account both local geometrical features and the partitioning hierarchy. We present results on finding part analogies among numerous objects from shape repositories, and demonstrate sub-part queries using an implementation of a simple search and retrieval application. We also demonstrate a simple annotation tool that carries textual tags of object parts from one model to many others using analogies, laying a basis for semantic text based search.",
   "venue": "International Journal of Computer Vision",
   "pages": "309-326",
+  "volume": "89",
+  "number": "2",
   "paperType": "journal",
   "categories": [
     "Shape Analysis"

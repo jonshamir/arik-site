@@ -11,6 +11,8 @@
   "abstract": "We present a framework for interactively manipulating objects in a photograph using related objects obtained from internet images. Given an image, the user selects an object to modify, and provides keywords to describe it. Objects with a similar shape are retrieved and segmented from online images matching the keywords, and deformed to correspond with the selected object. By matching the candidate object and adjusting manipulation parameters, our method appropriately modifies candidate objects and composites them into the scene. Supported manipulations include transferring texture, color and shape from the matched object to the target in a seamless manner. We demonstrate the versatility of our framework using several inputs of varying complexity, for object completion, augmentation, replacement and revealing. Our results are evaluated using a user study.",
   "venue": "Computer Graphics Forum",
   "pages": "265-274",
+  "volume": "31",
+  "number": "3",
   "paperType": "journal",
   "categories": [
     "Image & Video Processing"

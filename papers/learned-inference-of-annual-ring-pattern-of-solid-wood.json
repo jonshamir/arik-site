@@ -12,6 +12,8 @@
   "abstract": "We propose a method for inferring the internal anisotropic volumetric texture of a given wood block from annotated photographs of its external surfaces. The global structure of the annual ring pattern is represented using a continuous spatial scalar field referred to as the growth time field (GTF). First, we train a generic neural model that can represent various GTFs using procedurally generated training data. Next, we fit the generic model to the GTF of a given wood block based on surface annotations. Finally, we convert the GTF to an annual ring field (ARF) revealing the layered pattern and apply neural style transfer to render orientation-dependent small-scale features and colors on a cut surface. We show rendered results of various physically cut real wood samples. Our method has physical and virtual applications such as cut-preview before subtractive fabricating solid wood artifacts and simulating object breaking.",
   "venue": "Computer Graphics Forum",
   "pages": "",
+  "volume": "43",
+  "number": "6",
   "paperType": "journal",
   "categories": [
     "3D Modelling & Fabrication"

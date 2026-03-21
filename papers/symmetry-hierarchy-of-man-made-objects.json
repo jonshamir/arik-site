@@ -14,6 +14,8 @@
   "abstract": "We introduce symmetry hierarchy of man-made objects, a high-level structural representation of a 3D model providing a symmetry-induced, hierarchical organization of the model’s constituent parts. Given an input mesh, we segment it into primitive parts and build an initial graph which encodes inter-part symmetries and connectivity relations, as well as self-symmetries in individual parts. The symmetry hierarchy is constructed from the initial graph via recursive graph contraction which either groups parts by symmetry or assembles connected sets of parts. The order of graph contraction is dictated by a set of precedence rules designed primarily to respect the law of symmetry in perceptual grouping and the principle of compactness of representation. We show that symmetry hierarchy naturally implies a hierarchical segmentation that is more meaningful than those produced by local geometric considerations. We also develop an application of symmetry hierarchies for structural shape editing.",
   "venue": "Computer Graphics Forum (special issue, proceedings Eurographics",
   "pages": "287-296",
+  "volume": "30",
+  "number": "3",
   "paperType": "journal",
   "categories": [
     "Shape Analysis"

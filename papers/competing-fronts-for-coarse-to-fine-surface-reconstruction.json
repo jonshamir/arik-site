@@ -11,6 +11,8 @@
   "abstract": "We present a deformable model to reconstruct a surface from a point cloud. The model is based on an explicit mesh representation composed of multiple competing evolving fronts. These fronts adapt to the local feature size of the target shape in a coarse–to–fine manner. Hence, they approach towards the finer (local) features of the target shape only after the reconstruction of the coarse (global) features has been completed. This conservative approach leads to a better control and interpretation of the reconstructed topology. The use of an explicit representation for the deformable model guarantees water-tightness and simple tracking of topological events. Furthermore, the coarse–to–fine nature of reconstruction enables adaptive handling of non-homogenous sample density, including robustness to missing data in defected areas.",
   "venue": "Computer Graphics Forum",
   "pages": "389-398",
+  "volume": "25",
+  "number": "3",
   "paperType": "journal",
   "categories": [
     "3D Modelling & Fabrication"

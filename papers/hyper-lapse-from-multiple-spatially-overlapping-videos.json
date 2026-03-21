@@ -12,6 +12,8 @@
   "abstract": "Hyper-lapse video with high speed-up rate is an efficient way to overview long videos such as a human activity in first-person view. Existing hyper-lapse video creation methods produce a fast-forward video effect using only one video source. In this work, we present a novel hyper-lapse video creation approach based on multiple spatially-overlapping videos. We assume the videos share a common view or location, and find transition points where jumps from one video to another may occur. We represent the collection of videos using a hyper-lapse transition graph; the edges between nodes represent possible hyper-lapse frame transitions. To create a hyper-lapse video, a shortest path search is performed on this digraph to optimize frame sampling and assembly simultaneously. Finally, we render the hyper-lapse results using video stabilization and appearance smoothing techniques on the selected frames. Our technique can synthesize novel virtual hyper-lapse routes which may not exist originally. We show various application results on both indoor and outdoor video collections with static scenes, moving objects, and crowds.",
   "venue": "IEEE Transactions on Image Processing, 27(4): 1735-1747",
   "pages": "1735--1747",
+  "volume": "27",
+  "number": "4",
   "paperType": "journal",
   "categories": [
     "Image & Video Processing"
