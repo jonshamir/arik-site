@@ -1,0 +1,15 @@
+<article class="paper-card">
+  <div class="paper-thumbnail">
+    <a href="/papers/{{ paper.slug }}/">
+      <img src="{{ paper.thumbnail }}" alt="{{ paper.title }}" />
+    </a>
+  </div>
+  <div class="paper-info">
+    <h3><a href="/papers/{{ paper.slug }}/">{{ paper.title }}</a></h3>
+    <p class="paper-authors">{{ paper.authors | join(', ') }}</p>
+    <p class="paper-venue">{{ paper.venue }} ({{ paper.year }})</p>
+    {% if paper.paperType %}
+      <span class="paper-type badge">{{ paper.paperType }}</span>
+    {% endif %}
+  </div>
+</article>
