@@ -1,6 +1,8 @@
+const { HtmlBasePlugin } = require('@11ty/eleventy');
 const { categories, toSlug } = require('./_data/categories.js');
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(HtmlBasePlugin);
   // Add toSlug filter for Nunjucks
   eleventyConfig.addFilter('toSlug', toSlug);
 

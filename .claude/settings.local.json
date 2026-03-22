@@ -25,7 +25,8 @@
       "WebSearch",
       "Bash(while read:*)",
       "Bash(do grep:*)",
-      "Bash(/dev/null done:*)"
+      "Bash(/dev/null done:*)",
+      "WebFetch(domain:www.11ty.dev)"
     ]
   }
 }
