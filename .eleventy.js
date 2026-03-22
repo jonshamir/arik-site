@@ -6,6 +6,16 @@ module.exports = function (eleventyConfig) {
   // Add toSlug filter for Nunjucks
   eleventyConfig.addFilter('toSlug', toSlug);
 
+  // Add videoEmbedUrl filter: converts Vimeo/YouTube watch URLs to embed URLs
+  eleventyConfig.addFilter('videoEmbedUrl', function (url) {
+    if (!url) return null;
+    const vimeo = url.match(/vimeo\.com\/(\d+)/);
+    if (vimeo) return `https://player.vimeo.com/video/${vimeo[1]}`;
+    const youtube = url.match(/youtube\.com\/watch\?v=([\w-]+)/);
+    if (youtube) return `https://www.youtube.com/embed/${youtube[1]}`;
+    return null;
+  });
+
   // Add toBibtex filter
   eleventyConfig.addFilter('toBibtex', function (paper) {
     const lastNameMatch = paper.authors[0].split(' ').pop().toLowerCase();
@@ -53,7 +63,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: '.',
-      output: '_site'
+      output: process.env.npm_lifecycle_event === 'build' ? 'siteUpload' : '_site'
     },
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk'

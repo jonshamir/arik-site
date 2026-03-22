@@ -18,9 +18,6 @@ eleventyComputed:
     {% if paper.paperLink %}
       <a href="{{ paper.paperLink }}" class="btn">Paper PDF</a>
     {% endif %}
-    {% if paper.videoLink %}
-      <a href="{{ paper.videoLink }}" class="btn">Video</a>
-    {% endif %}
     {% if paper.projectLink %}
       <a href="{{ paper.projectLink }}" class="btn">Project Page</a>
     {% endif %}
@@ -35,6 +32,13 @@ eleventyComputed:
       </div>
     </dialog>
   </div>
+
+  {% set embedUrl = paper.videoLink | videoEmbedUrl %}
+  {% if embedUrl %}
+    <div class="paper-video">
+      <iframe src="{{ embedUrl }}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  {% endif %}
 
   <div class="paper-abstract">
     <h2>Abstract</h2>

@@ -26,7 +26,28 @@
       "Bash(while read:*)",
       "Bash(do grep:*)",
       "Bash(/dev/null done:*)",
-      "WebFetch(domain:www.11ty.dev)"
+      "WebFetch(domain:www.11ty.dev)",
+      "Bash(grep -l \"videoLink\" /Users/ariel/Documents/Arik/arik-site/papers/*.json)",
+      "Bash(grep -h \"videoLink\" /Users/ariel/Documents/Arik/arik-site/papers/*.json)",
+      "WebFetch(domain:mokumeproject.github.io)",
+      "WebFetch(domain:manyili12345.github.io)",
+      "WebFetch(domain:565353780.github.io)",
+      "WebFetch(domain:faculty.runi.ac.il)",
+      "WebFetch(domain:jdily.github.io)",
+      "WebFetch(domain:lseancs.github.io)",
+      "WebFetch(domain:nadavc220.github.io)",
+      "WebFetch(domain:yukistavailable.github.io)",
+      "WebFetch(domain:kenji-tojo.github.io)",
+      "WebFetch(domain:anranqi.github.io)",
+      "WebFetch(domain:datencoder.github.io)",
+      "WebFetch(domain:idanvidra.github.io)",
+      "WebFetch(domain:clipasso.github.io)",
+      "WebFetch(domain:www.computer-graphics.cn)",
+      "WebFetch(domain:people.csail.mit.edu)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.cs.tau.ac.il)",
+      "WebFetch(domain:rgl.epfl.ch)",
+      "WebFetch(domain:dl.acm.org)"
     ]
   }
 }
