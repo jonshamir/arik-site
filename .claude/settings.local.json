@@ -22,7 +22,10 @@
       "Bash(ls:*)",
       "Bash(xxd /Users/jonshamir/Downloads/site/Clipasso.asp)",
       "Bash(find /Users/jonshamir/Documents/Projects/arik/arik-site -name *mapping* -o -name *config* -o -name *map*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(while read:*)",
+      "Bash(do grep:*)",
+      "Bash(/dev/null done:*)"
     ]
   }
 }

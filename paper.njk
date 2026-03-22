@@ -13,7 +13,7 @@ eleventyComputed:
 <article class="paper-detail">
   <h1>{{ paper.title }}</h1>
   <p class="paper-authors">{{ paper.authors | join(' · ') }}</p>
-  <p class="paper-venue">{{ paper.venue }} ({{ paper.year }})</p>
+  <p class="paper-venue">{{ paper.venue }} {{paper.volume}}{% if paper.number %} ({{paper.number}}) {% endif %}{% if paper.pages %}: {{ paper.pages }}{% endif %}, {{ paper.year }}</p>
   <div class="paper-links">
     {% if paper.paperLink %}
       <a href="{{ paper.paperLink }}" class="btn">Paper PDF</a>
@@ -28,7 +28,10 @@ eleventyComputed:
     <dialog class="bibtex-dialog">
       <div class="bibtex-dialog-content">
         <pre>{{ paper | toBibtex }}</pre>
-        <button class="bibtex-copy-btn btn btn-small">Copy</button>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
       </div>
     </dialog>
   </div>

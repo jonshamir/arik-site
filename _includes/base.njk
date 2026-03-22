@@ -49,6 +49,9 @@
           const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
           dialog.showModal();
         }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
         if (e.target.closest('.bibtex-copy-btn')) {
           const pre = e.target.closest('dialog').querySelector('pre');
           navigator.clipboard.writeText(pre.textContent);

@@ -383,6 +383,11 @@ a.industry-span:hover {
   }
 }
 
+.bibtex-dialog-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .bibtex-dialog-content {
   padding: 1.5rem;
 
