@@ -16,17 +16,17 @@
       if (parsed >= 1 && parsed <= totalPages) currentPage = parsed;
     }
 
-    var nav = document.createElement("nav");
-    nav.className = "pagination";
-    nav.setAttribute("aria-label", "Page navigation");
-    container.appendChild(nav);
+    var navBottom = document.createElement("nav");
+    navBottom.className = "pagination";
+    navBottom.setAttribute("aria-label", "Page navigation");
+    container.appendChild(navBottom);
 
-    function render() {
-      cards.forEach(function (card, i) {
-        var page = Math.floor(i / PAGE_SIZE) + 1;
-        card.style.display = page === currentPage ? "" : "none";
-      });
+    var navTop = document.createElement("nav");
+    navTop.className = "pagination pagination-top";
+    navTop.setAttribute("aria-label", "Page navigation");
+    cards[0].parentNode.insertBefore(navTop, cards[0]);
 
+    function buildNav(nav) {
       nav.innerHTML = "";
 
       var prevBtn = document.createElement("button");
@@ -80,6 +80,16 @@
       info.textContent =
         "Showing " + startItem + "\u2013" + endItem + " of " + cards.length;
       nav.appendChild(info);
+    }
+
+    function render() {
+      cards.forEach(function (card, i) {
+        var page = Math.floor(i / PAGE_SIZE) + 1;
+        card.style.display = page === currentPage ? "" : "none";
+      });
+
+      buildNav(navTop);
+      buildNav(navBottom);
     }
 
     function goToPage(page) {

@@ -417,6 +417,12 @@ a.industry-span:hover {
   border-top: 1px solid var(--color-secondary);
 }
 
+.pagination.pagination-top {
+  border-top: none;
+  border-bottom: 1px solid var(--color-secondary);
+  margin: 1rem 0 2rem;
+}
+
 .pagination-btn {
   display: inline-flex;
   align-items: center;
