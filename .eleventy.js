@@ -16,6 +16,25 @@ module.exports = function (eleventyConfig) {
     return null;
   });
 
+  // Add groupByYear filter: groups an array of papers into year buckets,
+  // sorted newest-first, clustering all years before 2005 into one bucket.
+  eleventyConfig.addFilter('groupByYear', function (papers) {
+    const OLDEST_SEPARATE_YEAR = 2005;
+    const sorted = [...papers].sort((a, b) => b.year - a.year);
+
+    const groups = [];
+    let currentGroup = null;
+    for (const paper of sorted) {
+      const label = paper.year < OLDEST_SEPARATE_YEAR ? `Before ${OLDEST_SEPARATE_YEAR}` : String(paper.year);
+      if (!currentGroup || currentGroup.label !== label) {
+        currentGroup = { label, papers: [] };
+        groups.push(currentGroup);
+      }
+      currentGroup.papers.push(paper);
+    }
+    return groups;
+  });
+
   // Add toBibtex filter
   eleventyConfig.addFilter('toBibtex', function (paper) {
     const lastNameMatch = paper.authors[0].split(' ').pop().toLowerCase();

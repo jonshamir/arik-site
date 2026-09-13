@@ -6,7 +6,10 @@ permalink: /papers/all/
 
 <section class="papers-list">
   <h1>All Publications</h1>
-  {% for paper in papers | sort(true, false, 'year') %}
-    {% include "paper-card.njk" %}
+  {% for group in papers | groupByYear %}
+    <h2 class="papers-year-heading">{{ group.label }}</h2>
+    {% for paper in group.papers %}
+      {% include "paper-card.njk" %}
+    {% endfor %}
   {% endfor %}
 </section>

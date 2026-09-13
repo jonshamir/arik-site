@@ -255,6 +255,16 @@ a.industry-span:hover {
   columns: 2;
 }
 
+.papers-year-heading {
+  margin-top: 3rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.papers-year-heading:first-of-type {
+  margin-top: 1.5rem;
+}
+
 .paper-card {
   display: flex;
   flex-direction: row;
