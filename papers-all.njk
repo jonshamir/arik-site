@@ -13,7 +13,8 @@ eleventyComputed:
 <section class="papers-list">
   <h1>All Publications</h1>
 
-  <nav class="year-nav" aria-label="Browse by year">
+  {% set navCols = (collections.papersByYear.length / 2) | round(0, 'ceil') %}
+  <nav class="year-nav" style="grid-template-columns: repeat({{ navCols }}, auto);" aria-label="Browse by year">
     {% for group in collections.papersByYear %}
       {% set isActive = group.slug == yearGroup.slug %}
       <a
