@@ -1,0 +1,22 @@
+{
+  "title": "Automated Creation of Movie Summaries in Interactive Virtual Environments",
+  "authors": [
+    "Doron A. Friedman",
+    "Yishai A. Feldman",
+    "Ariel Shamir",
+    "Tsvi Dagan"
+  ],
+  "year": 2004,
+  "abstract": "Virtual environments and artificial worlds are becoming a real habitat for people. They have become multi-user, complex and long lasting. This brings up both need and desire to be informed or to save for keepsake what has happened inside them. A summary in the form of a movie can answer such needs for gaming, socializing, training and education. Nevertheless, creating a movie summary of a given set of events is a delicate, complicated and time consuming process. There is a need for tools which can create such movie summaries automatically. In this paper we discuss some of the issues involved in creating such an automatic system. We describe the stages in transforming a chronicle of events into a movie and present an implementation of such a system. We show results of transforming a log from a life-simulation game to a movie script.",
+  "venue": "Proceedings IEEE Virtual Reality",
+  "pages": "191--198",
+  "paperType": "conference",
+  "categories": [
+    "Information Visualization"
+  ],
+  "paperLink": "ftp://ftp.idc.ac.il/pub/users/cs/yishai/sims.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/movie-summary.jpg",
+  "overviewImage": "/images/research/movie-summary.jpg"
+}

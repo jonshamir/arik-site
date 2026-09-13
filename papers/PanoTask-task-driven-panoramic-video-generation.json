@@ -1,0 +1,24 @@
+{
+  "title": "PanoTask: Task-Driven Panoramic Video Generation with Scene-Aware Autoregressive Camera Trajectory Prediction",
+  "authors": [
+    "Dong Han",
+    "Jiahao Zhang",
+    "Wang Jiajun",
+    "Fang-Lue Zhang",
+    "Ariel Shamir",
+    "Miao Wang"
+  ],
+  "year": 2026,
+  "abstract": "Controllable and navigable panoramic content generation is essential for immersive virtual reality applications. However, existing approaches often lack precise camera controllability or fail to capture the semantic context of navigation. To address this, we introduce PanoTask, a novel task-driven framework for generating panoramic videos that follow semantically meaningful trajectories conditioned on scene context and user intent. As no existing dataset provides aligned video-text-trajectory annotations for this formulation, we construct PanoTask-10k, a large-scale dataset containing approximately 10k video-text-trajectory triplets. Building upon this dataset, we propose a two-stage task-to-video pipeline. First, a multi-modal autoregressive model predicts coherent camera trajectories conditioned on task descriptions and environmental context. Then, a diffusion-based video generator produces high fidelity panoramic videos. To ensure motion consistency between the generated video and the predicted trajectory, we introduce a trajectory-conditioned structured noise initialization. Furthermore, we incorporate ERP-aware geometric constraints in latent space to ensure panoramic consistency. Experiments show that our framework outperforms existing baselines in visual fidelity and geometric consistency, advancing the generation of semantically navigable panoramic videos. ",
+  "venue": "Proceedings of the 34th ACM International Conference on Multimedia",
+  "pages": "accepted",
+  "paperType": "conference",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/panoTask.png",
+  "overviewImage": "/images/research/PanoTaskOverview.jpg"
+}

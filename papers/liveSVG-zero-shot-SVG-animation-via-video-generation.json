@@ -1,0 +1,29 @@
+{
+  "title": "LiveSVG: Zero-Shot SVG Animation via Video Generation",
+  "authors": [
+    "Matan Levy",
+    "Ran Margolin",
+    "Bar Cavia",
+    "Dvir Samuel",
+    "Yael Pritch",
+    "Shmuel Peleg",
+    "Alex Rav Acha",
+    "Ariel Shamir",
+    "Dani Lischinski"
+  ],
+  "year": 2026,
+  "abstract": "We introduce LiveSVG, a zero-shot approach for generating Scalable Vector Graphics (SVG) animations using video diffusion models. Current SVG animation methods struggle with complex motions: LLM-based code synthesis fails to express fine, non-rigid Bézier deformations, while Score Distillation Sampling (SDS) provides noisy gradients and often requires category-specific priors like skeletons. In contrast, LiveSVG fits vector geometry directly to an explicitly generated target video. Given an input SVG image and a motion prompt, we generate a previewable target video using a frozen image-to-video model, then fit the original SVG to this video via differentiable rendering. Our fitting stage is skeleton-free, utilizing a dual-level motion representation that combines per-group homographies for coarse articulation with per-path Bézier control-point offsets for local deformations. To resolve color-induced correspondence ambiguities during pixel-wise fitting, we introduce a novel sphere-packing recolorization strategy. We also present ChallengeSVG, a benchmark of complex, multi-object scenes that exposes the limitations of prior work. Evaluations demonstrate that LiveSVG significantly outperforms existing methods on both AniClipart and ChallengeSVG, establishing direct reference-video fitting as a practical, robust route to prompt-aligned and fully editable vector animation.",
+  "venue": "ACM SIGGRAPH Asia Conference Proceedings",
+  "pages": "Accepted",
+  "paperType": "conference",
+  "categories": [
+    "Recent",
+    "Image & Video Processing",
+    "Art, Sketches, and Typography"
+  ],
+  "paperLink": "https://arxiv.org/pdf/2605.30174",
+  "videoLink": null,
+  "projectLink": "https://levymsn.github.io/LiveSVG/",
+  "thumbnail": "/images/research/thumbnails/liveSVG.png",
+  "overviewImage": "/images/research/liveSVGOverview.jpg"
+}

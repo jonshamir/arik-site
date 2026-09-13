@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Albums: Creating Fictional Stories from Personal Photograph Sets — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Story Albums: Creating Fictional Stories from Personal Photograph Sets</h1>
+  <p class="paper-authors">Oz Radiano · Yonatan Graber · Moshe Mahler · Leonid Sigal · Ariel Shamir</p>
+  <p class="paper-venue">Computer Graphics Forum 37: 19--31, 2018</p>
+  <div class="paper-links">
+    
+      <a href="includes/papers/storyAlbumCGF.pdf" class="btn">Paper PDF</a>
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{radiano2018,
+  author    = {Oz Radiano and Yonatan Graber and Moshe Mahler and Leonid Sigal and Ariel Shamir},
+  title     = {Story Albums: Creating Fictional Stories from Personal Photograph Sets},
+  journal   = {Computer Graphics Forum},
+  year      = {2018},
+  volume    = {37},
+  pages     = {19--31}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+    <div class="paper-video">
+      <iframe src="https://player.vimeo.com/video/208133682" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>We present a method for the automatic creation of fictional story-books based on personal photographs. Unlike previous attempts that summarize such collections by picking salient or diverse photos, or creating personal literal narratives, we focus on the creation of fictional stories. This provides new value to users, as well as an engaging way for people (especially children) to experience their own photographs. We use a graph model to represent an artist-generated story, where each node is a ÒframeÓ, akin to frames in comics or storyboards. A node is described by story elements, comprising actors, location, supporting objects and time. The edges in the graph encode connections between these elements and provide the discourse of the story. Based on this construction, we develop a constraint satisfaction algorithm for one-to-one assignment of nodes to photographs. Once each node is assigned to a photographs, a visual depiction of the story can be generated in different styles using various templates. We show results of several fictional visual stories created from different personal photo sets and in different styles.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/storyAlbumOverview.png" alt="Story Albums: Creating Fictional Stories from Personal Photograph Sets">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

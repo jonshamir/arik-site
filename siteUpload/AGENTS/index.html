@@ -1,0 +1,87 @@
+<p>Default to using Bun instead of Node.js.</p>
+<ul>
+<li>Use <code>bun &lt;file&gt;</code> instead of <code>node &lt;file&gt;</code> or <code>ts-node &lt;file&gt;</code></li>
+<li>Use <code>bun test</code> instead of <code>jest</code> or <code>vitest</code></li>
+<li>Use <code>bun build &lt;file.html|file.ts|file.css&gt;</code> instead of <code>webpack</code> or <code>esbuild</code></li>
+<li>Use <code>bun install</code> instead of <code>npm install</code> or <code>yarn install</code> or <code>pnpm install</code></li>
+<li>Use <code>bun run &lt;script&gt;</code> instead of <code>npm run &lt;script&gt;</code> or <code>yarn run &lt;script&gt;</code> or <code>pnpm run &lt;script&gt;</code></li>
+<li>Bun automatically loads .env, so don't use dotenv.</li>
+</ul>
+<h2>APIs</h2>
+<ul>
+<li><code>Bun.serve()</code> supports WebSockets, HTTPS, and routes. Don't use <code>express</code>.</li>
+<li><code>bun:sqlite</code> for SQLite. Don't use <code>better-sqlite3</code>.</li>
+<li><code>Bun.redis</code> for Redis. Don't use <code>ioredis</code>.</li>
+<li><code>Bun.sql</code> for Postgres. Don't use <code>pg</code> or <code>postgres.js</code>.</li>
+<li><code>WebSocket</code> is built-in. Don't use <code>ws</code>.</li>
+<li>Prefer <code>Bun.file</code> over <code>node:fs</code>'s readFile/writeFile</li>
+<li>Bun.$<code>ls</code> instead of execa.</li>
+</ul>
+<h2>Testing</h2>
+<p>Use <code>bun test</code> to run tests.</p>
+<pre><code class="language-ts#index.test.ts">import { test, expect } from &quot;bun:test&quot;;
+
+test(&quot;hello world&quot;, () =&gt; {
+  expect(1).toBe(1);
+});
+</code></pre>
+<h2>Frontend</h2>
+<p>Use HTML imports with <code>Bun.serve()</code>. Don't use <code>vite</code>. HTML imports fully support React, CSS, Tailwind.</p>
+<p>Server:</p>
+<pre><code class="language-ts#index.ts">import index from &quot;./index.html&quot;
+
+Bun.serve({
+  routes: {
+    &quot;/&quot;: index,
+    &quot;/api/users/:id&quot;: {
+      GET: (req) =&gt; {
+        return new Response(JSON.stringify({ id: req.params.id }));
+      },
+    },
+  },
+  // optional websocket support
+  websocket: {
+    open: (ws) =&gt; {
+      ws.send(&quot;Hello, world!&quot;);
+    },
+    message: (ws, message) =&gt; {
+      ws.send(message);
+    },
+    close: (ws) =&gt; {
+      // handle close
+    }
+  },
+  development: {
+    hmr: true,
+    console: true,
+  }
+})
+</code></pre>
+<p>HTML files can import .tsx, .jsx or .js files directly and Bun's bundler will transpile &amp; bundle automatically. <code>&lt;link&gt;</code> tags can point to stylesheets and Bun's CSS bundler will bundle.</p>
+<pre><code class="language-html#index.html">&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script type=&quot;module&quot; src=&quot;./frontend.tsx&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>With the following <code>frontend.tsx</code>:</p>
+<pre><code class="language-tsx#frontend.tsx">import React from &quot;react&quot;;
+
+// import .css files directly and it works
+import './index.css';
+
+import { createRoot } from &quot;react-dom/client&quot;;
+
+const root = createRoot(document.body);
+
+export default function Frontend() {
+  return &lt;h1&gt;Hello, world!&lt;/h1&gt;;
+}
+
+root.render(&lt;Frontend /&gt;);
+</code></pre>
+<p>Then, run index.ts</p>
+<pre><code class="language-sh">bun --hot ./index.ts
+</code></pre>
+<p>For more information, read the Bun API docs in <code>node_modules/bun-types/docs/**.md</code>.</p>

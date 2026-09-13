@@ -1,0 +1,23 @@
+{
+  "title": "Style and Abstraction in Portrait Sketching",
+  "authors": [
+    "Itamar Berger",
+    "Ariel Shamir",
+    "Moshe Mahler",
+    "Elizabeth Carter",
+    "Jessica Hodgins"
+  ],
+  "year": 2013,
+  "abstract": "We use a data-driven approach to study both style and abstraction in sketching of a human face. We gather and analyze data from a number of artists as they sketch a human face from a reference photograph. To achieve different levels of abstraction in the sketches, decreasing time limits were imposed – from four and a half minutes to fifteen seconds. We analyzed the data at two levels: strokes and geometric shape. In each, we create a model that captures both the style of the different artists and the process of abstraction. These models are then used for a portrait sketch synthesis application. Starting from a novel face photograph, we can synthesize a sketch in the various artistic styles and in different levels of abstraction.",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "Article 55",
+  "paperType": "journal",
+  "categories": [
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": "http://www.disneyresearch.com/project/portraitsketching/",
+  "thumbnail": "/images/research/thumbnails/portraitSketching.png",
+  "overviewImage": "/images/research/portraitSketching1.png"
+}

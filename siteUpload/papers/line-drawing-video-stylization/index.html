@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line-Drawing Video Stylization — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Line-Drawing Video Stylization</h1>
+  <p class="paper-authors">Nir Ben-Zvi · Jose Bento · Moshe Mahler · Jessica Hodgins · Ariel Shamir</p>
+  <p class="paper-venue">Computer Graphics Forum 35 (6) : 18-23, 2016</p>
+  <div class="paper-links">
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{ben-zvi2016,
+  author    = {Nir Ben-Zvi and Jose Bento and Moshe Mahler and Jessica Hodgins and Ariel Shamir},
+  title     = {Line-Drawing Video Stylization},
+  journal   = {Computer Graphics Forum},
+  year      = {2016},
+  volume    = {35},
+  number    = {6},
+  pages     = {18-23}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+    <div class="paper-video">
+      <iframe src="https://player.vimeo.com/video/148246658" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>We present a method to automatically convert videos and CG animations to stylized animated line-drawings. Using a data-driven approach, the animated drawings can follow the sketching style of a specific artist. Given an input video, we first extract edges from the video frames and vectorize them to curves. The curves are matched to strokes from an artist’s library, while following the artist’s stroke distribution and characteristics. The key challenge in this process is to match the large number of curves in the frames over time, despite topological and geometric changes, allowing to maintain temporal coherence in the output animation. We solve this problem using constrained optimization to build correspondences between tracked points and create smooth sheets over time. These sheets are then replaced with strokes from the artist’s database to render the final animation. We evaluate our tracking algorithm on various examples and show stylized animation results based on various artists.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/videoSketchTeaser.png" alt="Line-Drawing Video Stylization">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

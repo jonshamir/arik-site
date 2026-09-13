@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Photorealistic Simplification — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Progressive Photorealistic Simplification</h1>
+  <p class="paper-authors">Adi Rosenthal · Dana Berman · Yedid Hoshen · Ariel Shamir</p>
+  <p class="paper-venue">ACM SIGGRAPH Conference Proceedings : Article No.: 151, 1 – 10, 2026</p>
+  <div class="paper-links">
+    
+      <a href="https://arxiv.org/abs/2605.10409" class="btn">Paper PDF</a>
+    
+    
+      <a href="https://adirosenthal540.github.io/Progressive_Photorealistic_Simplification/" class="btn">Project Page</a>
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{rosenthal2026,
+  author    = {Adi Rosenthal and Dana Berman and Yedid Hoshen and Ariel Shamir},
+  title     = {Progressive Photorealistic Simplification},
+  booktitle = {ACM SIGGRAPH Conference Proceedings},
+  year      = {2026},
+  pages     = {Article No.: 151, 1 – 10}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+    <div class="paper-video">
+      <iframe src="https://www.youtube.com/embed/UwtZo6n5Su4" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Existing image simplification techniques often rely on Non-Photorealistic Rendering (NPR), transforming photographs into stylized sketches, cartoons, or paintings. While effective at reducing visual complexity, such approaches typically sacrifice photographic realism. In this work, we explore a complementary direction: simplifying images while preserving their photorealistic appearance. We introduce progressive semantic image simplification, a framework that iteratively reduces scene complexity by removing and inpainting elements in a controlled manner. At each step, the resulting image remains a plausible natural photograph. Our method combines semantic understanding with generative editing, leveraging Vision-Language Models (VLMs) to identify and prioritize elements for removal, and a learned verifier to ensure photorealism and coherence throughout the process. This is implemented via an iterative Select–Remove–Verify pipeline that produces high-quality simplification trajectories. To improve efficiency, we further distill this process into an image-to-video generation model that directly predicts coherent simplification sequences from a single input image. Beyond generating cleaner and more focused compositions, our approach enables applications such as content-aware decluttering, semantic layer decomposition, and interactive editing. More broadly, our work suggests that simplification through structured content removal can serve as a practical mechanism for guiding visual interpretation within the photorealistic domain, complementing traditional abstraction methods.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/photoSimpOverview.jpg" alt="Progressive Photorealistic Simplification">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

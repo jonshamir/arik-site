@@ -1,0 +1,23 @@
+{
+  "title": "A Sampler of Useful Computational Tools for Applied Geometry, Computer Graphics, and Image Processing",
+  "authors": [
+    "Daniel Cohen-Or",
+    "Chen Greif",
+    "Tao Ju",
+    "Niloy Mitra",
+    "Ariel Shamir",
+    "Olga Sorkine-Hornung",
+    "Hao (Richard) Zhang"
+  ],
+  "year": 2015,
+  "abstract": "",
+  "venue": "A K Peters/CRC Press",
+  "pages": "",
+  "paperType": "conference",
+  "categories": [],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/geomBook.png",
+  "overviewImage": "/images/research/geomBookCover.jpg"
+}

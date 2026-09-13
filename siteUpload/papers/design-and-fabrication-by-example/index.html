@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design and Fabrication by Example — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Design and Fabrication by Example</h1>
+  <p class="paper-authors">Adriana Schulz · Ariel Shamir · David Levin · Pitchaya Sitthi-Amorn · Wojciech Matusik</p>
+  <p class="paper-venue">ACM Transactions on Graphics 33 (4) : Article 62, 2014</p>
+  <div class="paper-links">
+    
+    
+      <a href="http://fabbyexample.csail.mit.edu/" class="btn">Project Page</a>
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{schulz2014,
+  author    = {Adriana Schulz and Ariel Shamir and David Levin and Pitchaya Sitthi-Amorn and Wojciech Matusik},
+  title     = {Design and Fabrication by Example},
+  journal   = {ACM Transactions on Graphics},
+  year      = {2014},
+  volume    = {33},
+  number    = {4},
+  pages     = {Article 62}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>We propose a data-driven method for designing 3D models that can be fabricated. First, our approach converts a collection of expert-created designs to a dataset of parameterized design templates that includes all information necessary for fabrication. The templates are then used in an interactive design system to create new fabricable models in a design-by-example manner. A simple interface allows novice users to choose template parts from the database, change their parameters, and combine them to create new models. Using the information in the template database, the system can automatically position, align, and connect parts: the system accomplishes this by adjusting parameters, adding appropriate constraints, and assigning connectors. This process ensures that the created models can be fabricated, saves the user from many tedious but necessary tasks, and makes it possible for non-experts to design and create actual physical objects. To demonstrate our data-driven method, we present several examples of complex functional objects that we designed and manufactured using our system.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/designFabExamples.png" alt="Design and Fabrication by Example">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Geodesic Parametrization: An Ant&amp;#39;s Perspective — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Local Geodesic Parametrization: An Ant&#39;s Perspective</h1>
+  <p class="paper-authors">Lior Shapira · Ariel Shamir</p>
+  <p class="paper-venue">in Mathematical Foundations of Scientific Visualization, Computer Graphics and Massive Data Exploration Series: Mathematics and Visualization , 2009</p>
+  <div class="paper-links">
+    
+      <a href="http://www.faculty.idc.ac.il/arik/papers/GeodParam.pdf" class="btn">Paper PDF</a>
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{shapira2009,
+  author    = {Lior Shapira and Ariel Shamir},
+  title     = {Local Geodesic Parametrization: An Ant&#39;s Perspective},
+  booktitle = {in Mathematical Foundations of Scientific Visualization, Computer Graphics and Massive Data Exploration Series: Mathematics and Visualization},
+  year      = {2009}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Two dimensional parameterizations of meshes is a dynamic field of research. Most works focus on parameterizing complete surfaces, attempting to satisfy various constraints on distances and angles and produce a 2D map with minimal errors. Except for developable surfaces no single map can be devoid of errors, and a parametrization produced for one purpose usually doesn&#39;t suit others. This work presents a different viewpoint. We try and acquire the perspective of an ant living on the surface. The point on which it stands is the center of its world, and importance diminishes from there onward. Distances and angles measured relative to its position have higher importance than those measured elsewhere. Hence, the local parametrization of the geodesic neighborhood should convey this perspective by mostly preserving geodesic distances from the center. We present a method for producing such overlapping local-parametrization for each vertex on the mesh. Our method provides an accurate rendition of the local area of each vertex and can be used for several purposes, including clustering algorithms which focus on local areas of the surface within a certain window such as Mean Shift.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/geodesic-param.jpg" alt="Local Geodesic Parametrization: An Ant&#39;s Perspective">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

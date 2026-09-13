@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuFrameQ: Neural Frame Fields for Scalable and Generalizable Anisotropic Quadrangulation — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>NeuFrameQ: Neural Frame Fields for Scalable and Generalizable Anisotropic Quadrangulation</h1>
+  <p class="paper-authors">Ying-Tian Liu · Jiajun Li · Yu-Tao Liu · Xin Yu · Yuan-Chen Guo · Yan-Pei Cao · Ding Liang · Ariel Shamir · Song-Hai Zhang</p>
+  <p class="paper-venue">Proceedings of the International Conference on Computer Vision, ICCV : 28000-28009, 2025</p>
+  <div class="paper-links">
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{liu2025,
+  author    = {Ying-Tian Liu and Jiajun Li and Yu-Tao Liu and Xin Yu and Yuan-Chen Guo and Yan-Pei Cao and Ding Liang and Ariel Shamir and Song-Hai Zhang},
+  title     = {NeuFrameQ: Neural Frame Fields for Scalable and Generalizable Anisotropic Quadrangulation},
+  booktitle = {Proceedings of the International Conference on Computer Vision, ICCV},
+  year      = {2025},
+  pages     = {28000-28009}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Quad meshes play a crucial role in computer graph002 ics applications, yet automatically generating high-quality quad meshes remains challenging. Traditional quadrangulation approaches rely on local geometric features and manual constraints, often producing suboptimal mesh layouts that fail to capture global shape semantics. We introduce NeuFrameQ, a novel learning-based framework for scalable and generalizable mesh quadrangulation via frame field prediction. We first create a large-scale dataset of high-quality quad meshes with various shapes to serve as priors of domain knowledge. Empowered by this dataset, we employ a connectivity-agnostic learning approach that operates on point clouds with normals, enabling robust processing of complex mesh geometries. By decomposing frame field prediction into direction regression and magnitude estimation tasks, we effectively handle the ill-posed nature in frame field estimation. We also employ the polyvector representation and computing mechanism in both tasks to handle the inherent ambiguities in frame field representation. Extensive experiments demonstrate that NeuFrameQ produces high-quality quad meshes with superior semantic alignment, also for geometries derived from neural fields. Our method significantly advances the state of the art in automatic quad mesh generation, bridging the gap between neural content creation and production-ready geometric assets.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/NeuFrameQOverview.jpg" alt="NeuFrameQ: Neural Frame Fields for Scalable and Generalizable Anisotropic Quadrangulation">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

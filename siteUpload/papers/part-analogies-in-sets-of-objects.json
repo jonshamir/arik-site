@@ -1,0 +1,22 @@
+{
+  "title": "Part Analogies in Sets of Objects",
+  "authors": [
+    "Daniel Cohen-Or",
+    "Shy Shalom",
+    "Ariel Shamir",
+    "Lior Shapira"
+  ],
+  "year": 2008,
+  "abstract": "Shape retrieval can benefit from analogies among similar shapes and parts of different objects. By partitioning an object to meaningful parts and finding analogous parts in other objects, sub-parts and partial match queries can be utilized. First by searching for similar parts in the context of their shape, and second by finding similarities even among objects that differ in their general shape and topology. Moreover, analogies can create the basis for semantic text-based searches: for instance, in this paper we demonstrate a simple annotation tool that carries tags of object parts from one model to many others using analogies. We partition 3D objects based on the shape-diameter function (SDF), and use it to find corresponding parts in other objects. We present results on finding analogies among numerous objects from shape repositories, and demonstrate sub-part queries using an implementation of a simple search and retrieval application.",
+  "venue": "Proceedings of Eurographics Symposium on 3D Object Retrieval",
+  "pages": "33-40",
+  "paperType": "conference",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": "http://www.faculty.idc.ac.il/arik/papers/partAnalogies.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/part-analogy.jpg",
+  "overviewImage": "/images/research/part-analogy.jpg"
+}

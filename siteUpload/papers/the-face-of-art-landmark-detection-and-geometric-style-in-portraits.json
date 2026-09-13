@@ -1,0 +1,23 @@
+{
+  "title": "The Face of Art: Landmark Detection and Geometric Style in Portraits",
+  "authors": [
+    "Jordan Yaniv",
+    "Yael Newman",
+    "Ariel Shamir"
+  ],
+  "year": 2019,
+  "abstract": "Facial Landmark detection in natural images is a very active research domain. Impressive progress has been made in recent years, with the rise of neural-network based methods and large-scale datasets. However, it is still a challenging and largely unexplored problem in the artistic portraits domain. Compared to natural face images, artistic portraits are much more diverse. They contain a much wider style variation in both geometry and texture and are more complex to analyze. Moreover, datasets that are necessary to train neural networks are unavailable.\nWe propose a method for artistic augmentation of natural face images that enables training deep neural networks for landmark detection in artistic portraits. We utilize conventional facial landmarks datasets, and transform their content from natural images into “artistic face” images. In addition, we use a feature-based landmark correction step, to reduce the dependency between the different facial features, which is necessary due to position and shape variations of facial landmarks in artworks. To evaluate our landmark detection framework, we created an “Artistic-Faces”dataset, containing 160 artworks of various art genres, artists and styles, with a large variation in both geometry and texture. Using our method, we can detect facial features in artistic portraits and analyze their geometric style. This allows the definition of signatures for artistic styles of artworks and artists, that encode both the geometry and the texture style. It also allows us to present a geometric-aware style transfer method for portraits.",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "60:1-60:15",
+  "volume": "38",
+  "number": "4",
+  "paperType": "journal",
+  "categories": [
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": "/foa/The_Face_of_Art.pdf",
+  "videoLink": null,
+  "projectLink": "https://faculty.runi.ac.il/arik/site/foa/face-of-art.asp",
+  "thumbnail": "/images/research/thumbnails/faceofArt.png",
+  "overviewImage": null
+}

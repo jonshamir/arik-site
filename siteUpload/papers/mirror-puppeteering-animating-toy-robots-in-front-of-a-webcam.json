@@ -1,0 +1,19 @@
+{
+  "title": "Mirror Puppeteering: Animating Toy Robots in Front of a Webcam",
+  "authors": [
+    "Ronit Slyper",
+    "Guy Hoffman",
+    "Ariel Shamir"
+  ],
+  "year": 2015,
+  "abstract": "Mirror Puppeteering is a system for easily creating gestures (“animations”) for robotic toys, custom robots, and virtual characters. Lay users can record animations by simply moving a robot’s limbs in front of a webcam. Makers and hobbyists can use the system to easily set up their custom-built robots for animation. Gamers and amateur animators can real-time control or save animations for virtual characters. Our system works by tracking circular markers on the robot’s surface and translating these into motor commands, using a calibration map between marker locations in camera space and motor angles. New robots can be quickly set up for Mirror Puppeteering without knowledge of the robot’s 3D structure, as we demonstrate on several robots. In a user study, participants found our method more enjoyable, usable, easy to learn, and successful than traditional animation methods.",
+  "venue": "Proceedings of the International Conference on Tangible, Embedded, and Embodied Interaction, TEI ’15",
+  "pages": "241-248",
+  "paperType": "conference",
+  "categories": [],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/mirrorPuppet.png",
+  "overviewImage": "/images/research/mirrorPuppetExamples.png"
+}

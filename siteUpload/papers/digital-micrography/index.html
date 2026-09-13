@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Micrography — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Digital Micrography</h1>
+  <p class="paper-authors">Ron Maharik · Mikhail Bessmeltsev · Alla Sheffer · Ariel Shamir · Nathan Carr</p>
+  <p class="paper-venue">ACM Transactions on Graphics 30 (4) , 2011</p>
+  <div class="paper-links">
+    
+    
+      <a href="http://www.cs.ubc.ca/labs/imager/tr/2011/Micrography/" class="btn">Project Page</a>
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{maharik2011,
+  author    = {Ron Maharik and Mikhail Bessmeltsev and Alla Sheffer and Ariel Shamir and Nathan Carr},
+  title     = {Digital Micrography},
+  journal   = {ACM Transactions on Graphics},
+  year      = {2011},
+  volume    = {30},
+  number    = {4}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>We present an algorithm for creating digital micrography images, or micrograms, a special type of calligrams created from minuscule text. These attractive text-art works successfully combine beautiful images with readable meaningful text. Traditional micrograms are created by highly skilled artists and involve a huge amount of tedious manual work. We aim to simplify this process by providing a computerized digital micrography design tool. The main challenge in creating digital micrograms is designing textual layouts that simultaneously convey the input image, are readable and appealing. To generate such layout we use the streamlines of singularity free, low curvature, smooth vector fields, especially designed for our needs. The vector fields are computed using a new approach which controls field properties via {&#92;em a priori} boundary condition design that balances the different requirements we aim to satisfy. The optimal boundary conditions are computed using a graph-cut approach balancing local and global design considerations. The generated layouts are further processed to obtain the final micrograms. Our method automatically generates engaging, readable micrograms starting from a vector image and an input text while providing a variety of optional high-level controls to the user.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/motif.png" alt="Digital Micrography">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

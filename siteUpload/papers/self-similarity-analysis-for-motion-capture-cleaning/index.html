@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-similarity Analysis for Motion Capture Cleaning — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Self-similarity Analysis for Motion Capture Cleaning</h1>
+  <p class="paper-authors">Andreas Aristidou · Daniel Cohen-Or · Jessica Hodgins · Ariel Shamir</p>
+  <p class="paper-venue">Computer Graphics Forum 37 (2) : 297-309, 2018</p>
+  <div class="paper-links">
+    
+      <a href="includes/papers/SSA-final.pdf" class="btn">Paper PDF</a>
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{aristidou2018,
+  author    = {Andreas Aristidou and Daniel Cohen-Or and Jessica Hodgins and Ariel Shamir},
+  title     = {Self-similarity Analysis for Motion Capture Cleaning},
+  journal   = {Computer Graphics Forum},
+  year      = {2018},
+  volume    = {37},
+  number    = {2},
+  pages     = {297-309}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+    <div class="paper-video">
+      <iframe src="https://player.vimeo.com/video/262522859" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Motion capture sequences may contain erroneous data, especially when the motion is complex or performers are interacting closely and occlusions are frequent. Common practice is to have specialists visually detect the abnormalities and fix them manually. In this paper, we present a method to automatically analyze and fix motion capture sequences by using self-similarity analysis. The premise of this work is that human motion data has a high-degree of self-similarity. Therefore, given enough motion data, erroneous motions are distinct when compared to other motions. We utilize motion-words that consist of short sequences of transformations of groups of joints around a given motion frame. We search for the K-nearest neighbors (KNN) set of each word using dynamic time warping and use it to detect and fix erroneous motions automatically. We demonstrate the effectiveness of our method in various examples, and evaluate by comparing to alternative methods and to manual cleaning.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/ssaMotionOverview.png" alt="Self-similarity Analysis for Motion Capture Cleaning">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

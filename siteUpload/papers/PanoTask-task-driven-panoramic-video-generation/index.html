@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanoTask: Task-Driven Panoramic Video Generation with Scene-Aware Autoregressive Camera Trajectory Prediction — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>PanoTask: Task-Driven Panoramic Video Generation with Scene-Aware Autoregressive Camera Trajectory Prediction</h1>
+  <p class="paper-authors">Dong Han · Jiahao Zhang · Wang Jiajun · Fang-Lue Zhang · Ariel Shamir · Miao Wang</p>
+  <p class="paper-venue">Proceedings of the 34th ACM International Conference on Multimedia : accepted, 2026</p>
+  <div class="paper-links">
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{han2026,
+  author    = {Dong Han and Jiahao Zhang and Wang Jiajun and Fang-Lue Zhang and Ariel Shamir and Miao Wang},
+  title     = {PanoTask: Task-Driven Panoramic Video Generation with Scene-Aware Autoregressive Camera Trajectory Prediction},
+  booktitle = {Proceedings of the 34th ACM International Conference on Multimedia},
+  year      = {2026},
+  pages     = {accepted}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Controllable and navigable panoramic content generation is essential for immersive virtual reality applications. However, existing approaches often lack precise camera controllability or fail to capture the semantic context of navigation. To address this, we introduce PanoTask, a novel task-driven framework for generating panoramic videos that follow semantically meaningful trajectories conditioned on scene context and user intent. As no existing dataset provides aligned video-text-trajectory annotations for this formulation, we construct PanoTask-10k, a large-scale dataset containing approximately 10k video-text-trajectory triplets. Building upon this dataset, we propose a two-stage task-to-video pipeline. First, a multi-modal autoregressive model predicts coherent camera trajectories conditioned on task descriptions and environmental context. Then, a diffusion-based video generator produces high fidelity panoramic videos. To ensure motion consistency between the generated video and the predicted trajectory, we introduce a trajectory-conditioned structured noise initialization. Furthermore, we incorporate ERP-aware geometric constraints in latent space to ensure panoramic consistency. Experiments show that our framework outperforms existing baselines in visual fidelity and geometric consistency, advancing the generation of semantically navigable panoramic videos. </p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/PanoTaskOverview.jpg" alt="PanoTask: Task-Driven Panoramic Video Generation with Scene-Aware Autoregressive Camera Trajectory Prediction">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

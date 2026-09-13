@@ -1,0 +1,25 @@
+{
+  "title": "Co-Hierarchical Analysis of Shape Structures",
+  "authors": [
+    "Oliver van Kaick",
+    "Kai Xu",
+    "Hao Zhang",
+    "Yanzhen Wang",
+    "Shuyang Sun",
+    "Ariel Shamir",
+    "Daniel Cohen-Or"
+  ],
+  "year": 2013,
+  "abstract": "We introduce an unsupervised co-hierarchical analysis of a set of shapes, aimed at discovering their hierarchical part structures and revealing relations between geometrically dissimilar yet functionally equivalent shape parts across the set. The core problem is that of representative co-selection. For each shape in the set, one representative hierarchy (tree) is selected from among many possible interpretations of the hierarchical structure of the shape. Collectively, the selected tree representatives maximize the within-cluster structural similarity among them. We develop an iterative algorithm for representative co-selection. At each step, a novel cluster-and-select scheme is applied to a set of candidate trees for all the shapes. The tree-to-tree distance for clustering caters to structural shape analysis by focusing on spatial arrangement of shape parts, rather than their geometric details. The final set of representative trees are unified to form a structural co-hierarchy. We demonstrate co-hierarchical analysis on families of man-made shapes exhibiting high degrees of geometric and finer-scale structural variabilities.",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "Article 69",
+  "paperType": "journal",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": "http://www2.cs.sfu.ca/~ovankaic/personal/pubs/conshier.pdf",
+  "videoLink": null,
+  "projectLink": "http://www2.cs.sfu.ca/~ovankaic/personal/conshier/",
+  "thumbnail": "/images/research/thumbnails/conshier.png",
+  "overviewImage": "/images/research/conshierAlgo.png"
+}

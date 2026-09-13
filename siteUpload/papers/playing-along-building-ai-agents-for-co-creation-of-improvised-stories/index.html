@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing Along: Building AI Agents for Co-Creation of Improvised Stories — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Playing Along: Building AI Agents for Co-Creation of Improvised Stories</h1>
+  <p class="paper-authors">Idan Dov Vidra · Gal Kimron · Lior Noy · Ariel Shamir</p>
+  <p class="paper-venue">Proceedings of the 16th International Conference on Computational Creativity, ICCC&#39;25 , 2025</p>
+  <div class="paper-links">
+    
+      <a href="https://computationalcreativity.net/iccc25/wp-content/uploads/papers/iccc25-vidra2025playing.pdf" class="btn">Paper PDF</a>
+    
+    
+      <a href="https://idanvidra.github.io/playing_along_paper_site/" class="btn">Project Page</a>
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{vidra2025,
+  author    = {Idan Dov Vidra and Gal Kimron and Lior Noy and Ariel Shamir},
+  title     = {Playing Along: Building AI Agents for Co-Creation of Improvised Stories},
+  booktitle = {Proceedings of the 16th International Conference on Computational Creativity, ICCC&#39;25},
+  year      = {2025}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+    <div class="paper-video">
+      <iframe src="https://www.youtube.com/embed/TpSOhtMsZds" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>This paper studies human-agent co-creation of improvised stories, investigating whether Large Language Models can effectively engage in an improvisational practice known as the &quot;Yes! and...&quot; game. We demonstrate how AI systems can participate successfully in improvisational co-creation, moving beyond response generation to collaborative story-telling. We provide a systematic framework for evaluating creative AI outputs in improvisational contexts, combining human evaluation with computational metrics. Our evaluations show that stories co-created with an AI agent received similar ratings to human-human collaborations and were perceptually indistinguishable in blind testing. This shows how AI&#39;s creative invention abilities - which can be limitations in factual tasks - become assets in collaborative storytelling. More generally, our approach presents the &quot;Yes! and...&quot; game as a novel model-system for studying improvised co-creativity in a well-defined and measurable setup.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/yesAndOverview.jpg" alt="Playing Along: Building AI Agents for Co-Creation of Improvised Stories">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

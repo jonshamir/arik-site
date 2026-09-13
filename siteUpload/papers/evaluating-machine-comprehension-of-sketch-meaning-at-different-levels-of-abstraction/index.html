@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluating machine comprehension of sketch meaning at different levels of abstraction — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Evaluating machine comprehension of sketch meaning at different levels of abstraction</h1>
+  <p class="paper-authors">Kushin Mukherjee · Xuanchen Lu · Holly Huey · Yael Vinker · Rio Aguina-Kang · Ariel Shamir · Judith E. Fan</p>
+  <p class="paper-venue">Proceedings of the Annual Meeting of the Cognitive Science Society , 2023</p>
+  <div class="paper-links">
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{mukherjee2023,
+  author    = {Kushin Mukherjee and Xuanchen Lu and Holly Huey and Yael Vinker and Rio Aguina-Kang and Ariel Shamir and Judith E. Fan},
+  title     = {Evaluating machine comprehension of sketch meaning at different levels of abstraction},
+  booktitle = {Proceedings of the Annual Meeting of the Cognitive Science Society},
+  year      = {2023}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>People can reliably understand images that vary in visual abstractionÑfrom detailed illustrations to schematic icons. To what degree are current vision algorithms robust to such variation when attributing meaning to abstract images? We first obtained &gt; 90K human-generated sketches produced under different time limits (4s, 8s, 16s, 32s; N=5,563 participants) and AI-generated sketches (Vinker et al., 2022) produced under different ink limits (4, 8, 16, 32 strokes) of 2,048 real-world object concepts spanning 128 categories from the THINGS dataset (Hebart et al., 2019). We then evaluated how well 12 state-of-the-art vision algorithms could (1) predict which concept each sketch was intended to convey and (2) match human performance and response patterns when presented with the same sketches. We found that models achieving generally higher recognition accuracy also tracked human error patterns better, although there remains a sizable gap between human and machine sketch understanding. We also found that, on average, different models expressed similar uncertainty about sketches of the same concept across different levels of abstraction. We hope that public release of this dataset and evaluation protocol will lead to algorithms that display more human-like visual abstraction.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/sketchEvalOverview.jpg" alt="Evaluating machine comprehension of sketch meaning at different levels of abstraction">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

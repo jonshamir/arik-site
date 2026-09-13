@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can Children Understand Machine Learning Concepts? The Effect of Uncovering Black Boxes — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Can Children Understand Machine Learning Concepts? The Effect of Uncovering Black Boxes</h1>
+  <p class="paper-authors">Tom Hitron · Yoav Orlev · Iddo Wald · Ariel Shamir · Hadas Erel · Oren Zuckerman</p>
+  <p class="paper-venue">Proceedings of ACM CHI Conference on Human Factors in Computing Systems : 415:1-415:11, 2019</p>
+  <div class="paper-links">
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{hitron2019,
+  author    = {Tom Hitron and Yoav Orlev and Iddo Wald and Ariel Shamir and Hadas Erel and Oren Zuckerman},
+  title     = {Can Children Understand Machine Learning Concepts? The Effect of Uncovering Black Boxes},
+  booktitle = {Proceedings of ACM CHI Conference on Human Factors in Computing Systems},
+  year      = {2019},
+  pages     = {415:1-415:11}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Machine Learning services are integrated into various aspects of everyday life. Their underlying processes are typically black-boxed to increase ease-of-use. Consequently, children lack the opportunity to explore such processes and develop essential mental models.We present a gesture recognition research platform, designed to support learning from experience by uncovering Machine Learning building blocks: Data Labeling and Evaluation. Children used the platform to perform physical gestures, iterating between sampling and evaluation. Their understanding was tested in a pre/post experimental design, in three conditions: learning activity uncovering Data Labeling only, Evaluation only, or both. Our findings show that both building blocks are imperative to enhance childrenÕs understanding of basic Machine Learning concepts. Children were able to apply their new knowledge to everyday life context, including personally meaningful applications. We conclude that childrenÕs interaction with uncovered black boxes of Machine Learning contributes to a better understanding of the world around them.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/childLearnExample.png" alt="Can Children Understand Machine Learning Concepts? The Effect of Uncovering Black Boxes">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

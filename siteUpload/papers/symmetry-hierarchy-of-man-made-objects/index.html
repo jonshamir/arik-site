@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symmetry Hierarchy of Man-Made Objects — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Symmetry Hierarchy of Man-Made Objects</h1>
+  <p class="paper-authors">Yanzhen Wang · Kai Xu · Jun Li · Hao Zhang · Ariel Shamir · Ligang Liu · Zhiquan Cheng · and Yueshan Xiong</p>
+  <p class="paper-venue">Computer Graphics Forum (special issue, proceedings Eurographics 30 (3) : 287-296, 2011</p>
+  <div class="paper-links">
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{wang2011,
+  author    = {Yanzhen Wang and Kai Xu and Jun Li and Hao Zhang and Ariel Shamir and Ligang Liu and Zhiquan Cheng and and Yueshan Xiong},
+  title     = {Symmetry Hierarchy of Man-Made Objects},
+  journal   = {Computer Graphics Forum (special issue, proceedings Eurographics},
+  year      = {2011},
+  volume    = {30},
+  number    = {3},
+  pages     = {287-296}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>We introduce symmetry hierarchy of man-made objects, a high-level structural representation of a 3D model providing a symmetry-induced, hierarchical organization of the model’s constituent parts. Given an input mesh, we segment it into primitive parts and build an initial graph which encodes inter-part symmetries and connectivity relations, as well as self-symmetries in individual parts. The symmetry hierarchy is constructed from the initial graph via recursive graph contraction which either groups parts by symmetry or assembles connected sets of parts. The order of graph contraction is dictated by a set of precedence rules designed primarily to respect the law of symmetry in perceptual grouping and the principle of compactness of representation. We show that symmetry hierarchy naturally implies a hierarchical segmentation that is more meaningful than those produced by local geometric considerations. We also develop an application of symmetry hierarchies for structural shape editing.</p>
+  </div>
+
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

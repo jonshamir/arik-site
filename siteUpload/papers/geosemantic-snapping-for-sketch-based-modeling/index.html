@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geosemantic Snapping for Sketch-Based Modeling — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Geosemantic Snapping for Sketch-Based Modeling</h1>
+  <p class="paper-authors">Alex Shtof · Alexander Agathos · Yotam Gingold · Ariel Shamir · Daniel Cohen-Or</p>
+  <p class="paper-venue">Computer Graphics Forum 32 (2) : 245-253, 2013</p>
+  <div class="paper-links">
+    
+      <a href="http://cs.gmu.edu/~ygingold/geosemantic/geosemantic.pdf" class="btn">Paper PDF</a>
+    
+    
+      <a href="http://cs.gmu.edu/~ygingold/geosemantic/" class="btn">Project Page</a>
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{shtof2013,
+  author    = {Alex Shtof and Alexander Agathos and Yotam Gingold and Ariel Shamir and Daniel Cohen-Or},
+  title     = {Geosemantic Snapping for Sketch-Based Modeling},
+  journal   = {Computer Graphics Forum},
+  year      = {2013},
+  volume    = {32},
+  number    = {2},
+  pages     = {245-253}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Modeling 3D objects from sketches is a process that requires several challenging problems including segmentation, recognition and reconstruction. Some of these tasks are harder for humans and some are harder for the machine. At the core of the problem lies the need for semantic understanding of the shape’s geometry from the sketch. In this paper we propose a method to model 3D objects from sketches by utilizing humans specifically for semantic tasks that are very simple for humans and extremely difficult for the machine, while utilizing the machine for tasks that are harder for humans. The user assists recognition and segmentation by choosing and placing specific geometric primitives on the relevant parts of the sketch. The machine first snaps the primitive to the sketch by fitting its projection to the sketch lines, and then improves the model globally by inferring geosemantic constraints that link the different parts. The fitting occurs in real-time, allowing the user to be only as precise as needed to have a good starting configuration for this non-convex optimization problem. We evaluate the accessibility of our approach with a user study.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/geoSemanticTeaser.png" alt="Geosemantic Snapping for Sketch-Based Modeling">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

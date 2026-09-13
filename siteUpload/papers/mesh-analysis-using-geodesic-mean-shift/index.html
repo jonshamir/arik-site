@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesh Analysis Using Geodesic Mean Shift — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Mesh Analysis Using Geodesic Mean Shift</h1>
+  <p class="paper-authors">Ariel Shamir · Lior Shapira · Daniel Cohen-Or</p>
+  <p class="paper-venue">The Visual Computer 22 (2) : 99-108, 2006</p>
+  <div class="paper-links">
+    
+      <a href="http://www.faculty.idc.ac.il/arik/papers/GeodMeanShift.pdf" class="btn">Paper PDF</a>
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{shamir2006,
+  author    = {Ariel Shamir and Lior Shapira and Daniel Cohen-Or},
+  title     = {Mesh Analysis Using Geodesic Mean Shift},
+  journal   = {The Visual Computer},
+  year      = {2006},
+  volume    = {22},
+  number    = {2},
+  pages     = {99-108}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>In this paper we introduce a versatile and robust method for analyzing the feature space associated with a given mesh surface. The method is based on the mean-shift operator which was shown to be successful in image and video processing. Its strength lays in the fact that it works in a single joint space of geometry and attributes called the feature-space. The mean-shift procedure works as a gradient ascend finding maxima of an estimated probability density function in feature-space. Our method for using the meanshift technique on surfaces solves several difficulties. First, meshes as opposed to images do not present a regular and uniform sampling of domain. Second, on surfaces meshes the shifting procedure must be constrained to stay on the surface and preserve geodesic distances. We define a special local geodesic parameterizations scheme, and use it to generalize the mean-shift procedure to unstructured surface meshes. Our method can support piecewise linear attribute definitions as well as piecewise constant attributes.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/mesh-analysis.jpg" alt="Mesh Analysis Using Geodesic Mean Shift">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

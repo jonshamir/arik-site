@@ -1,0 +1,25 @@
+{
+  "title": "Alterbute: Editing Intrinsic Attributes of Objects in Images",
+  "authors": [
+    "Tal Reiss",
+    "Daniel Winter",
+    "Matan Yaakov Cohen",
+    "Alex Rav-Acha",
+    "Yael Pritch",
+    "Ariel Shamir",
+    "Yedid Hoshen"
+  ],
+  "year": 2026,
+  "abstract": "We introduce Alterbute, a diffusion-based method for editing an object's intrinsic attributes in an image. We allow changing color, texture, material, and even the shape of an object, while preserving its perceived identity and scene context. Existing approaches either rely on unsupervised priors that often fail to preserve identity or use overly restrictive supervision that prevents meaningful intrinsic variations. Our method relies on: (i) a relaxed training objective that allows the model to change both intrinsic and extrinsic attributes conditioned on an identity reference image, a textual prompt describing the target intrinsic attributes, and a background image and object mask defining the extrinsic context. At inference, we restrict extrinsic changes by reusing the original background and object mask, thereby ensuring that only the desired intrinsic attributes are altered; (ii) Visual Named Entities (VNEs) -- fine-grained visual identity categories  (e.g., \"Porsche 911 Carrera\") that group objects sharing identity-defining features while allowing variation in intrinsic attributes. We use a vision-language model to automatically extract VNE labels and intrinsic attribute descriptions from a large public image dataset, enabling scalable, identity-preserving supervision. Alterbute outperforms existing methods on identity-preserving object intrinsic attribute editing. Our project page is available at https://talreiss.github.io/alterbute/.",  
+  "venue": "International Conference on Machine Learning (ICML)",
+  "pages": null,
+  "paperType": "conference",
+  "categories": [
+    "Image & Video Processing"
+  ],
+  "paperLink": "https://arxiv.org/pdf/2601.10714",
+  "videoLink": null,
+  "projectLink": "https://talreiss.github.io/alterbute/",
+  "thumbnail": "/images/research/thumbnails/alterbute.png",
+  "overviewImage": "/images/research/alterbute.jpg"
+}

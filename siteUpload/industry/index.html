@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<section class="about">
+  <h1>Industry</h1>
+  <p>Some places I am (or have been) affiliated with:</p>
+
+  <a href="https://sibf.vc/" target="_blank" class="industry-span">
+    <img src="/arik/site/images/industry/sibf.png" alt="SIBF" width="80" class="industry-img">
+    Southern Israel Bridging Fund
+  </a>
+
+  <a class="industry-span" href="https://www.shopify.com/" target="_blank">
+    <img src="/arik/site/images/industry/shopify.svg" alt="Shopify" width="200" class="industry-img">
+  </a>
+
+  <a class="industry-span" href="https://mappo.world/" target="_blank">
+    <img src="/arik/site/images/industry/mappo.png" alt="Mappo" width="200" class="industry-img">
+  </a>
+
+  <a href="https://learn.dondesearch.com/" target="_blank" class="industry-span">
+    <img src="/arik/site/images/industry/donde.png" alt="Donde" width="120" class="industry-img">
+    (acquired by Shopify)
+  </a>
+
+  <a href="https://verisk.com/" target="_blank" class="industry-span">
+    <img src="/arik/site/images/industry/verisk.svg" alt="Verisk" width="150" class="industry-img">
+  </a>
+
+  <a class="industry-span" href="http://www.camera51.com/" target="_blank">
+    <img src="/arik/site/images/industry/camera51.webp" alt="Camera51" width="50" class="industry-img">
+    Camera51
+  </a>
+
+  <a class="industry-span" href="http://www.disneyresearch.com/" target="_blank">
+    <img src="/arik/site/images/industry/disneyresearch.png" alt="disney" class="industry-img">
+  </a>
+
+  <span class="industry-span">
+    <img src="/arik/site/images/industry/sensomatix.png" alt="sensomatix" class="industry-img">
+    Sensomatix (acquired by Verisk)
+  </span>
+
+  <a class="industry-span" href="http://www.merl.com/" target="_blank">
+    <img src="/arik/site/images/industry/merl.svg" alt="MERL" class="industry-img" style="height: 2rem;">
+    Mitsubishi Electric Research Labs (MERL)
+  </a>
+
+  <span class="industry-span">
+    <img src="/arik/site/images/industry/primesense.png" alt="PrimeSense" class="industry-img">
+    PrimeSense (acquired by Apple)
+  </span>
+
+  <a class="industry-span" href="http://www.paieon.com/" target="_blank">
+    <img src="/arik/site/images/industry/paieon.png" alt="paieon" class="industry-img">
+    Paieon Medical
+  </a>
+
+  <a class="industry-span" href="https://www.llnl.gov/" target="_blank">
+    <img src="/arik/site/images/industry/lll.png" alt="LLNL" class="industry-img">
+    Lawrence Livermore National Laboratory
+  </a>
+</section>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

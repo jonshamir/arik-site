@@ -1,0 +1,22 @@
+{
+  "title": "Colorful-Noise: Training-Free Low-Frequency Noise Manipulation for Color-Based Conditional Image Generation",
+  "authors": [
+    "Nadav Z. Cohen",
+    "Ofir Abramovich",
+    "Ariel Shamir"
+  ],
+  "year": 2026,
+  "abstract": "Text-to-image diffusion models generate images by gradually converting white Gaussian noise into a natural image. White Gaussian noise is well suited for producing diverse outputs from a single text prompt due to its absence of structure. However, this very property limits control over, and predictability of, specific visual attributes, as the noise is not human-interpretable. In this work, we investigate the characteristics of the input noise in diffusion models. We show that, although all frequencies in white Gaussian noise have comparable statistical energy, low-frequency components primarily determine the image’s global structure and color composition, while high-frequency components control finer details. Building on this observation, we demonstrate that simple manipulations of the low-frequency noise using low-frequency image priors can effectively condition the generation process to reconstruct these low-frequency visual cues. This allows us to define a simple, training-free method with minimal overhead that steers overall image structure and color, while letting high-frequency components freely emerge as fine details, enabling variability across generated outputs.",
+  "venue": "ACM SIGGRAPH Conference Proceedings",
+  "pages": "Article No.: 104, 1 – 11",
+  "paperType": "conference",
+  "categories": [
+    "Recent",
+    "Image & Video Processing"
+  ],
+  "paperLink": "https://arxiv.org/abs/2605.00548",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/colorfulNoise.png",
+  "overviewImage": "/images/research/colorfulNoiseOverview.jpg"
+}

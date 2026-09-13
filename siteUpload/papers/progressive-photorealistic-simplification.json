@@ -1,0 +1,23 @@
+{
+  "title": "Progressive Photorealistic Simplification",
+  "authors": [
+    "Adi Rosenthal",
+    "Dana Berman",
+    "Yedid Hoshen",
+    "Ariel Shamir"
+  ],
+  "year": 2026,
+  "abstract": "Existing image simplification techniques often rely on Non-Photorealistic Rendering (NPR), transforming photographs into stylized sketches, cartoons, or paintings. While effective at reducing visual complexity, such approaches typically sacrifice photographic realism. In this work, we explore a complementary direction: simplifying images while preserving their photorealistic appearance. We introduce progressive semantic image simplification, a framework that iteratively reduces scene complexity by removing and inpainting elements in a controlled manner. At each step, the resulting image remains a plausible natural photograph. Our method combines semantic understanding with generative editing, leveraging Vision-Language Models (VLMs) to identify and prioritize elements for removal, and a learned verifier to ensure photorealism and coherence throughout the process. This is implemented via an iterative Select–Remove–Verify pipeline that produces high-quality simplification trajectories. To improve efficiency, we further distill this process into an image-to-video generation model that directly predicts coherent simplification sequences from a single input image. Beyond generating cleaner and more focused compositions, our approach enables applications such as content-aware decluttering, semantic layer decomposition, and interactive editing. More broadly, our work suggests that simplification through structured content removal can serve as a practical mechanism for guiding visual interpretation within the photorealistic domain, complementing traditional abstraction methods.",
+  "venue": "ACM SIGGRAPH Conference Proceedings",
+  "pages": "Article No.: 151, 1 – 10",
+  "paperType": "conference",
+  "categories": [
+    "Recent",
+    "Image & Video Processing"
+  ],
+  "paperLink": "https://arxiv.org/abs/2605.10409",
+  "videoLink": "https://www.youtube.com/watch?v=UwtZo6n5Su4",
+  "projectLink": "https://adirosenthal540.github.io/Progressive_Photorealistic_Simplification/",
+  "thumbnail": "/images/research/thumbnails/photoSimp.png",
+  "overviewImage": "/images/research/photoSimpOverview.jpg"
+}

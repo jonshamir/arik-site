@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Enhancements of Digital Typeface Boundary Representations — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Quality Enhancements of Digital Typeface Boundary Representations</h1>
+  <p class="paper-authors">Ariel Shamir · Ari Rappoport</p>
+  <p class="paper-venue">Computers &amp; Graphics 21 (6) , 1997</p>
+  <div class="paper-links">
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{shamir1997,
+  author    = {Ariel Shamir and Ari Rappoport},
+  title     = {Quality Enhancements of Digital Typeface Boundary Representations},
+  journal   = {Computers &amp; Graphics},
+  year      = {1997},
+  volume    = {21},
+  number    = {6}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Digital fonts are easily available today and their use has become widespread. Nonetheless, the visual quality of printed and displayed text and the technical quality of digital typefaces are often unsatisfactory. The foremost reason for this situation is that font manufacturing systems manipulate font boundary representations through low-level operations. In this paper we examine several aspects of font quality, and present a method for enhancing the quality of a typeface given in today&#39;s standard representation, the boundary (outline) representation. The method is based on the usage of high-level typographic features, and includes enhancements to both individual glyphs and complete fonts. Glyph enhancements include elimination of redundant points, insertion of essential points, corrections to contour orientations and inter-penetrations, and vertical and horizontal coherence. Font enhancements include regularization of font weights and sizes, serif unification, and feature extraction and discrimination. Our method is comprised of several algorithms which have been implemented in a commercial font manufacturing system to achieve enhanced quality of produced fonts.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/type-boundary.jpg" alt="Quality Enhancements of Digital Typeface Boundary Representations">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiAct: Text-to-Motion Generation from Composite Text via Tailored Attention Guidance — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>MultiAct: Text-to-Motion Generation from Composite Text via Tailored Attention Guidance</h1>
+  <p class="paper-authors">Nathan Sala · Ofir Abramovich · Ariel Shamir · Daniel Cohen-Or · Andreas Aristidou · Sigal Raab</p>
+  <p class="paper-venue">ACM SIGGRAPH Conference Proceedings : Article No.: 94, 1 – 11, 2026</p>
+  <div class="paper-links">
+    
+    
+      <a href="https://natsala13.github.io/multiact.github.io/" class="btn">Project Page</a>
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{sala2026,
+  author    = {Nathan Sala and Ofir Abramovich and Ariel Shamir and Daniel Cohen-Or and Andreas Aristidou and Sigal Raab},
+  title     = {MultiAct: Text-to-Motion Generation from Composite Text via Tailored Attention Guidance},
+  booktitle = {ACM SIGGRAPH Conference Proceedings},
+  year      = {2026},
+  pages     = {Article No.: 94, 1 – 11}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+    <div class="paper-video">
+      <iframe src="https://www.youtube.com/embed/XYrpXqOwkLE" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Text-to-motion generation has progressed rapidly in recent years, offering an expressive interface for animation and human–computer interaction. However, current models remain brittle when handling prompts that describe multiple actions occurring at the same time. Rather than realizing all components of a composite description, models frequently prioritize a single dominant action and neglect the rest, leading to incomplete or ambiguous motion. We present MultiAct, an unpaired, inference-time framework for compositional text-to-motion synthesis that operates directly on pre-trained motion generators without retraining or architectural modification. Our method counteracts semantic collapse by adaptively amplifying cross-attention scores associated with underrepresented prompt components. We note that effective modulation depends on prompt-specific choices, such as which tokens and layers to target, and introduce a lightweight auxiliary decision scheme that determines the most effective attention-strengthening parametrization. Extensive quantitative and qualitative evaluations demonstrate that MultiAct consistently outperforms existing baselines on composite prompts, achieving improved semantic coverage while preserving motion realism. Project page: https://natsala13.github.io/multiact.github.io/.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/multiActOverview.jpg" alt="MultiAct: Text-to-Motion Generation from Composite Text via Tailored Attention Guidance">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

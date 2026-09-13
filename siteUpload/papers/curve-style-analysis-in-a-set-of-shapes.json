@@ -1,0 +1,24 @@
+{
+  "title": "Curve Style Analysis in a Set of Shapes",
+  "authors": [
+    "H. Li",
+    "H. Zhang",
+    "Y. Wang",
+    "J. Cao",
+    "A. Shamir",
+    "D. Cohen-Or"
+  ],
+  "year": 2013,
+  "abstract": "The word “style” can be interpreted in so many different ways in so many different contexts. To provide a general analysis and understanding of styles is a highly challenging problem. We pose the open question “how to extract styles from geometric shapes?” and address one instance of the problem. Specifically, we present an unsupervised algorithm for identifying curve styles in a set of shapes. In our setting, a curve style is explicitly represented by a mode of curve features appearing along the 2D silhouettes of the shapes in the set. Unlike previous attempts, we do not rely on any preconceived conceptual characterizations, e.g., via specific shape descriptors, to define what is or is not a style. Our definition of styles is data-dependent; it depends on the input set but we do not require computing a shape correspondence across the set. We provide an operational definition of curve styles which focuses on separating curve features that represent styles from curve features that are content-revealing. To this end, we develop a novel formulation and associated algorithm for style-content separation. The analysis is based on a feature-shape association matrix (FSM) whose rows correspond to modes of curve features, columns to shapes in the set, and each entry expresses the extent a feature mode is present in a shape. We make several assumptions to drive style-content separation which only involve properties of, and relations between, rows of the FSM. Computationally, our algorithm only requires row-wise correlation analysis in the FSM and a heuristic solution of an instance of the set cover problem. Results are demonstrated on several datasets showing the identification of curve styles. We also develop and demonstrate several style-related applications including style exaggeration, removal, blending, and style transfer for 2D shape synthesis.",
+  "venue": "Computer Graphics Forum",
+  "pages": "77-88",
+  "paperType": "journal",
+  "categories": [
+    "Shape Analysis"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/curveStyle.png",
+  "overviewImage": "/images/research/curveStyleOverview.png"
+}

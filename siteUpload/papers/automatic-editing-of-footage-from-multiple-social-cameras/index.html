@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Editing of Footage from Multiple Social Cameras — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Automatic Editing of Footage from Multiple Social Cameras</h1>
+  <p class="paper-authors">Ido Arev · Hyun-Soo Park · Yaser Sheikh · Jessica Hodgins · Ariel Shamir</p>
+  <p class="paper-venue">ACM Transactions on Graphics 33 (4) : Article 81, 2014</p>
+  <div class="paper-links">
+    
+    
+      <a href="http://graphics.cs.cmu.edu/projects/social-cameras/" class="btn">Project Page</a>
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{arev2014,
+  author    = {Ido Arev and Hyun-Soo Park and Yaser Sheikh and Jessica Hodgins and Ariel Shamir},
+  title     = {Automatic Editing of Footage from Multiple Social Cameras},
+  journal   = {ACM Transactions on Graphics},
+  year      = {2014},
+  volume    = {33},
+  number    = {4},
+  pages     = {Article 81}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>We present an approach that takes multiple videos captured by social cameras - cameras that are carried or worn by members of the group involved in an activity - and produces a coherent ``cut&#39;&#39; video of the activity. Footage from social cameras contains an intimate, personalized view that reflects the part of an event that was of importance to the camera operator. We leverage the insight that social cameras share the focus of attention of the people carrying (or wearing) them. We use this insight to determine where the important &quot;content&quot; in a scene is taking place, and use it in conjunction with cinematographic rules to select which cameras to cut to and to determine the timing of those cuts. A trellis graph formulation is used to optimize an objective function that maximizes coverage of the important content in the scene, while respecting cinematographic rules such as the 180-degree rule and avoiding jump cuts. We demonstrate cuts of the videos in various styles and lengths for a number of scenarios, including sports games, street performance, family activities, and social get-togethers. We evaluate our results through an in-depth analysis of the cuts in the resulting videos and through comparison with videos produced by a professional editor and existing commercial solutions.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/SocialCamGraph.png" alt="Automatic Editing of Footage from Multiple Social Cameras">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

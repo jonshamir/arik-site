@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmarking non-photorealistic rendering of portraits — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Benchmarking non-photorealistic rendering of portraits</h1>
+  <p class="paper-authors">Paul L. Rosin · David Mould · Itamar Berger · John Collomosse · Yu-Kun Lai · Chuan Li · Hua Li · Ariel Shamir · Michael Wand · Tinghuai Wang · Holger Winnemoller</p>
+  <p class="paper-venue">Proceedings of the Symposium on Non-Photorealistic Animation and Rendering NPAR17 : Article 11, 2017</p>
+  <div class="paper-links">
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{rosin2017,
+  author    = {Paul L. Rosin and David Mould and Itamar Berger and John Collomosse and Yu-Kun Lai and Chuan Li and Hua Li and Ariel Shamir and Michael Wand and Tinghuai Wang and Holger Winnemoller},
+  title     = {Benchmarking non-photorealistic rendering of portraits},
+  booktitle = {Proceedings of the Symposium on Non-Photorealistic Animation and Rendering NPAR17},
+  year      = {2017},
+  pages     = {Article 11}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>We present a set of images for helping NPR practitioners evaluate their image-based portrait stylisation algorithms. Using a standard set both facilitates comparisons with other methods and helps ensure that presented results are representative. We give two levels of difficulty, each consisting of 20 images selected systematically so as to provide good coverage of several possible portrait characteristics. We applied three existing portrait-specific stylisation algorithms, two general-purpose stylisation algorithms, and one general learning based stylisation algorithm to the first level of the benchmark, corresponding to the type of constrained images that have often been used in portrait-specific work. We found that the existing methods are generally effective on this new image set, demonstrating that level one of the benchmark is tractable; challenges remain at level two. Results revealed several advantages conferred by portrait-specific algorithms over general-purpose algorithms: portrait-specific algorithms can use domain-specific information to preserve key details such as eyes and to eliminate extraneous details, and they have more scope for semantically meaningful abstraction due to the underlying face model. Finally, we provide some thoughts on systematically extending the benchmark to higher levels of difficulty.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/faceBenchmarkExamples.png" alt="Benchmarking non-photorealistic rendering of portraits">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

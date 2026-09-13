@@ -1,0 +1,26 @@
+{
+  "title": "CoatFusion: Controllable Material Coating in Images",
+  "authors": [
+    "Sagie Levy",
+    "Elad Aharoni",
+    "Matan Levy",
+    "Ariel Shamir",
+    "Dani Lischinski"
+  ],
+  "year": 2026,
+  "abstract": "Material Coating is a novel image editing task that simulates applying a thin material layer to a target surface (substrate) while preserving the substrate’s geometry and shading. Material coating is fundamentally different from material transfer, which typically reinterprets an object as being made of a new material and can modify its shape or overwrite fine details. We introduce CoatFusion, a diffusion-based framework for controllable material coating in images. Since real paired before/after coating data is difficult to acquire, we construct DataCoat110K, a synthetic paired dataset of approximately 110K examples rendered with physically motivated coating layers, including opaque, metallic, and transmissive appearances. CoatFusion formulates coating as visual in-context learning over a triptych containing the substrate image, a canonical 2D albedo texture, and the coated result, and uses cycle-consistent compose/decompose supervision to encourage substrate preservation and geometry-aware texture wrapping. Learned material tokens provide continuous control over roughness and thickness, and discrete on/off control over metalness and transmission. Across held-out synthetic evaluations, real-image examples, ablations, and a human study, CoatFusion produces more realistic and controllable coatings than material transfer/editing baselines and classical blending operations.",
+  "venue": "ACM Transactions on Graphics",
+  "pages": "Accepted (SIGGRAPH Asia 2026 Proceedings)",
+  "volume": "44",
+  "number": "4",
+  "paperType": "journal",
+  "categories": [
+    "Recent",
+    "Image & Video Processing"
+  ],
+  "paperLink": "https://arxiv.org/pdf/2512.02143",
+  "videoLink": null,
+  "projectLink": "https://github.com/sagielevy/coatFusion",
+  "thumbnail": "/images/research/thumbnails/coatFusion.png",
+  "overviewImage": "/images/research/coatFusionOverview.jpg"
+}

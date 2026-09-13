@@ -1,0 +1,21 @@
+{
+  "title": "Automatic thread painting generation",
+  "authors": [
+    "Xiao-Nan Fang",
+    "Bin Liu",
+    "Ariel Shamir"
+  ],
+  "year": 2016,
+  "abstract": "ThreadTone is an NPR representation of an input image by half-toning using threads on a circle. Current approaches to create ThreadTone paintings greedily draw the chords on the circle. We introduce the concept of chord space, and design a new algorithm to improve the quality of the thread painting. We use an optimization process that estimates the fitness of every chord in the chord space, and an error-diffusion based sampling process that selects a moderate number of chords to produce the output painting. We used an image similarity measure to evaluate the quality of our thread painting and also conducted a user study. Our approach can produce high quality results on portraits, sketches as well as cartoon pictures.",
+  "venue": "Communications in Information and Systems",
+  "pages": "",
+  "paperType": "conference",
+  "categories": [
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/threadPaint.png",
+  "overviewImage": "/images/research/threadPaintExamples.png"
+}

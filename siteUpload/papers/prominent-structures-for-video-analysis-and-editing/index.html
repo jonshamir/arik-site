@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prominent Structures for Video Analysis and Editing — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Prominent Structures for Video Analysis and Editing</h1>
+  <p class="paper-authors">Miao Wang · Xiao-Nan Fang · Guo-Wei Yang · Ariel Shamir · Shi-Min Hu</p>
+  <p class="paper-venue">IEEE Transactions on Visualization and Computer Graphics 27 (7) : 3305-3317, 2021</p>
+  <div class="paper-links">
+    
+      <a href="https://ieeexplore.ieee.org/document/8974422" class="btn">Paper PDF</a>
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{wang2021,
+  author    = {Miao Wang and Xiao-Nan Fang and Guo-Wei Yang and Ariel Shamir and Shi-Min Hu},
+  title     = {Prominent Structures for Video Analysis and Editing},
+  journal   = {IEEE Transactions on Visualization and Computer Graphics},
+  year      = {2021},
+  volume    = {27},
+  number    = {7},
+  pages     = {3305-3317}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+    <div class="paper-video">
+      <iframe src="https://player.vimeo.com/video/396456783" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>We present prominent structures in video, a representation of visually strong, spatially sparse and temporally stable structural units, for use in video analysis and editing. With a novel quality measurement of prominent structures in video, we develop a general framework for prominent structure computation, and an efficient hierarchical structure alignment algorithm between a pair of videos. The prominent structural unit map is proposed to encode both binary prominence guidance and numerical strength and geometry details for each video frame. Even though the detailed appearance of videos could be visually different, the proposed alignment algorithm can find matched prominent structure sub-volumes. Prominent structures in video support a wide range of video analysis and editing applications including graphic match-cut between successive videos, instant cut editing, finding transition portals from a video collection, structure-aware video re-ranking, visualizing human action differences, etc.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/prominentTeaser.png" alt="Prominent Structures for Video Analysis and Editing">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

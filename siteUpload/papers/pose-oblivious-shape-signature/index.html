@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pose Oblivious Shape Signature — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Pose Oblivious Shape Signature</h1>
+  <p class="paper-authors">Daniel Cohen-Or · Ran Gal · Ariel Shamir</p>
+  <p class="paper-venue">IEEE Transactions of Visualization and Computer Graphics 13 (2) : 261-271, 2007</p>
+  <div class="paper-links">
+    
+      <a href="http://www.faculty.idc.ac.il/arik/papers/pose_oblivious.pdf" class="btn">Paper PDF</a>
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{cohen-or2007,
+  author    = {Daniel Cohen-Or and Ran Gal and Ariel Shamir},
+  title     = {Pose Oblivious Shape Signature},
+  journal   = {IEEE Transactions of Visualization and Computer Graphics},
+  year      = {2007},
+  volume    = {13},
+  number    = {2},
+  pages     = {261-271}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>A 3D shape signature is a compact representation of the essence of the shape. A common use of shape signatures is as a fast indexing mechanism for shape retrieval. Effective shape signatures capture some global geometric properties which are scale, translation and rotation invariant. In this paper we introduce an effective shape signature which is also pose-oblivious. This means that the signature is also insensitive to transformations which change the pose of the 3D shape such as skeletal articulations. Although some topology-based matching methods can be considered pose-oblivious as well, our new signature retains the simplicity and speed of signature indexing. Moreover, contrary to topology-based methods, the new signature is also insensitive to the topology change of the shape, allowing to match similar shapes with different genus. Our signature is a 2D histogram which is a combination of the distribution of two scalar functions defined on the boundary surface of the 3D shape. The first is a definition of a novel function called the local-diameter function. This function measures the diameter of the 3D shape in the neighborhood of each vertex. The histogram of this function is an informative measure of the shape which is insensitive to pose changes. The second is the centricity function that, measures the average geodesic distance from a vertex to all other vertices on the mesh. We evaluate and compare a number of methods for measuring similarity between two signatures, and demonstrate the effectiveness of our pose-oblivious shape signature within a 3D search engine application for different databases containing hundreds of models.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/pose-oblivious.jpg" alt="Pose Oblivious Shape Signature">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

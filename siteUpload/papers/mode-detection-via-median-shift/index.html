@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode-Detection via Median-Shift — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Mode-Detection via Median-Shift</h1>
+  <p class="paper-authors">Lior Shapira · Shai Avidan · Ariel Shamir</p>
+  <p class="paper-venue">Proceedings of IEEE International Conference on Computer Vision : (to appear), 2009</p>
+  <div class="paper-links">
+    
+    
+      <a href="http://www.cs.tau.ac.il/~liors/mode-detection" class="btn">Project Page</a>
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{shapira2009,
+  author    = {Lior Shapira and Shai Avidan and Ariel Shamir},
+  title     = {Mode-Detection via Median-Shift},
+  booktitle = {Proceedings of IEEE International Conference on Computer Vision},
+  year      = {2009},
+  pages     = {(to appear)}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Median-shift is a mode seeking algorithm that relies on computing the median of local neighborhoods, instead of the mean. We further combine median-shift with Locality Sensitive Hashing (LSH) and show that the combined algorithm is suitable for clustering large scale, high dimensional data sets. In particular, we propose a new mode detection step that greatly accelerates performance. In the past, LSH was used in conjunction with mean shift only to accelerate nearest neighbor queries. Here we show that we can analyze the density of the LSH bins to quickly detect potential mode candidates and use only them to initialize the median-shift procedure. We use the median, instead of the mean (or its discrete counterpart - the medoid) because the median is more robust and because the median of a set is a point in the set. A median is well defined for scalars but there is no single agreed upon extension of the median to high dimensional data. We adopt a particular extension, known as the Tukey median, and show that it can be computed efficiently using random projections of the high dimensional data onto $1D$ lines, just like LSH, leading to a tightly integrated and efficient algorithm.</p>
+  </div>
+
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

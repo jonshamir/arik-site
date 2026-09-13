@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoConnect: Computational Design of 3D-Printable Connectors — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>AutoConnect: Computational Design of 3D-Printable Connectors</h1>
+  <p class="paper-authors">Yuki Koyama · Shinjiro Sueda · Emma Steinhardt · Takeo Igarashi · Ariel Shamir · Wojciech Matusik</p>
+  <p class="paper-venue">ACM Transactions on Graphics 34 (6) : Article 231, 2015</p>
+  <div class="paper-links">
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{koyama2015,
+  author    = {Yuki Koyama and Shinjiro Sueda and Emma Steinhardt and Takeo Igarashi and Ariel Shamir and Wojciech Matusik},
+  title     = {AutoConnect: Computational Design of 3D-Printable Connectors},
+  journal   = {ACM Transactions on Graphics},
+  year      = {2015},
+  volume    = {34},
+  number    = {6},
+  pages     = {Article 231}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+    <div class="paper-video">
+      <iframe src="https://player.vimeo.com/video/148245378" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>We present AutoConnect, an automatic method that creates customized, 3D-printable connectors attaching two physical objects together. Users simply position and orient virtual models of the two objects that they want to connect and indicate some auxiliary information such as weight and dimensions. Then, AutoConnect creates several alternative designs that users can choose from for 3D printing. The design of the connector is created by combining two holders, one for each object. We categorize the holders into two types. The first type holds standard objects such as pipes and planes. We utilize a database of parameterized mechanical holders and optimize the holder shape based on the grip strength and material consumption. The second type holds free-form objects. These are procedurally generated shell-gripper designs created based on geometric analysis of the object. We illustrate the use of our method by demonstrating many examples of connectors and practical use cases.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/autoConnectTeaser1.png" alt="AutoConnect: Computational Design of 3D-Printable Connectors">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

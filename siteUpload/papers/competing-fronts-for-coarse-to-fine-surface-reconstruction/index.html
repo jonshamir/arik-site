@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competing Fronts for Coarse–to–Fine Surface Reconstruction — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Competing Fronts for Coarse–to–Fine Surface Reconstruction</h1>
+  <p class="paper-authors">Andrei Sharf · Thomas Lewiner · Ariel Shamir · Leif Kobbelt · Daniel Cohen-Or</p>
+  <p class="paper-venue">Computer Graphics Forum 25 (3) : 389-398, 2006</p>
+  <div class="paper-links">
+    
+      <a href="http://www.matmidia.mat.puc-rio.br/attachments/competing_fronts_eg.pdf" class="btn">Paper PDF</a>
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{sharf2006,
+  author    = {Andrei Sharf and Thomas Lewiner and Ariel Shamir and Leif Kobbelt and Daniel Cohen-Or},
+  title     = {Competing Fronts for Coarse–to–Fine Surface Reconstruction},
+  journal   = {Computer Graphics Forum},
+  year      = {2006},
+  volume    = {25},
+  number    = {3},
+  pages     = {389-398}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>We present a deformable model to reconstruct a surface from a point cloud. The model is based on an explicit mesh representation composed of multiple competing evolving fronts. These fronts adapt to the local feature size of the target shape in a coarse–to–fine manner. Hence, they approach towards the finer (local) features of the target shape only after the reconstruction of the coarse (global) features has been completed. This conservative approach leads to a better control and interpretation of the reconstructed topology. The use of an explicit representation for the deformable model guarantees water-tightness and simple tracking of topological events. Furthermore, the coarse–to–fine nature of reconstruction enables adaptive handling of non-homogenous sample density, including robustness to missing data in defected areas.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/coarse-to-fine.jpg" alt="Competing Fronts for Coarse–to–Fine Surface Reconstruction">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

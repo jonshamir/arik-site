@@ -1,0 +1,25 @@
+{
+  "title": "Evaluating machine comprehension of sketch meaning at different levels of abstraction",
+  "authors": [
+    "Kushin Mukherjee",
+    "Xuanchen Lu",
+    "Holly Huey",
+    "Yael Vinker",
+    "Rio Aguina-Kang",
+    "Ariel Shamir",
+    "Judith E. Fan"
+  ],
+  "year": 2023,
+  "abstract": "People can reliably understand images that vary in visual abstractionÑfrom detailed illustrations to schematic icons. To what degree are current vision algorithms robust to such variation when attributing meaning to abstract images? We first obtained > 90K human-generated sketches produced under different time limits (4s, 8s, 16s, 32s; N=5,563 participants) and AI-generated sketches (Vinker et al., 2022) produced under different ink limits (4, 8, 16, 32 strokes) of 2,048 real-world object concepts spanning 128 categories from the THINGS dataset (Hebart et al., 2019). We then evaluated how well 12 state-of-the-art vision algorithms could (1) predict which concept each sketch was intended to convey and (2) match human performance and response patterns when presented with the same sketches. We found that models achieving generally higher recognition accuracy also tracked human error patterns better, although there remains a sizable gap between human and machine sketch understanding. We also found that, on average, different models expressed similar uncertainty about sketches of the same concept across different levels of abstraction. We hope that public release of this dataset and evaluation protocol will lead to algorithms that display more human-like visual abstraction.",
+  "venue": "Proceedings of the Annual Meeting of the Cognitive Science Society",
+  "pages": "",
+  "paperType": "conference",
+  "categories": [
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": null,
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/sketchEval.png",
+  "overviewImage": "/images/research/sketchEvalOverview.jpg"
+}

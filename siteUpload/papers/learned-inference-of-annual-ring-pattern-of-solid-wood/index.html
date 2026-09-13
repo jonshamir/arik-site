@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learned Inference of Annual Ring Pattern of Solid Wood — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Learned Inference of Annual Ring Pattern of Solid Wood</h1>
+  <p class="paper-authors">Maria Larsson · Takashi Ijiri · I-Chao Shen · Hironori Yoshida · Ariel Shamir · Takeo Igarashi</p>
+  <p class="paper-venue">Computer Graphics Forum 43 (6) , 2024</p>
+  <div class="paper-links">
+    
+      <a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.15074?af=R" class="btn">Paper PDF</a>
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{larsson2024,
+  author    = {Maria Larsson and Takashi Ijiri and I-Chao Shen and Hironori Yoshida and Ariel Shamir and Takeo Igarashi},
+  title     = {Learned Inference of Annual Ring Pattern of Solid Wood},
+  journal   = {Computer Graphics Forum},
+  year      = {2024},
+  volume    = {43},
+  number    = {6}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>We propose a method for inferring the internal anisotropic volumetric texture of a given wood block from annotated photographs of its external surfaces. The global structure of the annual ring pattern is represented using a continuous spatial scalar field referred to as the growth time field (GTF). First, we train a generic neural model that can represent various GTFs using procedurally generated training data. Next, we fit the generic model to the GTF of a given wood block based on surface annotations. Finally, we convert the GTF to an annual ring field (ARF) revealing the layered pattern and apply neural style transfer to render orientation-dependent small-scale features and colors on a cut surface. We show rendered results of various physically cut real wood samples. Our method has physical and virtual applications such as cut-preview before subtractive fabricating solid wood artifacts and simulating object breaking.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/annualRingsOverview.jpg" alt="Learned Inference of Annual Ring Pattern of Solid Wood">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

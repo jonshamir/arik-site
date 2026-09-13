@@ -1,0 +1,21 @@
+{
+  "title": "Generating Comics From 3D Interactive Computer Graphics",
+  "authors": [
+    "Ariel Shamir",
+    "Miki Rubinstein",
+    "Tomer Levinboim"
+  ],
+  "year": 2006,
+  "abstract": "There are times when Computer Graphics is required to be succinct and simple. Carefully chosen simplified and static images can portray a narration of a story as effectively as 3D photo-realistic continuous graphics. In this paper we present an automatic system which transforms continuous graphics originating from real 3D virtualworld interactions into a sequence of comics images. The system traces events during the interaction and then analyzes and breaks them into scenes. Based on user defined parameters of point-ofview and story granularity it chooses specific time-frames to create static images, renders them, and applies post-processing to reduce their cluttering. The system utilizes the same principal of intelligent reduction of details in both temporal and spatial domains for choosing important events and depicting them visually. The end result is a sequence of comics images which summarize the main happenings and present them in a coherent, concise and visually pleasing manner.",
+  "venue": "IEEE Computer Graphics & Applications",
+  "pages": "30--38",
+  "paperType": "conference",
+  "categories": [
+    "Information Visualization"
+  ],
+  "paperLink": "http://www.faculty.idc.ac.il/arik/papers/ComicsCGA.pdf",
+  "videoLink": null,
+  "projectLink": "http://www.faculty.idc.ac.il/arik/Comics/",
+  "thumbnail": "/images/research/thumbnails/comics.jpg",
+  "overviewImage": "/images/research/comics.jpg"
+}

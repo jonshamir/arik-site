@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consistent Mesh Partitioning and Skeletonization using the Shape Diameter Function — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Consistent Mesh Partitioning and Skeletonization using the Shape Diameter Function</h1>
+  <p class="paper-authors">Daniel Cohen-Or · Ariel Shamir · Lior Shapira</p>
+  <p class="paper-venue">The Visual Computer 24 (4) : 249-259, 2008</p>
+  <div class="paper-links">
+    
+      <a href="http://www.cs.tau.ac.il/~liors/research/papers/consistent_mesh_partitioning.pdf" class="btn">Paper PDF</a>
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{cohen-or2008,
+  author    = {Daniel Cohen-Or and Ariel Shamir and Lior Shapira},
+  title     = {Consistent Mesh Partitioning and Skeletonization using the Shape Diameter Function},
+  journal   = {The Visual Computer},
+  year      = {2008},
+  volume    = {24},
+  number    = {4},
+  pages     = {249-259}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Mesh partitioning and skeletonisation are fundamental for many computer graphics and animation techniques. Because of the close link between an object’s skeleton and its boundary, these two problems are in many cases complementary. Any partitioning of the object can assist in the creation of a skeleton and any segmentation of the skeleton can infer a partitioning of the object. In this paper, we consider these two problems on a wide variety of meshes, and strive to construct partitioning and skeletons which remain consistent across a family of objects, not a single one. Such families can consist of either a single object in multiple poses and resolutions, or multiple objects which have a general common shape. To achieve consistency, we base our algorithms on a volume-based shape-function called the shape-diameter-function (SDF), which remains largely oblivious to pose changes of the same object and maintains similar values in analogue parts of different objects. The SDF is a scalar function defined on the mesh surface; however, it expresses a measure of the diameter of the object’s volume in the neighborhood of each point on the surface. Using the SDF we are able to process and manipulate families of objects which contain similarities using a simple and consistent algorithm: consistently partitioning and creating skeletons among multiple meshes.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/mesh-partition.jpg" alt="Consistent Mesh Partitioning and Skeletonization using the Shape Diameter Function">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duet Dancing from a Solo Dance Video — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Duet Dancing from a Solo Dance Video</h1>
+  <p class="paper-authors">Yarin Moshe · Yael Moses · Ariel Shamir</p>
+  <p class="paper-venue">Computers &amp; Graphics 130 (C) : (Presented at the 9th ACM/EG Expressive Symposium), 2025</p>
+  <div class="paper-links">
+    
+      <a href="https://www.sciencedirect.com/science/article/pii/S0097849325000913?dgcid=rss_sd_all" class="btn">Paper PDF</a>
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{moshe2025,
+  author    = {Yarin Moshe and Yael Moses and Ariel Shamir},
+  title     = {Duet Dancing from a Solo Dance Video},
+  journal   = {Computers &amp; Graphics},
+  year      = {2025},
+  volume    = {130},
+  number    = {C},
+  pages     = {(Presented at the 9th ACM/EG Expressive Symposium)}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>This paper introduces a method to generate duet dance videos from an input solo dancerÕs video performance. Addressing this novel problem, our system tackles a set of sub-tasks, including dancer segmentation, camera motion handling, stage reconstruction and the intricate management of geometric constraints such as dancer scale preservation and dancers collision prevention. The proposed approach leverages existing methodologies and new solutions. Notably, we address collisions in 2D spaceÐtime directly, departing from traditional 3D approaches. We modify the initial location of the dancer to avoid long-time collisions globally, while also modulating the pace of the dance by deliberate slowing down or accelerating motion to avoid short collisions locally. Experimental results attest to the efficacy of our approach. The system not only successfully synthesizes engaging duet dance sequences but also upholds the authenticity of individual performances, as shown by a user study.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/duetDanceOverview.jpg" alt="Duet Dancing from a Solo Dance Video">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

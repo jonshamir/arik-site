@@ -1,0 +1,24 @@
+{
+  "title": "MultiAct: Text-to-Motion Generation from Composite Text via Tailored Attention Guidance",
+  "authors": [
+    "Nathan Sala",
+    "Ofir Abramovich",
+    "Ariel Shamir",
+    "Daniel Cohen-Or",
+    "Andreas Aristidou",
+    "Sigal Raab"
+  ],
+  "year": 2026,
+  "abstract": "Text-to-motion generation has progressed rapidly in recent years, offering an expressive interface for animation and human–computer interaction. However, current models remain brittle when handling prompts that describe multiple actions occurring at the same time. Rather than realizing all components of a composite description, models frequently prioritize a single dominant action and neglect the rest, leading to incomplete or ambiguous motion. We present MultiAct, an unpaired, inference-time framework for compositional text-to-motion synthesis that operates directly on pre-trained motion generators without retraining or architectural modification. Our method counteracts semantic collapse by adaptively amplifying cross-attention scores associated with underrepresented prompt components. We note that effective modulation depends on prompt-specific choices, such as which tokens and layers to target, and introduce a lightweight auxiliary decision scheme that determines the most effective attention-strengthening parametrization. Extensive quantitative and qualitative evaluations demonstrate that MultiAct consistently outperforms existing baselines on composite prompts, achieving improved semantic coverage while preserving motion realism. Project page: https://natsala13.github.io/multiact.github.io/.",
+  "venue": "ACM SIGGRAPH Conference Proceedings",
+  "pages": "Article No.: 94, 1 – 11",
+  "paperType": "conference",
+  "categories": [
+    "Animation"
+  ],
+  "paperLink": null,
+  "videoLink": "https://www.youtube.com/watch?v=XYrpXqOwkLE",
+  "projectLink": "https://natsala13.github.io/multiact.github.io/",
+  "thumbnail": "/images/research/thumbnails/multiAct.png",
+  "overviewImage": "/images/research/multiActOverview.jpg"
+}

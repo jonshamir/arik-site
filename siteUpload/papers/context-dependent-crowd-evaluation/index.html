@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Context-Dependent Crowd Evaluation — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Context-Dependent Crowd Evaluation</h1>
+  <p class="paper-authors">Alon Lerner · Yiorgos Chrysanthou · Ariel Shamir · Daniel Cohen-Or</p>
+  <p class="paper-venue">Computer Graphics Forum 29 (7) : 2197-2206, 2010</p>
+  <div class="paper-links">
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{lerner2010,
+  author    = {Alon Lerner and Yiorgos Chrysanthou and Ariel Shamir and Daniel Cohen-Or},
+  title     = {Context-Dependent Crowd Evaluation},
+  journal   = {Computer Graphics Forum},
+  year      = {2010},
+  volume    = {29},
+  number    = {7},
+  pages     = {2197-2206}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>No matter which technique is used for simulating crowds, the quality of the results is usually measured by examining its “look-and-feel”. However, even if a crowd looks good in general, there could be some specific individual behaviors which do not seem correct. Although spotting such problems manually can become tedious, ignoring them may harm the simulation’s credibility. In this paper we present a data-driven approach for evaluating the behaviors of individuals within a simulated crowd. Based on video-footage of a real crowd, a database of behavior examples is generated. Given a simulation of a crowd, an analog analysis is performed on it, defining a set of queries, which are matched by a similarity function to the database examples. The results offer a possible objective answer to the question of how similar are the simulated individual behaviors compared to real observed behaviors. By changing the video input one can change the context of evaluation. We show several examples of evaluating simulated crowds produced using different techniques and comprising of dense crowds, sparse crowds and flocks.</p>
+  </div>
+
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

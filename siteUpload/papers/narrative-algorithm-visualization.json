@@ -1,0 +1,21 @@
+{
+  "title": "Narrative Algorithm Visualization",
+  "authors": [
+    "Marina Blumenkrants",
+    "Hilla Starovisky",
+    "Ariel Shamir"
+  ],
+  "year": 2006,
+  "abstract": "Algorithm animations have been shown to be useful aids for educational purposes. Nevertheless, in a sample survey we conducted it seems that the actual use of animation among students is not very high. Furthermore, numerous algorithm animation systems have been proposed, but none has gained acceptance in a large community. The foremost reason for this is inter-operability: special purpose systems would not be easily adopted by users. We believe the second reason is the fact that most algorithm animation systems are targeted at automating or parameterizing the animation creation, and specializing the systems for algorithm depictions. Our approach suggests using general animation tools which are much widely accessible. Furthermore, we claim that content management and design of the animation have more to do with creating effective educational aids than the tool used to create it. We present a novel framework for the creation of algorithm animations. The framework is based on viewing the animation as a narrative, forming a central story and defining participating characters. Using this framework, the basic elements defining an animation - visual metaphors and temporal transitions - are addressed. The characters which signify abstract notions in the algorithm define the depictions and the story defines the modifications over time. This focuses the creator on the mapping process, which is the basis of any visual depiction: from his or her mind to the animation and back to the viewer's mind.",
+  "venue": "Proceedings ACM Symposium on Software Visualization",
+  "pages": "17-26",
+  "paperType": "conference",
+  "categories": [
+    "Information Visualization"
+  ],
+  "paperLink": "http://www.faculty.idc.ac.il/arik/papers/AlgoAnim.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/algorithm-visualization.jpg",
+  "overviewImage": "/images/research/algorithm-visualization.jpg"
+}

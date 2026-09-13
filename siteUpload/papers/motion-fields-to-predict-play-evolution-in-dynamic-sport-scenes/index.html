@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Fields to Predict Play Evolution in Dynamic Sport Scenes — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Motion Fields to Predict Play Evolution in Dynamic Sport Scenes</h1>
+  <p class="paper-authors">Kihwan Kim · Matthias Grundmann · Ariel Shamir · Iain Matthews · Jessica Hodgins · Irfan Essa</p>
+  <p class="paper-venue">Proc. Computer Vision and Pattern Recognition : 840 - 847, 2010</p>
+  <div class="paper-links">
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{kim2010,
+  author    = {Kihwan Kim and Matthias Grundmann and Ariel Shamir and Iain Matthews and Jessica Hodgins and Irfan Essa},
+  title     = {Motion Fields to Predict Play Evolution in Dynamic Sport Scenes},
+  booktitle = {Proc. Computer Vision and Pattern Recognition},
+  year      = {2010},
+  pages     = {840 - 847}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Videos of multi-player team sports provide a challenging domain for dynamic scene analysis. Player actions and interactions are complex as they are driven by many factors, such as the short-term goals of the individual player, the overall team strategy, the rules of the sport, and the current context of the game. We show that such constrained multi-agent events can be analyzed, and even predicted, by estimating the global movements of all players in the scene at any time and used to predict play evolution. We propose a novel approach to detect the locations where the play evolution will proceed, e.g. where interesting events will occur, by tracking player positions over time. We start with a multiview video from fixed cameras of a game. We first extract the ground level sparse movement of players in each time-step, and then generate a dense motion field. Using this field we detect locations where the motion converges, implying positions towards which the play is evolving.</p>
+  </div>
+
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

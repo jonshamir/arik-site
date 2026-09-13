@@ -1,0 +1,20 @@
+{
+  "title": "Dynamic Typography and LiveType: a parametric font model based on features and constraints",
+  "authors": [
+    "Ariel Shamir",
+    "Ari Rappoport"
+  ],
+  "year": 1997,
+  "abstract": "New digital media such as the world wide web allow pages to be dynamic. Just as letters and fonts are extremely important graphics objects in static pages, they are so for dynamic pages. Unfortunately, current font models do not support dynamic behaviours beyond simple affine transformations and interpolations, resulting in lack of visual richness and possible damage to the typographic nature of the design. In this paper we present a dynamic font model, LIVETYPE, that supports complex nonlinear dynamic behaviours of letter shapes. Inherent typographic and stylistic constraints are preserved during dynamic behaviours. The capability of modifying letter shapes through parameter specification is present in the font itself and is provided to any user of the font. LIVETYPE is implemented using parametric features and constraints. The constraints evaluation algorithm operates in linear time in the size of a glyph and guarantees finding a single solution. Constraints are represented using a special novel type of constraints graph, a mixed ratio graph, which can deal with most constraints cycles of the kind arising in the font domain. In addition, a novel constraint state machine enables modification of the shape's underlying topology during dynamic behaviour.",
+  "venue": "ACM SIGGRAPH 97 Visual Proceedings: The Art and Interdisciplinary Programs of SIGGRAPH '97",
+  "pages": "160",
+  "paperType": "conference",
+  "categories": [
+    "Art, Sketches & Typography"
+  ],
+  "paperLink": "./includes/papers/DynaTyp.pdf",
+  "videoLink": null,
+  "projectLink": null,
+  "thumbnail": "/images/research/thumbnails/DynaTypo.png",
+  "overviewImage": "/images/research/DynaTypoOverview.jpg"
+}

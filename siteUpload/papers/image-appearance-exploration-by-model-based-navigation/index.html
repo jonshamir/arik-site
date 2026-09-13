@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Appearance Exploration by Model Based Navigation — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Image Appearance Exploration by Model Based Navigation</h1>
+  <p class="paper-authors">Lior Shapira · Ariel Shamir · Daniel Cohen-Or</p>
+  <p class="paper-venue">Computer Graphics Forum 28 (2) : to appear, 2009</p>
+  <div class="paper-links">
+    
+      <a href="http://www.cs.tau.ac.il/~liors/research/papers/image_appearance_exploration.pdf" class="btn">Paper PDF</a>
+    
+    
+      <a href="http://www.cs.tau.ac.il/~liors/image-appearance-exploration" class="btn">Project Page</a>
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{shapira2009,
+  author    = {Lior Shapira and Ariel Shamir and Daniel Cohen-Or},
+  title     = {Image Appearance Exploration by Model Based Navigation},
+  journal   = {Computer Graphics Forum},
+  year      = {2009},
+  volume    = {28},
+  number    = {2},
+  pages     = {to appear}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Changing the appearance of an image can be a complex and non-intuitive task. Many times the target image colors and look are only known vaguely and many trials are needed to reach the desired results. Moreover, the effect of a specific change on an image is difficult to envision, since one must take into account spatial image considerations along with the color constraints. Tools provided today by image processing applications can become highly technical and non-intuitive including various gauges and knobs. In this paper we introduce a method for changing image appearance by navigation, focusing on recoloring images. The user visually navigates a high dimensional space of possible color manipulations of an image. He can either explore in it for inspiration or refine his choices by navigating into sub regions of this space to a specific goal. This navigation is enabled by modeling the chroma channels of an image&#39;s colors using a Gaussian Mixture Model (GMM). The Gaussians model both color and spatial image coordinates, and provide a high dimensional parameterization space of a rich variety of color manipulations. The user&#39;s actions are translated into transformations of the parameters of the model, which recolor the image. This approach provides both inspiration and intuitive navigation in the complex space of image color manipulations.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/appearance-explore.jpg" alt="Image Appearance Exploration by Model Based Navigation">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

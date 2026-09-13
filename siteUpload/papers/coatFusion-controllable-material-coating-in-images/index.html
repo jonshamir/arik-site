@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoatFusion: Controllable Material Coating in Images — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>CoatFusion: Controllable Material Coating in Images</h1>
+  <p class="paper-authors">Sagie Levy · Elad Aharoni · Matan Levy · Ariel Shamir · Dani Lischinski</p>
+  <p class="paper-venue">ACM Transactions on Graphics 44 (4) : Accepted (SIGGRAPH Asia 2026 Proceedings), 2026</p>
+  <div class="paper-links">
+    
+      <a href="https://arxiv.org/pdf/2512.02143" class="btn">Paper PDF</a>
+    
+    
+      <a href="https://github.com/sagielevy/coatFusion" class="btn">Project Page</a>
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{levy2026,
+  author    = {Sagie Levy and Elad Aharoni and Matan Levy and Ariel Shamir and Dani Lischinski},
+  title     = {CoatFusion: Controllable Material Coating in Images},
+  journal   = {ACM Transactions on Graphics},
+  year      = {2026},
+  volume    = {44},
+  number    = {4},
+  pages     = {Accepted (SIGGRAPH Asia 2026 Proceedings)}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Material Coating is a novel image editing task that simulates applying a thin material layer to a target surface (substrate) while preserving the substrate’s geometry and shading. Material coating is fundamentally different from material transfer, which typically reinterprets an object as being made of a new material and can modify its shape or overwrite fine details. We introduce CoatFusion, a diffusion-based framework for controllable material coating in images. Since real paired before/after coating data is difficult to acquire, we construct DataCoat110K, a synthetic paired dataset of approximately 110K examples rendered with physically motivated coating layers, including opaque, metallic, and transmissive appearances. CoatFusion formulates coating as visual in-context learning over a triptych containing the substrate image, a canonical 2D albedo texture, and the coated result, and uses cycle-consistent compose/decompose supervision to encourage substrate preservation and geometry-aware texture wrapping. Learned material tokens provide continuous control over roughness and thickness, and discrete on/off control over metalness and transmission. Across held-out synthetic evaluations, real-image examples, ablations, and a human study, CoatFusion produces more realistic and controllable coatings than material transfer/editing baselines and classical blending operations.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/coatFusionOverview.jpg" alt="CoatFusion: Controllable Material Coating in Images">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

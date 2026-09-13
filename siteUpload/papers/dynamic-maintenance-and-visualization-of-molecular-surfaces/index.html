@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Maintenance and Visualization of Molecular Surfaces — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Dynamic Maintenance and Visualization of Molecular Surfaces</h1>
+  <p class="paper-authors">Chandrajit Bajaj · Valerio Pascucci · Ariel Shamir · Robert J. Holt · Arun Netravali</p>
+  <p class="paper-venue">Discrete and Applied Mathematics 127 (1) : 23-51, 2003</p>
+  <div class="paper-links">
+    
+      <a href="http://www.pascucci.org/pdf-papers/dynamicDAM.pdf" class="btn">Paper PDF</a>
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{bajaj2003,
+  author    = {Chandrajit Bajaj and Valerio Pascucci and Ariel Shamir and Robert J. Holt and Arun Netravali},
+  title     = {Dynamic Maintenance and Visualization of Molecular Surfaces},
+  booktitle = {Discrete and Applied Mathematics},
+  year      = {2003},
+  volume    = {127},
+  number    = {1},
+  pages     = {23-51}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Molecular surface computations are often necessary in order to perform synthetic drug design. A critical step in this process is the computation and update of an exact boundary representation for the molecular surface (e.g. the Lee-Richards surface). In this paper we introduce efficient techniques for computing a molecular surface boundary representation as a set of NURBS (non-uniform rational B-splines) patches. This representation introduces for molecules the same geometric data structure used in the solid modeling community and enables immediate access to a wide range of modeling operations and techniques. Furthermore, this allows the use of any general solid modeling or visualization system as a molecular modeling interface. However, using such a representation in a molecular modeling environment raises several efficiency and update constraints, especially in a dynamic setting. For example, changes in the probe radius result in both geometric and topological changes to the set of patches. Our techniques provide the option of trading accuracy of the representation for the efficiency of the computation, while still tracking the changes in the set of patches. In particular, we discuss two main classes of dynamic updates: one that keeps the topology of the molecular configuration fixed, and a more complicated case where the topology may be updated continuously. In general the generated output surface is represented in a format that can be loaded into standard solid modeling systems. It can also be directly triangulated or rendered, possibly at different levels of resolution, by a standard graphics library such as OpenGL without any additional effort.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/molecular-surface.jpg" alt="Dynamic Maintenance and Visualization of Molecular Surfaces">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

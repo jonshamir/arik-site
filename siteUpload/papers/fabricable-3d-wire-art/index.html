@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabricable 3D Wire Art — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Fabricable 3D Wire Art</h1>
+  <p class="paper-authors">Kenji Tojo · Ariel Shamir · Bernd Bickel · Nobuyuki Umetani</p>
+  <p class="paper-venue">ACM SIGGRAPH Conference Proceedings : 134, 2024</p>
+  <div class="paper-links">
+    
+      <a href="https://dl.acm.org/doi/10.1145/3641519.3657453" class="btn">Paper PDF</a>
+    
+    
+      <a href="https://kenji-tojo.github.io/publications/fab3dwire/" class="btn">Project Page</a>
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{tojo2024,
+  author    = {Kenji Tojo and Ariel Shamir and Bernd Bickel and Nobuyuki Umetani},
+  title     = {Fabricable 3D Wire Art},
+  booktitle = {ACM SIGGRAPH Conference Proceedings},
+  year      = {2024},
+  pages     = {134}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>This paper presents a computational method for automatically creating fabricable 3D wire sculptures from various input modalities, including 3D models, images, and even text. There are several challenges to wire art creation. For example, artists must express the desired visual as a sparse wire representation. It is also difficult to manually bend wires in the air without guidance to fabricate the designed 3D curves. Our workflow solves these challenges by using two core techniques. First, we present an algorithm that automatically generates a fabricable 3D curve representation of the target based on a loss function that measures the semantic distance between the rendered curve and the target. The loss function can be defined using different pre-trained vision-language neural networks to generate wire art from different input types. The loss function is then optimized using differentiable rendering specifically targeting 3D parametric curves. Our method can incorporate various fabrication constraints on the wire as additional regularization terms in the optimization process. Second, we present an algorithm to generate a 3D printable jig structure that can be used to fabricate the generated wire path. The major challenge in the jig generation stems from the design of an intersection-free surface mesh for 3D printing, which we address with our inflation algorithm. The experimental results indicate that our method can handle a wider range of input types and can produce physically fabricable wire shapes compared to previous wire generation methods. Various wire arts have been fabricated using our 3D-printed jig to demonstrate its effectiveness in 3D wire bending.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/wireArtOverview.jpg" alt="Fabricable 3D Wire Art">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

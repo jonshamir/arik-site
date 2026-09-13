@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Comparative Study of Image Retargeting — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>A Comparative Study of Image Retargeting</h1>
+  <p class="paper-authors">Michael Rubinstein · Diego Gutierrez · Olga Sorkine · Ariel Shamir</p>
+  <p class="paper-venue">ACM Transactions on Graphics 29 (5) , 2010</p>
+  <div class="paper-links">
+    
+    
+      <a href="http://people.csail.mit.edu/mrub/retargetme/" class="btn">Project Page</a>
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{rubinstein2010,
+  author    = {Michael Rubinstein and Diego Gutierrez and Olga Sorkine and Ariel Shamir},
+  title     = {A Comparative Study of Image Retargeting},
+  journal   = {ACM Transactions on Graphics},
+  year      = {2010},
+  volume    = {29},
+  number    = {5}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>The numerous works on media retargeting call for a methodological approach for evaluating retargeting results. We present the first comprehensive perceptual study and analysis of image retargeting. First, we create a large benchmark of images and conduct a large scale user study to compare a representative number of state-of-theart retargeting methods. Second, we present analysis of the users’ responses, where we find that humans in general agree on the evaluation of the results and show that some retargeting methods are consistently more favorable than others. Third, we examine whether computational image distance metrics can predict human retargeting perception. We show that current measures used in this context are not necessarily consistent with human rankings, and demonstrate that better results can be achieved using image features that were not previously considered for this task. We also reveal specific qualities in retargeted media that are more important for viewers. The importance of our work lies in promoting better measures to assess and guide retargeting algorithms in the future. The full benchmark we collected, including all images, retargeted results, and the collected user data, are available to the research community for further investigation at http://people.csail.mit.edu/mrub/retargetme.</p>
+  </div>
+
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

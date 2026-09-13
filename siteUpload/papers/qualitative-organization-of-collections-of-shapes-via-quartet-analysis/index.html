@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualitative Organization of Collections of Shapes via Quartet Analysis — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Qualitative Organization of Collections of Shapes via Quartet Analysis</h1>
+  <p class="paper-authors">Shi-Sheng Huang · Ariel Shamir · Chao-Hui Shen · Hao Zhang · Alla Sheffer · Shi-Min Hu · Daniel Cohen-Or</p>
+  <p class="paper-venue">ACM Transactions on Graphics : Article 71, 2013</p>
+  <div class="paper-links">
+    
+    
+      <a href="http://cg.cs.tsinghua.edu.cn/quartet/" class="btn">Project Page</a>
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{huang2013,
+  author    = {Shi-Sheng Huang and Ariel Shamir and Chao-Hui Shen and Hao Zhang and Alla Sheffer and Shi-Min Hu and Daniel Cohen-Or},
+  title     = {Qualitative Organization of Collections of Shapes via Quartet Analysis},
+  journal   = {ACM Transactions on Graphics},
+  year      = {2013},
+  pages     = {Article 71}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>We present a method for organizing a heterogeneous collection of 3D shapes for overview and exploration. Instead of relying on quantitative distances, which may become unreliable between dissimilar shapes, we introduce a qualitative analysis which utilizes multiple distance measures but only in cases where the measures can be reliably compared. Our analysis is based on the notion of quartets, defined by two pairs objects. In each pair the shapes are close to each other, but far apart from the shapes of the other pair. Combining the information from many quartets computed across a shape collection using several distance measures, we create a hierarchical structure we call categorization tree of the shape collection. This tree satisfies the topological (qualitative) constraints imposed by the quartets creating an effective organization of the shapes. We present categorization trees computed on various collections of shapes and compare them to ground truth data from human categorization. We further introduce the concept of degree of separation chart for every shape in the collection and show the effectiveness of using it for interactive shapes exploration.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/quartetsTeaser.png" alt="Qualitative Organization of Collections of Shapes via Quartet Analysis">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

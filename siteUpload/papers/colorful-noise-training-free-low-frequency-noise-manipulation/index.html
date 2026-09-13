@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful-Noise: Training-Free Low-Frequency Noise Manipulation for Color-Based Conditional Image Generation — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Colorful-Noise: Training-Free Low-Frequency Noise Manipulation for Color-Based Conditional Image Generation</h1>
+  <p class="paper-authors">Nadav Z. Cohen · Ofir Abramovich · Ariel Shamir</p>
+  <p class="paper-venue">ACM SIGGRAPH Conference Proceedings : Article No.: 104, 1 – 11, 2026</p>
+  <div class="paper-links">
+    
+      <a href="https://arxiv.org/abs/2605.00548" class="btn">Paper PDF</a>
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{cohen2026,
+  author    = {Nadav Z. Cohen and Ofir Abramovich and Ariel Shamir},
+  title     = {Colorful-Noise: Training-Free Low-Frequency Noise Manipulation for Color-Based Conditional Image Generation},
+  booktitle = {ACM SIGGRAPH Conference Proceedings},
+  year      = {2026},
+  pages     = {Article No.: 104, 1 – 11}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Text-to-image diffusion models generate images by gradually converting white Gaussian noise into a natural image. White Gaussian noise is well suited for producing diverse outputs from a single text prompt due to its absence of structure. However, this very property limits control over, and predictability of, specific visual attributes, as the noise is not human-interpretable. In this work, we investigate the characteristics of the input noise in diffusion models. We show that, although all frequencies in white Gaussian noise have comparable statistical energy, low-frequency components primarily determine the image’s global structure and color composition, while high-frequency components control finer details. Building on this observation, we demonstrate that simple manipulations of the low-frequency noise using low-frequency image priors can effectively condition the generation process to reconstruct these low-frequency visual cues. This allows us to define a simple, training-free method with minimal overhead that steers overall image structure and color, while letting high-frequency components freely emerge as fine details, enabling variability across generated outputs.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/colorfulNoiseOverview.jpg" alt="Colorful-Noise: Training-Free Low-Frequency Noise Manipulation for Color-Based Conditional Image Generation">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

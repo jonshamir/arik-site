@@ -53,12 +53,14 @@ module.exports = function (eleventyConfig) {
   // Ignore non-template files
   eleventyConfig.ignores.add('README.md');
   eleventyConfig.ignores.add('CLAUDE.md');
+  eleventyConfig.ignores.add('siteUpload');
 
   // Passthrough copy
   eleventyConfig.addPassthroughCopy('images');
   eleventyConfig.addPassthroughCopy('papers');
   eleventyConfig.addPassthroughCopy('style');
   eleventyConfig.addPassthroughCopy('files');
+  eleventyConfig.addPassthroughCopy('index.asp');
 
   return {
     dir: {

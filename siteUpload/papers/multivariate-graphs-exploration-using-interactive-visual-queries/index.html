@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multivariate Graphs Exploration using Interactive Visual Queries — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Multivariate Graphs Exploration using Interactive Visual Queries</h1>
+  <p class="paper-authors">Ariel Shamir · Alla Stolpnik</p>
+  <p class="paper-venue">Computers and Graphics 36 (4) : 257-264, 2012</p>
+  <div class="paper-links">
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@inproceedings{shamir2012,
+  author    = {Ariel Shamir and Alla Stolpnik},
+  title     = {Multivariate Graphs Exploration using Interactive Visual Queries},
+  booktitle = {Computers and Graphics},
+  year      = {2012},
+  volume    = {36},
+  number    = {4},
+  pages     = {257-264}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>Graphic interfaces are vital when interacting with the vast amounts of information available today. A multivariate-graphs, containing typed nodes and typed links between nodes, is very often used to represent many types of data. Such graphs impose greater demands on graphical interaction techniques as they contain a great amount of information as attributes of graph entities. To visualize and interact with such graphs, stronger tools are needed for visualization and interaction that combine statistical and topological analysis, and provide the link to the correct information context whenever possible. In this paper we present visual queries as a graphical interface that reveals semantic information and assists both navigation and exploration of multivariate graphs. Visual queries display the results of specific queries on the elements of the graph or their data in a pop-up view. This promotes view consistency as the main graph depiction is preserved and allows multiple inspection of various data aspects simultaneously in context. We demonstrate three types of visual queries: topological, statistical and contextual and show how these are used effectively for various tasks of interactive graph exploration.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/visualQueriesLarge.jpg" alt="Multivariate Graphs Exploration using Interactive Visual Queries">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>

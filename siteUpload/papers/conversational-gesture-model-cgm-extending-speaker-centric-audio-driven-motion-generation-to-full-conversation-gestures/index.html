@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversational Gesture Model (CGM): Extending Speaker-Centric Audio-Driven Motion Generation to Full Conversation Gestures — Ariel Shamir</title>
+    <link rel="icon" href="/arik/site/images/favicon.ico">
+    <link rel="stylesheet" href="/arik/site/style/reset.css">
+    <link rel="stylesheet" href="/arik/site/style/main.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a href="/arik/site/" class="nav-name">Ariel Shamir</a>
+        <div class="nav-links">
+          <a href="/arik/site/">
+            <i class="ph-fill ph-house"></i>
+            Home
+          </a>
+          <a href="/arik/site/papers/">
+            <i class="ph-fill ph-graph"></i>
+            Research
+          </a>
+          <a href="/arik/site/teaching/">
+            <i class="ph-duotone ph-book-open"></i>
+            Teaching
+          </a>
+          <a href="/arik/site/industry/">
+            <i class="ph-duotone ph-monitor"></i>
+            Industry
+          </a>
+          <a href="/arik/site/others/">
+            <i class="ph-fill ph-smiley"></i>
+            Others
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+<article class="paper-detail">
+  <h1>Conversational Gesture Model (CGM): Extending Speaker-Centric Audio-Driven Motion Generation to Full Conversation Gestures</h1>
+  <p class="paper-authors">Tomer Koren · Adi Rosenthal · Doron Friedman · Ariel Shamir</p>
+  <p class="paper-venue">Computer Graphics Forum (proc. Eurographics) 45 (2) : e70412, 2026</p>
+  <div class="paper-links">
+    
+    
+    <button class="bibtex-btn btn">BibTeX</button>
+    <dialog class="bibtex-dialog">
+      <div class="bibtex-dialog-content">
+        <pre>@article{koren2026,
+  author    = {Tomer Koren and Adi Rosenthal and Doron Friedman and Ariel Shamir},
+  title     = {Conversational Gesture Model (CGM): Extending Speaker-Centric Audio-Driven Motion Generation to Full Conversation Gestures},
+  journal   = {Computer Graphics Forum (proc. Eurographics)},
+  year      = {2026},
+  volume    = {45},
+  number    = {2},
+  pages     = {e70412}
+}</pre>
+        <div class="bibtex-dialog-actions">
+          <button class="bibtex-copy-btn btn btn-small">Copy</button>
+          <button class="bibtex-close-btn btn btn-small">Close</button>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  
+  
+
+  <div class="paper-abstract">
+    <h2>Abstract</h2>
+    <p>In this work we extend speaker-centric audio-driven gesture synthesis toward a unified conversational model that jointly captures both speaking and listening behaviors. Existing speaker-centric models effectively generate gestures aligned with speech but overlook the bidirectional dynamics that characterize natural dialogue. To address this limitation, we propose the Conversational Gesture Model (CGM), a cross-attention-based model capable of synthesizing gestures conditioned on interlocutor conversational cues such as gestures, tone, and textual semantics. By leveraging cross-attention mechanisms, the model fuses interlocutor audio and text features with character gesture encodings, enabling a single system to seamlessly alternate between speaking and listening roles of the same character. Hence, our model enables a single system to act as both speaker and listener, capturing the fluid role shifts and mutual influence inherent in conversation. Experiments demonstrate that this approach preserves the quality of speaker-driven gestures while significantly improving the realism, coherence, and responsiveness of full conversational interactions.</p>
+  </div>
+
+  
+    <div class="paper-overview-image">
+      <img src="/arik/site/images/research/CGMOverview.jpg" alt="Conversational Gesture Model (CGM): Extending Speaker-Centric Audio-Driven Motion Generation to Full Conversation Gestures">
+    </div>
+  
+</article>
+</main>
+    <footer>
+      <p>&copy;  Ariel Shamir</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('.bibtex-btn')) {
+          e.preventDefault();
+          const dialog = e.target.closest('.bibtex-btn').nextElementSibling;
+          dialog.showModal();
+        }
+        if (e.target.closest('.bibtex-close-btn')) {
+          e.target.closest('dialog').close();
+        }
+        if (e.target.closest('.bibtex-copy-btn')) {
+          const pre = e.target.closest('dialog').querySelector('pre');
+          navigator.clipboard.writeText(pre.textContent);
+          e.target.closest('.bibtex-copy-btn').textContent = 'Copied!';
+          setTimeout(() => {
+            e.target.closest('.bibtex-copy-btn').textContent = 'Copy';
+          }, 2000);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'DIALOG') {
+          e.target.close();
+        }
+      });
+    </script>
+    <script src="/arik/site/style/pagination.js"></script>
+  </body>
+</html>
