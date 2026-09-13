@@ -16,25 +16,6 @@ module.exports = function (eleventyConfig) {
     return null;
   });
 
-  // Add groupByYear filter: groups an array of papers into year buckets,
-  // sorted newest-first, clustering all years before 2005 into one bucket.
-  eleventyConfig.addFilter('groupByYear', function (papers) {
-    const OLDEST_SEPARATE_YEAR = 2005;
-    const sorted = [...papers].sort((a, b) => b.year - a.year);
-
-    const groups = [];
-    let currentGroup = null;
-    for (const paper of sorted) {
-      const label = paper.year < OLDEST_SEPARATE_YEAR ? `Before ${OLDEST_SEPARATE_YEAR}` : String(paper.year);
-      if (!currentGroup || currentGroup.label !== label) {
-        currentGroup = { label, papers: [] };
-        groups.push(currentGroup);
-      }
-      currentGroup.papers.push(paper);
-    }
-    return groups;
-  });
-
   // Add toBibtex filter
   eleventyConfig.addFilter('toBibtex', function (paper) {
     const lastNameMatch = paper.authors[0].split(' ').pop().toLowerCase();
@@ -67,6 +48,26 @@ module.exports = function (eleventyConfig) {
       slug: toSlug(name),
       papers: allPapers.filter(p => p.categories && p.categories.includes(name))
     }));
+  });
+
+  // Collection: papers grouped by year, newest first, clustering all years
+  // before 2005 into a single "Before 2005" group.
+  eleventyConfig.addCollection('papersByYear', function (collectionApi) {
+    const OLDEST_SEPARATE_YEAR = 2005;
+    const allPapers = require('./_data/papers.js')();
+    const sorted = [...allPapers].sort((a, b) => b.year - a.year);
+
+    const groups = [];
+    let currentGroup = null;
+    for (const paper of sorted) {
+      const label = paper.year < OLDEST_SEPARATE_YEAR ? `Before ${OLDEST_SEPARATE_YEAR}` : String(paper.year);
+      if (!currentGroup || currentGroup.label !== label) {
+        currentGroup = { label, slug: toSlug(label), papers: [] };
+        groups.push(currentGroup);
+      }
+      currentGroup.papers.push(paper);
+    }
+    return groups;
   });
 
   // Ignore non-template files

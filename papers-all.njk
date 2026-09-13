@@ -1,15 +1,31 @@
 ---
 layout: base.njk
-title: All Publications — Ariel Shamir
-permalink: /papers/all/
+pagination:
+  data: collections.papersByYear
+  size: 1
+  alias: yearGroup
+  addAllPagesToCollections: true
+permalink: "{% if pagination.pageNumber == 0 %}/papers/all/{% else %}/papers/all/{{ yearGroup.slug }}/{% endif %}"
+eleventyComputed:
+  title: "All Publications ({{ yearGroup.label }}) — Ariel Shamir"
 ---
 
 <section class="papers-list">
   <h1>All Publications</h1>
-  {% for group in papers | groupByYear %}
-    <h2 class="papers-year-heading">{{ group.label }}</h2>
-    {% for paper in group.papers %}
-      {% include "paper-card.njk" %}
+
+  <nav class="year-nav" aria-label="Browse by year">
+    {% for group in collections.papersByYear %}
+      {% set isActive = group.slug == yearGroup.slug %}
+      <a
+        href="{% if loop.index0 == 0 %}/papers/all/{% else %}/papers/all/{{ group.slug }}/{% endif %}"
+        class="year-nav-link{% if isActive %} active{% endif %}"
+        {% if isActive %}aria-current="page"{% endif %}
+      >{{ group.label }}</a>
     {% endfor %}
+  </nav>
+
+  <h2 class="papers-year-heading">{{ yearGroup.label }}</h2>
+  {% for paper in yearGroup.papers %}
+    {% include "paper-card.njk" %}
   {% endfor %}
 </section>

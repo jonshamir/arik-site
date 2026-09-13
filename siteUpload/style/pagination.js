@@ -1,7 +1,7 @@
 (function () {
   var PAGE_SIZE = 10;
 
-  var containers = document.querySelectorAll(".papers-list, .category-page");
+  var containers = document.querySelectorAll(".category-page");
 
   containers.forEach(function (container) {
     var cards = Array.from(container.querySelectorAll(".paper-card"));
