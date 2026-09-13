@@ -53,7 +53,7 @@ module.exports = function (eleventyConfig) {
   // Collection: papers grouped by year, newest first, clustering all years
   // before 2005 into a single "Before 2005" group.
   eleventyConfig.addCollection('papersByYear', function (collectionApi) {
-    const OLDEST_SEPARATE_YEAR = 2005;
+    const OLDEST_SEPARATE_YEAR = 2006;
     const allPapers = require('./_data/papers.js')();
     const sorted = [...allPapers].sort((a, b) => b.year - a.year);
 
